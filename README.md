@@ -10,3 +10,10 @@ Who: anyone who wants to contribute to opensource project's documentation!
 
 The BIDS space is reserved Jan, 23rd from 6pm to 9pm.
 See with Tracy for food.
+
+
+## Projects that may be interested
+
+- matplotlib (see with NelleV)
+- scikit-learn
+- mne
