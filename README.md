@@ -5,6 +5,8 @@ However, as important as it is, we often don't give documentation enough attenti
 
 We think documentation is great, so we're devoting a week to improving the documentation in the open-source ecosystem. We're going to call it "the docathon".
 
+## For more information about the docathon, check out the website [here](https://bids.github.io/docathon/)
+
 ## What is a docathon
 It's kind of like a hackathon, but focused on developing material and tools for documentation. This is the first of hopefully many docathons to come!
 

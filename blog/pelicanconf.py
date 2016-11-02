@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Docathon community'
 SITENAME = 'Docathon'
-SITEURL = ''
+SITEURL = 'https://bids.github.io/docathon'
 
 PATH = 'content'
 
