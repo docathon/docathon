@@ -11,7 +11,7 @@ We think documentation is great, so we're devoting a week to improving the docum
 It's kind of like a hackathon, but focused on developing material and tools for documentation. This is the first of hopefully many docathons to come!
 
 ## When is the docathon?
-The first docathon will be tentatively held from Jan, 23rd to Jan, 30th (2017).
+The first docathon will be tentatively held in early 2017, more details to come!
 
 ## Where is the docathon?
 We'll have one meeting at the beginning of the week to discuss potential projects and pair interested helpers with packages / projects that need work. We'll have a physical presence at the Berkeley Institute for Data Science, but all are welcome to participate in person or remotely.
