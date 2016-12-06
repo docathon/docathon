@@ -3,10 +3,19 @@ About
 
 :date: 2016-11-10 10:20
 :modified: 2016-11-10 18:40
-:tags: communication, coding
+:tags: about
 :category: info
-:slug: why-host-a-docathon
+:slug: about
 :authors: Chris Holdgraf
-:summary: A quick background on why documentation is important and why a docathon can help fix it.
+:summary: The docathon team info.
 
-This is our about page. It is really unhelpful right now.
+The Docathon team believes that coding is inherently part human, part machine. We spend a lot of time trying to perfect the machine half of that equation, often at the detriment of the human half. The Docathon is a place where we remember that ultimately, the tools we write will be used by other people, and it's crucial that those people are able to understand and utilize these tools effectively.
+
+Currently, the Docathon organizing team is composed of several members at the [Berkeley Institute for Data Science](https://bids.berkeley.edu/). In particular, below is our core organizing team:
+
+* [Chris Holdgraf](https://bids.berkeley.edu/people/chris-holdgraf)
+* [Nelle Varoquaux](https://bids.berkeley.edu/people/nelle-varoquaux) 
+* [Stefan van der Walt](https://bids.berkeley.edu/people/st%C3%A9fan-van-der-walt)
+* [Ali Ferguson](https://bids.berkeley.edu/people/ali-ferguson)
+
+If you'd like to get involved in organizing, shoot us an email or open an issue on our repository.
