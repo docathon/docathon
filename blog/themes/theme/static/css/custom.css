@@ -1,0 +1,16 @@
+div.offset-container {
+    margin-top: 40px;
+}
+
+h1.sitetitle  {
+    font-size: 2em;
+    margin-top: -25px;
+}
+
+div.header_box img {
+    box-shadow: none;
+    margin-right: 20px;
+    float:left;
+    margin-top: -35px;
+    margin-left: 10px;
+}
