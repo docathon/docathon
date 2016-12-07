@@ -1,13 +1,11 @@
-Participate
-###########
-
-:date: 2016-11-10 10:20
-:modified: 2016-11-10 18:40
-:tags: organization, docathon
-:category: info
-:slug: participate
-:authors: Chris Holdgraf
-:summary: Information about how to help with the docathon.
+Title: Participate
+Date: 2016-11-10 10:20
+Modified: 2016-11-10 18:40
+Tags: organization, docathon
+Category: info
+Slug: participate
+Authors: Chris Holdgraf
+Summary: Information about how to help with the docathon.
 
 # What can I do at the docathon?
 There are two main ways to get involved with the docathon.

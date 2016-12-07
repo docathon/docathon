@@ -1,13 +1,11 @@
-Resources
-#########
-
-:date: 2016-11-10 10:20
-:modified: 2016-11-10 18:40
-:tags: resources, documentation
-:category: info
-:slug: resources
-:authors: Chris Holdgraf
-:summary: A collection of resources that we've found useful in improving our documentation
+Title: Resources
+Date: 2016-11-10 10:20
+Modified: 2016-11-10 18:40
+Tags: resources, documentation
+Category: info
+Slug: resources
+Authors: Chris Holdgraf
+Summary: A collection of resources that we've found useful in improving our documentation
 
 Below we'll keep a semi-updated list of resources that we've found useful in writing and improving our own documentation. If you've got a suggestion for something else to add, please add it as a comment to our github issue on this [here](https://github.com/BIDS/docathon/issues/5).
 

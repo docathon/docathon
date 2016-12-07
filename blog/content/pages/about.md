@@ -1,13 +1,11 @@
-About
-#####
-
-:date: 2016-11-10 10:20
-:modified: 2016-11-10 18:40
-:tags: about
-:category: info
-:slug: about
-:authors: Chris Holdgraf
-:summary: The docathon team info.
+Title: About
+Date: 2016-11-10 10:20
+Modified: 2016-11-10 18:40
+Tags: about
+Category: info
+Slug: about
+Authors: Chris Holdgraf
+Summary: The docathon team info.
 
 The Docathon team believes that coding is inherently part human, part machine. We spend a lot of time trying to perfect the machine half of that equation, often at the detriment of the human half. The Docathon is a place where we remember that ultimately, the tools we write will be used by other people, and it's crucial that those people are able to understand and utilize these tools effectively.
 
