@@ -1,6 +1,3 @@
-# specific to this project:
-blog/*.pid
-blog/output/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
