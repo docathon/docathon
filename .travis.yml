@@ -3,10 +3,11 @@ python: 3.5
 install:
   - pip install pelican markdown
   - pip install doctr
-  - doctr deploy --deploy-repo Carreau/docathon
 script: 
   - cd blog
   - make html
+  - cd ..
+  - doctr deploy --deploy-repo Carreau/docathon --built-docs blog/output
 env:
   global:
     - secure: "qJZs/xoYQ6UNg3KdwpveNubalN8Du2DZ/7Xdjsuzc+5OtBq5g/WXK31TbPy+swUpIkME5U/+Ek4rQV6e/YIzuMuGTPNOerBsY3zrPi4ME2tzZkxOtUzxxNYpTTpI4Yz1FORpieiecMYIvafJZiiIIw8kxhjocu6TDoM4Uj9xqEvewQvWt/TYxIArmN/VFDRFQ70uLZyGiJhlqRmipBLT04FJTduYo/A/SAM30WIMOKbWxYc7aOOPd1eMpWelT+JoQrYxqegC6XPYCMREdYoXDp/9y6fkOaVRVqRmtcgHKD3Kyp4cC3LYYknEzEbARCpWGcqHqpMbQtwfreZ+oL3iBtO2uW3TlkLm8nKDNcmaxYJa3ozwHSoNR1wGELFNTw8ickElw5gUv46/osabp0GU/geaV0LQda+xvdazYAJzrkhFKbppvHh5triWt2ohTUeU5cL56NmT0ZPoiQLXqlJO7SoxH+FiwW70oPB8EaK8oQFH344GAlQLcY3rO0lj4Qy/byUblyxslwQUNmKhcNKaCry/UusiP3bGzieyHzVO/oCVQZsx8EO1bpVxx06+dZF5CCs/jGZUXzTvTge8jnf8kMbotURaOB6NqTh/L8FIL9V2OwGds7bFcnCd7oZ4+yHHVKVHSKctWlm4m2i7hwheS8DdRrk/S80lWGyDFk9WjPE="
