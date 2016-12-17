@@ -4,29 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Docathon | Resources</title>
-    <link rel="shortcut icon" type="image/png" href="https://bids.github.io/docathon/favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="https://bids.github.io/docathon/favicon.ico">
-    <link href="https://bids.github.io/docathon/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Docathon Full Atom Feed" />
-    <link rel="stylesheet" href="https://bids.github.io/docathon/theme/css/screen.css" type="text/css" />
-    <link rel="stylesheet" href="https://bids.github.io/docathon/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="https://bids.github.io/docathon/theme/css/print.css" type="text/css" media="print" />
-    <link rel="stylesheet" href="https://bids.github.io/docathon/theme/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="../theme/css/custom.css" type="text/css" />
     <meta name="generator" content="Pelican" />
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="https://bids.github.io/docathon/">Home</a></li>
-                <li><a href="https://bids.github.io/docathon/pages/about.html">About</a></li>
-                <li><a href="https://bids.github.io/docathon/pages/participate.html">Participate</a></li>
-                <li class="selected"><a href="https://bids.github.io/docathon/pages/resources.html">Resources</a></li>
-                <li><a href="https://bids.github.io/docathon/archives">Archives</a></li>
+                <li><a href="../">Home</a></li>
+                <li><a href="../archives">Archives</a></li>
             </ul>
         </nav>
         <div class="header_box">
-            <img src="https://bids.github.io/docathon/images/logo-01.png", style="width: 50px" />
-            <h1 class="sitetitle"><a href="https://bids.github.io/docathon/">Docathon</a></h1>
+            <img src="../images/logo-01.png", style="width: 50px" />
+            <h1 class="sitetitle"><a href="../">Docathon</a></h1>
         </div>
     </header>
 
@@ -68,7 +64,7 @@ or as a contributor.
                 <h1>Resources</h1>
                 <p>Below we'll keep a semi-updated list of resources that we've found useful in writing and improving our own documentation. If you've got a suggestion for something else to add, please add it as a comment to our github issue on this <a href="https://github.com/BIDS/docathon/issues/5">here</a>.</p>
 <h1>Learning how to document projects</h1>
-<hr />
+<hr>
 <h2>Articles</h2>
 <ul>
 <li>Modern Physics' Guide to Writing Well - https://drive.google.com/file/d/0B8VZ4vaOYWZ3ZDJzcWNWVUFFR00/view?usp=sharing</li>
@@ -85,20 +81,60 @@ or as a contributor.
 <li>https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html</li>
 </ul>
 <h1>Documentation tools</h1>
-<hr />
+<hr>
 <h2>Python</h2>
-<ul>
-<li>numpydoc</li>
-<li>Napoleon</li>
-<li>https://github.com/drdoctr/doctr</li>
-<li>http://devdocs.io/</li>
-<li><a href="http://blog.readthedocs.com/announcing-pydoc-io/">pydoc.io</a>  (exists since yesteraday), see <a href="https://github.com/rtfd/readthedocs.org/issues/1957#issuecomment-261647307">this issue</a> as well</li>
-<li>https://kapeli.com/dash</li>
-<li>https://pypi.python.org/pypi/docrepr</li>
-<li>https://github.com/sphinx-gallery/sphinx-gallery</li>
-<li>https://github.com/michaelpacer/thebe-test</li>
-<li>His new declarative Sphinx tool (<a href="https://github.com/carreau/thoth">link</a>)</li>
-</ul>
+<h3>numpydoc</h3>
+<p><a href="https://pypi.python.org/pypi/numpydoc">numpydoc</a> is a set of extension to
+sphinx initially used by the numpy project and now more widely used in the
+scientific ecosystem. Among other it provide extra sphinx directives, and
+understand the numpy docstring syntax.</p>
+<h3>Napoleon</h3>
+<p><a href="https://pypi.python.org/pypi/sphinxcontrib-napoleon">Sphinxcontrib-napoleon</a>
+is a set of extension for Sphinx which understand both NumPy and Google style
+docstrings.</p>
+<h3>Doctr</h3>
+<p><a href="https://github.com/drdoctr/doctr">Doctr</a> is meant to simplify the deployment
+of documentation from Travis-CI to GitHub pages, by providing a single tool to
+setup, build and deploying documentation build. </p>
+<p>It is an alternative to readthedocs where it is not always simple to get all
+dependency installed.</p>
+<p>Doctr is still young and an easy to contribute project with a number of missing
+features. </p>
+<h3>Sphinx Gallery</h3>
+<p><a href="https://github.com/sphinx-gallery/sphinx-gallery">Sphinx Gallery</a> is a Sphinx
+Extensions that will automatically generate a gallery from a repository of
+examples.</p>
+<p>Sphinx Gallery automatically make all identifiers present in every code block
+to link to their definition. In conjunction with [intersphinx] this is allow
+seamless navigation in between related projects. </p>
+<h3>Documentation portals</h3>
+<p>The following tools enter the category of "Documentation portals" they attempt
+to gather documentation from several source in a coherent, uniform and
+searchable portal. </p>
+<p><a href="http://devdocs.io/">Devdocs</a> started as a portal to gather documentation for
+javascript only. Now expanded to many project. Browser based but store content
+in local storage so available online projects need to opt-in a write a
+"Scrapper" to parse already existing HTML docs.</p>
+<p>It <em>not</em> have a concept of next-previous page so is not meant for read-through
+tutorials.</p>
+<p><a href="https://kapeli.com/dash">Dash</a> is a similar project. It is though (for now)
+available for MacOS only, as native application. It is capable to get online
+resources, but is mostly meant to work off-line.</p>
+<p><a href="https://pydoc.io">PyDoc</a> fills again a similar niche.  PyDoc first version
+were made public at end of 2016. Unlike the two above, PyDoc is meant to be
+Python only, and has no intent to be available off-line. Its tight integration
+with Python should allows it to automatically build <em>api only</em> docs for all
+Python project on PyPI and Warehouse. </p>
+<h3>Miscs</h3>
+<p><a href="https://pypi.python.org/pypi/docrepr">Docrepr</a> extend the concept of
+MimeBundle that can be found in IPython and Jupyter to extend it to python's
+docstring. Using docrepr, the Jupyter Notebook and Spyder can show docstring of
+interactive object using rich html. </p>
+<p><a href="https://github.com/michaelpacer/thebe-test">thebe test</a> is a prototype to make
+example written using sphinx interactive and backed by an actual running
+kernel. Either running on a temporary server in the cloud (like SymPy
+documentation console), or even cnnecting to a locally running jupyter notebook
+server. </p>
 <h2>C++</h2>
 <ul>
 <li><a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a></li>
@@ -114,8 +150,6 @@ or as a contributor.
                 <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
                 &middot;
                 Powered by <a href="http://getpelican.com">Pelican</a>
-                &middot;
-                <a href="https://bids.github.io/docathon/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
             </footer>
         </div>
         <div class="clear"></div>
