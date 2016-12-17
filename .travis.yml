@@ -7,7 +7,7 @@ script:
   - cd blog
   - make html
   - cd ..
-  - doctr deploy --deploy-repo Carreau/docathon --built-docs blog/output --gh-pages-docs='.'
+  - doctr deploy --deploy-repo BIDS/docathon --built-docs blog/output --gh-pages-docs='.'
 env:
   global:
-    - secure: "qJZs/xoYQ6UNg3KdwpveNubalN8Du2DZ/7Xdjsuzc+5OtBq5g/WXK31TbPy+swUpIkME5U/+Ek4rQV6e/YIzuMuGTPNOerBsY3zrPi4ME2tzZkxOtUzxxNYpTTpI4Yz1FORpieiecMYIvafJZiiIIw8kxhjocu6TDoM4Uj9xqEvewQvWt/TYxIArmN/VFDRFQ70uLZyGiJhlqRmipBLT04FJTduYo/A/SAM30WIMOKbWxYc7aOOPd1eMpWelT+JoQrYxqegC6XPYCMREdYoXDp/9y6fkOaVRVqRmtcgHKD3Kyp4cC3LYYknEzEbARCpWGcqHqpMbQtwfreZ+oL3iBtO2uW3TlkLm8nKDNcmaxYJa3ozwHSoNR1wGELFNTw8ickElw5gUv46/osabp0GU/geaV0LQda+xvdazYAJzrkhFKbppvHh5triWt2ohTUeU5cL56NmT0ZPoiQLXqlJO7SoxH+FiwW70oPB8EaK8oQFH344GAlQLcY3rO0lj4Qy/byUblyxslwQUNmKhcNKaCry/UusiP3bGzieyHzVO/oCVQZsx8EO1bpVxx06+dZF5CCs/jGZUXzTvTge8jnf8kMbotURaOB6NqTh/L8FIL9V2OwGds7bFcnCd7oZ4+yHHVKVHSKctWlm4m2i7hwheS8DdRrk/S80lWGyDFk9WjPE="
+    - secure: "hmqJYS2bMf/xpL8hc+xGqWUVLsIG80ZxE4/z7CzZEwcGSVLdZAdeIMhkRWCw4DRYSFzCuU9/wfFbRLzSFFqgqe4ML47VQAPUfqBewenoXKOM9CWDhBIUpH/ZRWsadOZqzA2DybUaWD0j+f4yNd4lqkrocWTfDNnuqU6Vajmy9sd4sUDju/u+Q6n01DDrqElk1Rczg2a5b+nQxJkOwrn8DTiV2/afFX06Q4aKfBusFIhvyGPbUsjtixN9Uh+Wfs1yTbBbxkLJJlJnOjU8DvjbPxTv6ineNSV3x1+2Ka9gm4/h9gyrpr/ZkSiW0uZb26Waux16HWBDoii/rkFK9cY1u9yBnmVyPW9zaN/0/UkZ/BK6X9CDoMq0IhLLlWC6vGEj8OimySEDKceoeEbyeZFS6wjNw98fWDrD1XLufWUhWuV7736G6MxtKPH1+MELpJAcLHLR2ABfw30aS7L/o5X1q/YSGKt/2v9M71M8N0e8LJFRA/Y4ylC6NYthYV5nxQps656qOggG1SWG7WkYCftlzgcLjdkg4jrKXjni6wobxVI+WCm59ywFZ2z/M9A+XfgNPDV5uevZOgBCsQLr/P4diB2NQ06z++NVeo+Tm3WXI/dUGud4hMU7NEa0rV+tPYXiMefkQ7zM7E93bcrCA1x370HTDwqQJv+9Dt6S4NmsVxc="
