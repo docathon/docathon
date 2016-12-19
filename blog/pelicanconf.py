@@ -70,7 +70,7 @@ MENUITEMS = (
 )
 
 STATIC_PATHS = ['images', 'extras/favicon.ico']
-HEADER_IMAGE = "logo-1.png"
+HEADER_IMAGE = "logo.svg"
 
 EXTRA_PATH_METADATA = {
     'extras/favicon.ico': {'path': 'favicon.ico'}
