@@ -17,7 +17,7 @@ Currently, the Docathon organizing team is composed of several members at the [B
 * [Ali Ferguson](https://bids.berkeley.edu/people/ali-ferguson)
 * [Dmitriy Morozov](https://bids.berkeley.edu/people/dmitriy-morozov)
 * [Matthias Bussonnier](https://bids.berkeley.edu/people/matthias-bussonnier)
-* [Teon Brooks](teonbrooks.github.io)
+* [Teon Brooks](http://teonbrooks.github.io)
 
 
 If you'd like to get involved in organizing, shoot us an email or open an issue on our repository.
