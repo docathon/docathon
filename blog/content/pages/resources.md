@@ -13,16 +13,16 @@ Below we'll keep a semi-updated list of resources that we've found useful in wri
 ---
 
 ## Articles
-* Modern Physics' Guide to Writing Well - https://drive.google.com/file/d/0B8VZ4vaOYWZ3ZDJzcWNWVUFFR00/view?usp=sharing
+* Modern Physics' Guide to Writing Well - <https://drive.google.com/file/d/0B8VZ4vaOYWZ3ZDJzcWNWVUFFR00/view?usp=sharing>
 
 ## Web posts
-* https://www.elsevier.com/connect/infographic-tips-to-writing-better-science-papers
-* https://jacobian.org/writing/great-documentation/
-* https://emptysqua.re/blog/write-an-excellent-programming-blog/
-* https://emptysqua.re/blog/resources-for-writing-about-programming/
+* <https://www.elsevier.com/connect/infographic-tips-to-writing-better-science-papers>
+* <https://jacobian.org/writing/great-documentation/>
+* <https://emptysqua.re/blog/write-an-excellent-programming-blog/>
+* <https://emptysqua.re/blog/resources-for-writing-about-programming/>
 
 ## Videos
-* https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html
+* <https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html>
 
 # Documentation tools
 ---
