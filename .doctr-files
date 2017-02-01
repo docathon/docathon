@@ -7,6 +7,9 @@
 ./images/logo.svg
 ./index.html
 ./pages/about.html
+./pages/hosting.html
+./pages/hosts.html
+./pages/hosts/bids.html
 ./pages/participate.html
 ./pages/resources.html
 ./tag/coding.html
