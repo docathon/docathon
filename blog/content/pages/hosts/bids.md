@@ -3,7 +3,7 @@ Date: 2016-11-10 10:20
 Modified: 2016-11-10 18:40
 Tags: organization, docathon
 Category: info
-Slug: hosting-bids
+Slug: hosts/bids
 Authors: Nelle Varoquaux, Chris Holdgraf
 Summary: BIDS is hosting a Docathon!
 
