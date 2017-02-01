@@ -10,7 +10,7 @@ Status: hidden
 
 Want to host a Docathon remotely? It is very easy! We welcome anybody to join in from around the world. We will coordinately loosely before / during the event, but feel free to do things the way that you'd like to.
 
-Just create a pull request on our [Github hosted
+Just create a pull request on our [Github-hosted
 website](http://github.com/BIDS/docathon), with a new file in
 `content/pages/hosts/XX.md` where `XX` is the name of your institute. This
 file should contain the following information:
