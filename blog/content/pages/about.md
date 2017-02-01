@@ -15,5 +15,6 @@ Currently, the Docathon organizing team is composed of several members at the [B
 * [Nelle Varoquaux](https://bids.berkeley.edu/people/nelle-varoquaux) 
 * [Stefan van der Walt](https://bids.berkeley.edu/people/st%C3%A9fan-van-der-walt)
 * [Ali Ferguson](https://bids.berkeley.edu/people/ali-ferguson)
+* [Dmitriy Morozov](https://bids.berkeley.edu/people/dmitriy-morozov)
 
 If you'd like to get involved in organizing, shoot us an email or open an issue on our repository.

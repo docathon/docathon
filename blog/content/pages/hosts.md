@@ -7,7 +7,8 @@ Slug: hosts
 Authors: Chris Holdgraf, Nelle Varoquaux
 Summary: Information about how to help with the docathon.
 
+Here is a list of organizations / groups that are holding docathon parties during the week.
 
-Here is the lists of hosts institution:
+If you'd like to host your own remote docathon, [click here](hosting.html).
 
   - [BIDS, UC Berkeley, CA](hosts/bids.html)

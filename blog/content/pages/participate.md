@@ -10,14 +10,21 @@ Summary: Information about how to help with the docathon.
 # What can I do at the docathon?
 There are two main ways to get involved with the docathon.
 
+## Offer a project that could use some documentation love
 First, you can offer a project that could use some documentation love. This might be an open-source package that is lacking in examples, that needs docstring improvements, or that simply needs somebody other than the author to make decisions about how to describe things. It could also be a tool or codebase that is designed to help with documentation or make it more effective.
 
+Interested? <a href="https://goo.gl/forms/0cPpw01zehrEyDDE3">Click here!</a>
+
+
+
+## Participate and help other open-source projects
 Second, you can offer your own time during the docathon to work on the projects that are officially on-board. Alternatively, you can work on your own personal projects (so long as you're working on documentation!).
 
-We'll have a list of projects with (mostly) clearly-defined projects that could be tackled over the course of the week. This will be the main watering hole for both listing and finding projects to work on. 
+We'll have a list of projects with (mostly) clearly-defined projects that could be tackled over the course of the week. This will be the main watering hole for both listing and finding projects to work on. Interested? Click the button below!
 
-## If you have a project you'd like to include in the docathon:
-Check back here soon. We'll post a link to sign up in a few weeks.
+Interested? <a href="https://goo.gl/forms/AaW2b24mMxOutxt02">Click here!</a>
 
-## If you're interested in participating in the docathon
-Check back here soon. We'll post a link to sign up in a few weeks.
+## Host your own docathon!
+While we'll have a physical presence here at BIDS, we'd love for other folks to host their own docathons as well. We're flexible in what exactly this means, but we'd love to know if you'll be working on documentation stuff at the same time that we are.
+
+Interested? <a href="https://bids.github.io/docathon/pages/hosting.html">Click here!</a>

@@ -6,6 +6,7 @@ Category: info
 Slug: hosts/bids
 Authors: Nelle Varoquaux, Chris Holdgraf
 Summary: BIDS is hosting a Docathon!
+Status: hidden
 
 
 # Berkeley Institute for Data Science
