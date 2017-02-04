@@ -4,6 +4,7 @@
 ./categories/index.html
 ./category/info.html
 ./favicon.ico
+./feeds/all.atom.xml
 ./images/logo.svg
 ./index.html
 ./pages/about.html
