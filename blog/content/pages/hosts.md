@@ -12,3 +12,4 @@ Here is a list of organizations / groups that are holding docathon parties durin
 If you'd like to host your own remote docathon, [click here](hosting.html).
 
   - [BIDS, UC Berkeley, CA](hosts/bids.html)
+  - [eScience Institute, UW Seattle, WA](hosts/uwescience.html)

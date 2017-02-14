@@ -19,6 +19,7 @@ repo](http://github.com/BIDS/docathon). In this PR, there should be:
     - When are you meeting?
     - How to get to the host place?
     - Are you organizing anything special during this week?
+  * Add your institute to the file `hosts.md`
   * Make the PR on the master branch.
 
 To see an example, look at the list of hosts presented [here](hosts/bids).
