@@ -64,70 +64,55 @@ We welcome both individuals and projects looking to participate, either locall o
         <div id="content">
             <div class="page">
                 <h1>Resources</h1>
-                <p>Below we'll keep a semi-updated list of resources that we've found useful in writing and improving our own documentation. If you've got a suggestion for something else to add, please add it as a comment to our github issue on this <a href="https://github.com/BIDS/docathon/issues/5">here</a>.</p>
-<h1>Learning how to document projects</h1>
-<hr />
-<h2>Articles</h2>
-<ul>
-<li>Modern Physics' Guide to Writing Well - <a href="https://drive.google.com/file/d/0B8VZ4vaOYWZ3ZDJzcWNWVUFFR00/view?usp=sharing">https://drive.google.com/file/d/0B8VZ4vaOYWZ3ZDJzcWNWVUFFR00/view?usp=sharing</a></li>
-</ul>
-<h2>Web posts</h2>
-<ul>
-<li><a href="https://www.elsevier.com/connect/infographic-tips-to-writing-better-science-papers">https://www.elsevier.com/connect/infographic-tips-to-writing-better-science-papers</a></li>
-<li><a href="https://jacobian.org/writing/great-documentation/">https://jacobian.org/writing/great-documentation/</a></li>
-<li><a href="https://emptysqua.re/blog/write-an-excellent-programming-blog/">https://emptysqua.re/blog/write-an-excellent-programming-blog/</a></li>
-<li><a href="https://emptysqua.re/blog/resources-for-writing-about-programming/">https://emptysqua.re/blog/resources-for-writing-about-programming/</a></li>
-</ul>
-<h2>Videos</h2>
-<ul>
-<li><a href="https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html">https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html</a></li>
-</ul>
+                <p>Below we'll keep a semi-updated list of resources that we've found useful in writing and improving our own documentation. If you've got a suggestion for something else to add, please add it as a comment on our github issue on this <a href="https://github.com/BIDS/docathon/issues/5">here</a>.</p>
 <h1>Documentation tools</h1>
 <hr />
+<p>These cover tools and software that are useful in documentation. If you have a suggestion for a new tool, add a comment <a href="https://github.com/BIDS/docathon/issues/4">here</a>.</p>
 <h2>Python</h2>
 <h3>numpydoc</h3>
-<p><a href="https://pypi.python.org/pypi/numpydoc">numpydoc</a> is a set of extension to
+<p><a href="https://pypi.python.org/pypi/numpydoc">numpydoc</a> is a set of extension for
 sphinx initially used by the numpy project and now more widely used in the
-scientific ecosystem. Among other it provide extra sphinx directives, and
-understand the numpy docstring syntax.</p>
+scientific ecosystem. Among other features, it provides extra sphinx directives, and
+understands the numpy docstring syntax. This allows you to quickly build websites for your project.</p>
 <h3>Napoleon</h3>
 <p><a href="https://pypi.python.org/pypi/sphinxcontrib-napoleon">Sphinxcontrib-napoleon</a>
-is a set of extension for Sphinx which understand both NumPy and Google style
+is a set of extensions for Sphinx which understand both NumPy and Google style
 docstrings.</p>
 <h3>Doctr</h3>
 <p><a href="https://github.com/drdoctr/doctr">Doctr</a> is meant to simplify the deployment
 of documentation from Travis-CI to GitHub pages, by providing a single tool to
-setup, build and deploying documentation build. </p>
-<p>It is an alternative to readthedocs where it is not always simple to get all
-dependency installed.</p>
-<p>Doctr is still young and an easy to contribute project with a number of missing
-features. </p>
+setup, build and deploy documentation builds. </p>
+<p>It is an alternative to readthedocs, which is sometimes difficult in getting dependencies installed.</p>
+<p>Doctr is still young and could have many features contributed, maybe by you! </p>
 <h3>Sphinx Gallery</h3>
 <p><a href="https://github.com/sphinx-gallery/sphinx-gallery">Sphinx Gallery</a> is a Sphinx
-Extensions that will automatically generate a gallery from a repository of
-examples.</p>
-<p>Sphinx Gallery automatically make all identifiers present in every code block
-to link to their definition. In conjunction with [intersphinx] this is allow
-seamless navigation in between related projects. </p>
+extension that will automatically generate a gallery from a repository of
+examples that generate matplotlib plots. It also auto-generates a jupyter notebook that can be downloaded from the html page in the docs.</p>
+<p>Sphinx Gallery automatically makes all identifiers present in every code block
+link to their definition. In conjunction with [intersphinx] this is allows
+seamless navigation between related projects. </p>
+<h3>custom_inherit</h3>
+<p><a href="https://github.com/meowklaski/custom_inherit">custom_inherit</a> is a Python package that provides convenient, light-weight tools for inheriting/merging docstrings in customizeable ways. </p>
+<p>This helps facilitate thorough and consistent documentation, since documentation need not be duplicated manually when it is being "inherited". It includes a metaclass that instructs children to inherit docstrings for their attributes from their parents, using custom docstring inheritance styles. This works for all varieties of methods (instance, static, class) and properties, including abstract ones. I also has a decorator that merges a string/docstring with the docstring of the decorated object using custom styles. This can decorate functions as well as all varieties of class attributes.</p>
+<p>More details, including advanced usage examples, are provided in repo's README.</p>
 <h3>Documentation portals</h3>
-<p>The following tools enter the category of "Documentation portals" they attempt
-to gather documentation from several source in a coherent, uniform and
+<p>The following tools fall under the category of "Documentation portals" they attempt
+to gather documentation from several sources in a coherent, uniform and
 searchable portal. </p>
 <p><a href="http://devdocs.io/">Devdocs</a> started as a portal to gather documentation for
-javascript only. Now expanded to many project. Browser based but store content
-in local storage so available online projects need to opt-in a write a
+javascript projects. Now it has expanded to many projects and languages. It's browser-based but stores content locally so available online projects can opt-in and write a
 "Scrapper" to parse already existing HTML docs.</p>
-<p>It <em>not</em> have a concept of next-previous page so is not meant for read-through
+<p>It does <em>not</em> have a concept of "next/previous" pages so is not meant for read-through
 tutorials.</p>
-<p><a href="https://kapeli.com/dash">Dash</a> is a similar project. It is though (for now)
-available for MacOS only, as native application. It is capable to get online
+<p><a href="https://kapeli.com/dash">Dash</a> is a similar project. It is (for now)
+available for MacOS only, as native application. You can use it to get online
 resources, but is mostly meant to work off-line.</p>
 <p><a href="https://pydoc.io">PyDoc</a> fills again a similar niche.  PyDoc first version
 were made public at end of 2016. Unlike the two above, PyDoc is meant to be
 Python only, and has no intent to be available off-line. Its tight integration
 with Python should allows it to automatically build <em>api only</em> docs for all
 Python project on PyPI and Warehouse. </p>
-<h3>Miscs</h3>
+<h3>Miscellaneous documentation tools</h3>
 <p><a href="https://pypi.python.org/pypi/docrepr">Docrepr</a> extend the concept of
 MimeBundle that can be found in IPython and Jupyter to extend it to python's
 docstring. Using docrepr, the Jupyter Notebook and Spyder can show docstring of
@@ -143,6 +128,49 @@ server. </p>
 <li><a href="http://www.boost.org/doc/libs/1_62_0/doc/html/boostbook.html">BoostBook</a> and <a href="http://www.boost.org/doc/libs/1_62_0/doc/html/quickbook.html">QuickBook</a></li>
 <li><a href="https://breathe.readthedocs.io/en/latest/">Breathe</a> for connecting Sphinx and Doxygen</li>
 <li><a href="https://jessevdk.github.io/cldoc/">cldoc</a> — clang-based documentation generator</li>
+</ul>
+<h1>Guides and articles on technical communication</h1>
+<hr />
+<p>These are resources for communicating clearly, particularly about technical matters. If you have a suggestion for a new resource, add a comment <a href="https://github.com/BIDS/docathon/issues/5">here</a></p>
+<h2>Articles</h2>
+<ul>
+<li>Modern Physics' Guide to Writing Well - <a href="https://drive.google.com/file/d/0B8VZ4vaOYWZ3ZDJzcWNWVUFFR00/view?usp=sharing">https://drive.google.com/file/d/0B8VZ4vaOYWZ3ZDJzcWNWVUFFR00/view?usp=sharing</a></li>
+</ul>
+<h2>Web posts</h2>
+<ul>
+<li><a href="https://www.elsevier.com/connect/infographic-tips-to-writing-better-science-papers">https://www.elsevier.com/connect/infographic-tips-to-writing-better-science-papers</a></li>
+<li><a href="https://jacobian.org/writing/great-documentation/">https://jacobian.org/writing/great-documentation/</a></li>
+<li><a href="https://emptysqua.re/blog/write-an-excellent-programming-blog/">https://emptysqua.re/blog/write-an-excellent-programming-blog/</a></li>
+<li><a href="https://emptysqua.re/blog/resources-for-writing-about-programming/">https://emptysqua.re/blog/resources-for-writing-about-programming/</a></li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li><a href="https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html">https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html</a></li>
+</ul>
+<h1>Events / resources for holding events</h1>
+<hr />
+<p>There are also many events that follow the same principles as the Docathon. We've compiled a list of them below. If you have a new event to suggest, post a comment <a href="https://github.com/BIDS/docathon/issues/19">here</a></p>
+<h2>Hackathon Events / Orgs</h2>
+<ul>
+<li><a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a></li>
+<li><a href="https://24pullrequests.com/">24PullRequests</a></li>
+<li><a href="https://codecuriosity.org/">Code Curiosity</a></li>
+<li><a href="http://nanowrimo.org/">National Novel Writing Month</a></li>
+<li><a href="http://www.julython.org/">Julython</a></li>
+</ul>
+<h2>Documentation Events / Orgs</h2>
+<ul>
+<li><a href="http://www.writethedocs.org/">Write the Docs</a> (they also have a "writing day" event, <a href="http://www.writethedocs.org/conf/na/2015/writing-day/#projects">here</a> is a link to their projects page)</li>
+<li><a href="https://source.opennews.org/en-US/articles/building-guide-open-sourcing-newsroom-code/">The Open News Code Convening for docs on OSS</a></li>
+<li>Open Stack doc day <a href="https://www.openstack.org/blog/2011/04/dedicated-doc-day/">here</a> and <a href="https://wiki.openstack.org/wiki/Documentation/DocDay">here</a></li>
+<li><a href="http://blogs.atlassian.com/2010/03/the_atlassian_doc_sprint_was_awesome/">Atlassian documentation day</a></li>
+</ul>
+<h2>Guides / How-To</h2>
+<ul>
+<li><a href="https://ffeathers.wordpress.com/2012/09/07/how-to-plan-a-doc-sprint/">How to plan a doc sprint</a></li>
+<li><a href="https://ffeathers.wordpress.com/2016/01/17/learnings-from-a-doc-sprint/">Learning from a doc sprint</a></li>
+<li><a href="https://ffeathers.wordpress.com/2016/07/08/doc-bug-fixits-a-doc-sprint-to-fix-issues/">Doc bug fixits</a></li>
+<li><a href="https://twitter.com/ericholscher/status/821429334879584256">A twitter thread about docs/sprints</a> </li>
 </ul>
             </div>
 
