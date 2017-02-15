@@ -50,12 +50,9 @@ seamless navigation between related projects.
 
 ### custom_inherit
 
-[custom_inherit](https://github.com/meowklaski/custom_inherit) is a Python package that provides convenient, light-weight tools for inheriting/merging docstrings in customizeable ways. 
+[custom_inherit](https://github.com/meowklaski/custom_inherit) is a Python package that provides convenient, light-weight tools for inheriting/merging docstrings in customizeable ways. This helps facilitate thorough and consistent documentation - documentation need not be duplicated manually when docstring sections are being inherited.
 
-This helps facilitate thorough and consistent documentation, since documentation need not be duplicated manually when it is being "inherited". It includes a metaclass that instructs children to inherit docstrings for their attributes from their parents, using custom docstring inheritance styles. This works for all varieties of methods (instance, static, class) and properties, including abstract ones. I also has a decorator that merges a string/docstring with the docstring of the decorated object using custom styles. This can decorate functions as well as all varieties of class attributes.
-
-More details, including advanced usage examples, are provided in repo's README.
-
+It provides both a decorator and a metaclass for facilitating docstring inheritance/merging. Numpy, Google, & reST docstring styles are supported out of the box.
 
 ### Documentation portals
 
