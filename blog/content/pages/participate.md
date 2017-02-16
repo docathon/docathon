@@ -37,6 +37,7 @@ Here are some Projects that have already signed in :
  - [Matplotlib](https://github.com/matplotlib/matplotlib)
  - [IPython](https://github.com/ipython/ipython/)
  - [Jupyter](https://github.com/jupyter/notebook/)
+ - [Scikit-image](https://github.com/scikit-image/scikit-image)
 
 Search for a
 [`Docathon`](https://github.com/search?q=label%3A%22Docathon%22&type=Issues)
