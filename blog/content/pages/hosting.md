@@ -28,7 +28,7 @@ If some of that is confusing to you, then don't hesitate to open an issue on our
 
 [Here's a list](hosts.html) of the groups that are participating so far!
 
-We are also [request and invite](https://docathon.herokuapp.com/), to our slack
+You can also [request and invite](https://docathon.herokuapp.com/), to our slack
 channel or directly head to
 [https://docathon.slack.com](https://docathon.slack.com) if you already have a
 login.

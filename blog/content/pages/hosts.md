@@ -13,3 +13,8 @@ If you'd like to host your own remote docathon, [click here](hosting.html).
 
   - [BIDS, UC Berkeley, CA](hosts/bids.html)
   - [eScience Institute, UW Seattle, WA](hosts/uwescience.html)
+
+You can also [request and invite](https://docathon.herokuapp.com/), to our slack
+channel or directly head to
+[https://docathon.slack.com](https://docathon.slack.com) if you already have a
+login.
