@@ -9,11 +9,8 @@ Summary: #DigitalGC is hosting a Docathon!
 Status: hidden
 
 
-# Graduate Center Digital Initiatives
-
-The Graduate Center Digital Initiatives at The Graduate Center (CUNY) will be hosting a Docathon. The first
-day will be focused on tutorials and getting people started. We then will have support throughout the week 
-via office hours and our Python User's Group. 
+# Digital Fellows @ Graduate Center Digital Initiatives
+The Digital Fellows, part of the Graduate Center Digital Initiatives at The Graduate Center (CUNY), will be hosting a Docathon. The first day will be focused on tutorials and getting people started. We then will have support throughout the week via our office hours and Python User's Group.
 
 ## Launch event
 Monday February 6th is the Docathon's first day! Learn about the tools and
