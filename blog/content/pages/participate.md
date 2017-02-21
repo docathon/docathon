@@ -38,6 +38,7 @@ Here are some Projects that have already signed in :
  - [IPython](https://github.com/ipython/ipython/)
  - [Jupyter](https://github.com/jupyter/notebook/)
  - [Scikit-image](https://github.com/scikit-image/scikit-image)
+ - [Clawpack](http://www.clawpack.org)
 
 Search for a
 [`Docathon`](https://github.com/search?q=label%3A%22Docathon%22&type=Issues)
