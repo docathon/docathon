@@ -32,7 +32,7 @@ Here are some Projects that have already signed in :
 
  - [PmagPy](https://github.com/pmagpy/pmagpy)
  - [pycortex](https://github.com/gallantlab/pycortex)
- - [cottoncandy](https://github.com/gallantlab/cottoncand)
+ - [cottoncandy](https://github.com/gallantlab/cottoncandy)
  - [Data Science Education Infrastructure](https://github.com/data-8/connector-instructors)
  - [Matplotlib](https://github.com/matplotlib/matplotlib)
  - [IPython](https://github.com/ipython/ipython/)
