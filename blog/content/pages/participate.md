@@ -39,10 +39,12 @@ Here are some Projects that have already signed in :
  - [Jupyter](https://github.com/jupyter/notebook/)
  - [Scikit-image](https://github.com/scikit-image/scikit-image)
  - [Clawpack](http://www.clawpack.org)
-
+ - [Pandas](http://pandas.pydata.org/)
+ - [Omeka](http://omeka.org/)
+  
 Search for a
 [`Docathon`](https://github.com/search?q=label%3A%22Docathon%22&type=Issues)
-label, or asked for one to be added/created
+label, or ask for one to be added/created
 
 We'll have a list of projects with (mostly) clearly-defined projects that could
 be tackled over the course of the week. This will be the main watering hole for
