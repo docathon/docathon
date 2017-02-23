@@ -13,12 +13,9 @@ Status: hidden
 The Digital Fellows, part of the Graduate Center Digital Initiatives at The Graduate Center (CUNY), will be hosting a Docathon. The first day will be focused on tutorials and getting people started. We then will have support throughout the week via our office hours and Python User's Group.
 
 ## Launch event
-Monday February 6th is the Docathon's first day! Learn about the tools and
-best practices for writing good documentation. We will dedicate this first day to
-getting you started on writing documentation. The morning will be dedicated to
-tutorials, while the afternoon will be hands on for your favorite project. 
+Monday February 6th is the Docathon's first day! We're hosting a launch event where we'll provide you with an introduction to some projects, a discussion of good documentation practices, and help setting up your development environment. You can work on your own personal project or help out on one of the participating projects. Participants of all skill-levels are encouraged to join.
 
-Register here: [tba]
+Register here: https://www.eventbrite.com/e/doc-a-thon-tickets-32309998074?aff=es2
 
 ## Drop in Support
 The Digital Fellows will be supporting docathon activities via office hours (Tuesday 2:00-4:00) 
@@ -33,6 +30,8 @@ https://www.gc.cuny.edu/About-the-GC/Building-Venues-Particulars/Building-Access
 
 Here are the projects that we plan on working on during the Docathon:
     - [dhbox](http://dhbox.org/)
+    - [omeka](http://omeka.org/)
     - [matplotlib](http://matplotlib.org/)
     - [pandas](http://pandas.pydata.org/)
+    - [clawpack](http://www.clawpack.org/)
     
