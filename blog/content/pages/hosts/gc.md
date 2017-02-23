@@ -15,7 +15,7 @@ The Digital Fellows, part of the Graduate Center Digital Initiatives at The Grad
 ## Launch event
 Monday February 6th is the Docathon's first day! We're hosting a launch event where we'll provide you with an introduction to some projects, a discussion of good documentation practices, and help setting up your development environment. You can work on your own personal project or help out on one of the participating projects. Participants of all skill-levels are encouraged to join.
 
-** Register here: <https://www.eventbrite.com/e/doc-a-thon-tickets-32309998074> **
+**Register here: <https://www.eventbrite.com/e/doc-a-thon-tickets-32309998074>**
 
 ## Drop in Support
 The Digital Fellows will be supporting docathon activities via office hours (Tuesday 2:00-4:00) 
@@ -30,6 +30,7 @@ You can find instructions on how to find us at:
 ## Projects tackled at The GC?
 
 Here are the projects that we plan on working on during the Docathon:
+
     - [DH Box](http://dhbox.org/)
     - [Omeka](http://omeka.org/)
     - [Matplotlib](http://matplotlib.org/)
