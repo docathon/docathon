@@ -6,6 +6,7 @@ Category: info
 Slug: about
 Authors: Chris Holdgraf
 Summary: The docathon team info.
+Status: hidden
 
 # About
 
