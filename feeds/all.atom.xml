@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Docathon</title><link href="https://bids.github.io/docathon/" rel="alternate"></link><link href="https://bids.github.io/docathon/feeds/all.atom.xml" rel="self"></link><id>https://bids.github.io/docathon/</id><updated>2016-11-10T18:40:00-08:00</updated><entry><title>Why host a docathon?</title><link href="https://bids.github.io/docathon/why-host-a-docathon.html" rel="alternate"></link><published>2016-11-10T18:40:00-08:00</published><updated>2016-11-10T18:40:00-08:00</updated><author><name>Chris Holdgraf</name></author><id>tag:bids.github.io,2016-11-10:docathon/why-host-a-docathon.html</id><summary type="html">&lt;p&gt;Learning how to code, how to analyze data, how to do your work openly, and how to collaborate with others requires an incredible amount of self determination. While classes and our colleagues can teach us quite a lot about best practices in programming and the potential that exists in our respective computer languages, we must often rely on ourselves to learn about the tools at our disposal.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Docathon</title><link href="https://bids.github.io/docathon/" rel="alternate"></link><link href="https://bids.github.io/docathon/feeds/all.atom.xml" rel="self"></link><id>https://bids.github.io/docathon/</id><updated>2017-02-24T00:00:00-08:00</updated><entry><title>Encouraging user help for the Docathon (and beyond)</title><link href="https://bids.github.io/docathon/encouraging-user-docathon.html" rel="alternate"></link><published>2017-02-24T00:00:00-08:00</published><updated>2017-02-24T00:00:00-08:00</updated><author><name>Chris Holdgraf</name></author><id>tag:bids.github.io,2017-02-24:docathon/encouraging-user-docathon.html</id><summary type="html">&lt;p&gt;Documentation is a great way to get new users and contributors involved in
+your project. It requires less knowledge of the intricacies of your codebase,
+and can be both fun and easily appreciated by others.&lt;/p&gt;
+&lt;p&gt;However, it’s not always clear to people how to contribute documentation. At
+the Docathon there will be many attendees who have experience in coding, but
+aren’t sure where to begin. This is a great opportunity to get some work done
+and to grow your community.&lt;/p&gt;
+&lt;p&gt;A commonly-forgotten part of project documentation is information about how
+users can become developers. Each project has its idiosyncrasies and preferred
+contribution workflow, and this isn’t always obvious to people. We recommend
+the following steps:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Think about your contribution workflow.&lt;/strong&gt; Do you have one? If not, then
+spend some time thinking about how you’d like contributions to occur. If
+anything else, it is helpful to explicitly state that you welcome
+contributions in the form of pull requests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make it clear how your documentation is organized.&lt;/strong&gt; It’s good to have
+documentation split up by the scope of its content. E.g., don’t intermingle
+high-level tutorials with examples showing off a specific piece of the API.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make it obvious what kinds of documentation goes where.&lt;/strong&gt; It will help
+new contributors, and make it easier for new users to use your project.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create a “documentation” label, as well as a “new-contributor-friendly”
+label&lt;/strong&gt; for your repository. Come up with some ways in which you’d like
+your documentation to improve (e.g., &lt;tt class="docutils literal"&gt;#32: write an example for the
+statistics module&lt;/tt&gt;, or &lt;tt class="docutils literal"&gt;make docstrings numpydoc compatible&lt;/tt&gt;) and tag it
+with these labels. Along these lines, make your tickets as descriptive,
+clear, and actionable as you can. “Add references to the &lt;tt class="docutils literal"&gt;linear_model&lt;/tt&gt;
+function” is better than “Improve documentation for the &lt;tt class="docutils literal"&gt;linear_model&lt;/tt&gt;
+function”.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make sure that your project has at least one or two examples&lt;/strong&gt; that can
+be highlighted as “good” forms of documentation. Many users will riff off
+of what is already there, so if you can say “you should make your example
+similar in style and scope to XXX”, it will help them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Write a short “how to contribute” guide.&lt;/strong&gt; You might link to a guide on
+opening pull-requests in github, then explain if you have any information
+you’d like to see in the pull request.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Finally, don’t be too nitpicky about the PRs that new users make&lt;/strong&gt;, and
+make sure to be friendly to new contributors! Documentation (usually)
+won’t break anything, so don’t let good become an enemy of perfect! Is the
+pull request an improvement? Just press the green button.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Remember - documentation is the first point of contact that most people have
+with your package, so it’s worth putting in time to make it as clear,
+complete, and maintainable as possible!&lt;/p&gt;
+</summary><category term="communication"></category><category term="coding"></category></entry><entry><title>Why host a docathon?</title><link href="https://bids.github.io/docathon/why-host-a-docathon.html" rel="alternate"></link><published>2016-11-10T18:40:00-08:00</published><updated>2016-11-10T18:40:00-08:00</updated><author><name>Chris Holdgraf</name></author><id>tag:bids.github.io,2016-11-10:docathon/why-host-a-docathon.html</id><summary type="html">&lt;p&gt;Learning how to code, how to analyze data, how to do your work openly, and how to collaborate with others requires an incredible amount of self determination. While classes and our colleagues can teach us quite a lot about best practices in programming and the potential that exists in our respective computer languages, we must often rely on ourselves to learn about the tools at our disposal.&lt;/p&gt;
 &lt;p&gt;For this purpose, the first point-of-contact many of us have with a package is its documentation. This can serve as simple &amp;quot;how-to&amp;quot; guide for how a package works and the API that is reveals to the user. It can also serve as a &amp;quot;best-practices&amp;quot; exemplar for how others &amp;quot;should&amp;quot; use a package. Sometimes it can even be an introduction to an entire field.&lt;/p&gt;
 &lt;p&gt;Documentation is important because it's one of the first connections between the human world and the machine world. It helps us effectively translate our concepts and ideas into the languages that we use to control machines. Or, it can be a confusing mess, and hurt more than it helps.&lt;/p&gt;
 &lt;p&gt;We believe that we can do better with documentation. While there are a few shining jewels of well-documented projects, the vast majority deserve to be improved. However, improving documentation is very different from writing better code. It requires the developer to intuitively describe their package and the ways that one might use it, a difficult feat for someone who is mired in the details of their package.&lt;/p&gt;
