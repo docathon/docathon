@@ -7,6 +7,8 @@ Slug: about
 Authors: Chris Holdgraf
 Summary: The docathon team info.
 
+# About
+
 The Docathon team believes that coding is inherently part human, part machine. We spend a lot of time trying to perfect the machine half of that equation, often at the detriment of the human half. The Docathon is a place where we remember that ultimately, the tools we write will be used by other people, and it's crucial that those people are able to understand and utilize these tools effectively.
 
 Currently, the Docathon organizing team is composed of several members at the [Berkeley Institute for Data Science](https://bids.berkeley.edu/). In particular, below is our core organizing team:

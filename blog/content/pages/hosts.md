@@ -7,6 +7,8 @@ Slug: hosts
 Authors: Chris Holdgraf, Nelle Varoquaux
 Summary: Information about how to help with the docathon.
 
+# Hosts
+
 Here is a list of organizations / groups that are holding docathon parties during the week.
 
 If you'd like to host your own remote docathon, [click here](hosting.html).

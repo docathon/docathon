@@ -111,10 +111,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
     font-weight: bold;
 }
+
+
 h1, h2, h3 {
     font-size: 1.5em;
     line-height: 1em;
     margin: 1em 0;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 img, p, .post > .highlight, .highlighttable, h4, h5, h6 {
