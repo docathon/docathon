@@ -7,6 +7,9 @@ Authors: Ariel Rokem, Jake VanderPlas
 Summary: We're hosting a docathon at eScience
 Status: hidden
 
+# The University of Washington eScience Institute
+
+
 
 UW eScience will be hosting a satellite docathon in the [WRF Data Science Studio](http://escience.washington.edu/wrf-data-science-studio/),
 March 6-10 from 9am until noon.

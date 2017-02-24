@@ -9,7 +9,13 @@ Summary: A collection of resources that we've found useful in improving our docu
 
 Below we'll keep a semi-updated list of resources that we've found useful in writing and improving our own documentation. If you've got a suggestion for something else to add, please add it as a comment on our github issue on this [here](https://github.com/BIDS/docathon/issues/5).
 
-# Documentation tools
+# Table of Contents
+
+1. [Documentation tools](#documentation-tools)
+2. [Guides and articles on technical communication](#guides-comm)
+3. [Events and resources for holding events](#events)
+
+# Documentation tools <a name="documentation-tools"></a>
 ---
 These cover tools and software that are useful in documentation. If you have a suggestion for a new tool, add a comment [here](https://github.com/BIDS/docathon/issues/4).
 
@@ -103,7 +109,7 @@ server.
 - [cldoc](https://jessevdk.github.io/cldoc/) — clang-based documentation generator
 
 
-# Guides and articles on technical communication
+# Guides and articles on technical communication <a name="guides-comm"></a>
 ---
 
 These are resources for communicating clearly, particularly about technical matters. If you have a suggestion for a new resource, add a comment [here](https://github.com/BIDS/docathon/issues/5)
@@ -121,7 +127,7 @@ These are resources for communicating clearly, particularly about technical matt
 * <https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html>
 
 
-# Events / resources for holding events
+# Events and resources for holding events <a name="events"></a>
 ---
 
 There are also many events that follow the same principles as the Docathon. We've compiled a list of them below. If you have a new event to suggest, post a comment [here](https://github.com/BIDS/docathon/issues/19)

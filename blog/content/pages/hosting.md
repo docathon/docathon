@@ -8,7 +8,9 @@ Authors: Nelle Varoquaux
 Summary: Information about hosting a Docathon.
 Status: hidden
 
-Want to host a Docathon remotely? It is very easy! We welcome anybody to join in from around the world. We will coordinately loosely before / during the event, but feel free to do things the way that you'd like to.
+# Want to host a Docathon remotely?
+
+It is very easy! We welcome anybody to join in from around the world. We will coordinately loosely before / during the event, but feel free to do things the way that you'd like to.
 
 Here's what to do:
 
