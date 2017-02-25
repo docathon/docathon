@@ -1,13 +1,9 @@
 language: python
 python: 3.5
-install:
-  - pip install 'pelican<3.7' markdown
-  - pip install doctr
-script: 
-  - cd blog
-  - make html
-  - cd ..
-  - doctr deploy --deploy-repo BIDS/docathon --built-docs blog/output --gh-pages-docs='.'
+install: source build_tools/install.sh
+script: bash build_tools/build_script.sh
 env:
   global:
     - secure: "hmqJYS2bMf/xpL8hc+xGqWUVLsIG80ZxE4/z7CzZEwcGSVLdZAdeIMhkRWCw4DRYSFzCuU9/wfFbRLzSFFqgqe4ML47VQAPUfqBewenoXKOM9CWDhBIUpH/ZRWsadOZqzA2DybUaWD0j+f4yNd4lqkrocWTfDNnuqU6Vajmy9sd4sUDju/u+Q6n01DDrqElk1Rczg2a5b+nQxJkOwrn8DTiV2/afFX06Q4aKfBusFIhvyGPbUsjtixN9Uh+Wfs1yTbBbxkLJJlJnOjU8DvjbPxTv6ineNSV3x1+2Ka9gm4/h9gyrpr/ZkSiW0uZb26Waux16HWBDoii/rkFK9cY1u9yBnmVyPW9zaN/0/UkZ/BK6X9CDoMq0IhLLlWC6vGEj8OimySEDKceoeEbyeZFS6wjNw98fWDrD1XLufWUhWuV7736G6MxtKPH1+MELpJAcLHLR2ABfw30aS7L/o5X1q/YSGKt/2v9M71M8N0e8LJFRA/Y4ylC6NYthYV5nxQps656qOggG1SWG7WkYCftlzgcLjdkg4jrKXjni6wobxVI+WCm59ywFZ2z/M9A+XfgNPDV5uevZOgBCsQLr/P4diB2NQ06z++NVeo+Tm3WXI/dUGud4hMU7NEa0rV+tPYXiMefkQ7zM7E93bcrCA1x370HTDwqQJv+9Dt6S4NmsVxc="
+    - secure: "V4ikbRxl32eUgtiqeSCFAMCQt+taqGmAJpA6bXjQKUYb5EFrygQgmXrKq8uonycAIPBtI1jkHwqzF6ipmDKAT/6mBP2ktOglidUnJURT7AZS/5RlOvvMdo5PjujjDM9efoDR1W6IlbjD3T067OQZQZg1CsYcG7TPMme6IBFD52QK6/tfgz3TtGFUQtYWdqHGpevi18e1TJvNsZLCvwLoKm8rVBKv9a5D5XDmeZ9QtNLCyKcme6ZP4EfSbNHcDeOvfAF/UTPqXNxWEQLFapRNhG9B3vzJUdibB6v74YuLjek29aiq2HfyYBij+m5qzFQVakSvc98mZAsr9xgU+TBf2RbtmDOQMW8ZRLCAVNz+DVtFX/ZbRfhTGkxKtBvI4hdE3Qj8ivbRDitTBb5bc259U1u1HfYQdRPOL7dmAL8bwQ9HYGaMOUzvt4OZt+E7qwwpfsq9NMvk6vz0EGc6xHq3NBERpBSqGgQksFHSuO2usWnbejHAE3h2Gu7cvo0+BLcgZovljFIczTF5tuc2TluhH9cZxVsctSp8Oa/8U02AQYS86YY1Xz05fkAShj0P1Bo0ftk6LyGhOSviCnuC/YRzvIghN85XIHwRVrmqmPzDuzwE2mMZTZIGeAtbxT/X9XX7BTms6Tn+rwt9LXU68O18geA59IpW45MZ1cCZmpyoeiM="
+
