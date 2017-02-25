@@ -5,8 +5,7 @@ from watchtower._config import get_API_token
 
 parser = argparse.ArgumentParser()
 parser.add_argument("filename")
-parser.add_argument("--auth_user", default='GITHUB_API_USER')
-parser.add_argument("--auth_token", default='GITHUB_API_TOKEN')
+parser.add_argument("--auth")
 parser.add_argument("--outdir", "-o", default="build")
 parser.add_argument("--per_page", "-n", default=100)
 parser.add_argument("--max_pages", "-m", default=100)
@@ -16,9 +15,11 @@ parser.add_argument("--since", "-s", default="2017-01-01",
 args = parser.parse_args()
 
 # Generate the github API user:token pair
-auth_user = args.auth_user
-auth_token = get_API_token(args.auth_token)
-auth = ':'.join([auth_user, auth_token])
+# auth_user = args.auth_user
+# auth_token = get_API_token(args.auth_token)
+# auth = ':'.join([auth_user, auth_token])
+# XXX should fix this to have choldgraf's technic work on travis
+auth = args.auth
 
 per_page = args.per_page,
 max_pages = args.max_pages
