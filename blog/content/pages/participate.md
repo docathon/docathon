@@ -30,18 +30,22 @@ projects (so long as you're working on documentation!).
 
 Here are some Projects that have already signed in :
 
- - [PmagPy](https://github.com/pmagpy/pmagpy)
- - [pycortex](https://github.com/gallantlab/pycortex)
- - [cottoncandy](https://github.com/gallantlab/cottoncandy)
- - [Data Science Education Infrastructure](https://github.com/data-8/connector-instructors)
- - [Matplotlib](https://github.com/matplotlib/matplotlib)
- - [IPython](https://github.com/ipython/ipython/)
- - [Jupyter](https://github.com/jupyter/notebook/)
- - [Scikit-image](https://github.com/scikit-image/scikit-image)
- - [Clawpack](http://www.clawpack.org)
- - [Pandas](http://pandas.pydata.org/)
- - [Omeka](http://omeka.org/)
-  
+---
+* [hdbscan](http://hdbscan.readthedocs.io)
+* [MNE-python](https://mne-tools.github.io/stable/index.html)
+* [Clawpack](http://clawpack.org)
+* [scikit-image](http://scikit-image.org)
+* [yt](http://yt-project.org/doc)
+* [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
+* [pomegranate](http://pomegranate.readthedocs.io/en/latest/)
+* [IPython](http://jupyter.readthedocs.org)
+* [Matplotlib](http://matplotlib.org)
+* [Data Science Education Infrastructure](http://bids.github.io/docathon)
+* [cottoncandy](http://gallantlab.github.io/cottoncandy/)
+* [pycortex](http://gallantlab.org/pycortex/docs/)
+* [PmagPy](https://earthref.org/PmagPy/cookbook/)
+ ---
+
 Search for a
 [`Docathon`](https://github.com/search?q=label%3A%22Docathon%22&type=Issues)
 label, or ask for one to be added/created
