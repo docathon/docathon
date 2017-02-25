@@ -56,6 +56,14 @@ table {
     border-spacing: 0;
 }
 
+tr, th, td {
+  padding: 5px 5px;
+}
+
+th {
+  font-weight: bold;
+}
+
 body {
     font-family: Georgia, serif;
     font-size: 18px;
