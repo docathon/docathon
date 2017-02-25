@@ -5,5 +5,5 @@ set -e
 
 pip install 'pelican<3.7' markdown
 pip install doctr
-pip install pandas matplotlib numpy
+pip install pandas matplotlib numpy tqdm
 pip install git+git://github.com/NelleV/watchtower
