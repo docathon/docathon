@@ -33,7 +33,7 @@ Here are some Projects that have already signed in :
 ---
 * [hdbscan](http://hdbscan.readthedocs.io)
 * [MNE-python](https://mne-tools.github.io/stable/index.html)
-* [Clawpack](http://clawpack.org)
+* [Clawpack](http://clawpack.org) - [issues](https://github.com/clawpack/doc/issues?q=is%3Aissue+is%3Aopen+label%3Adocathon)
 * [scikit-image](http://scikit-image.org)
 * [yt](http://yt-project.org/doc)
 * [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
