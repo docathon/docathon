@@ -1,10 +1,13 @@
 import numpy as np
 import os
+import matplotlib
+matplotlib.use('agg')
 from watchtower import commits_
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import calendar
 import pandas as pd
+
 
 
 def plot_commits(user, project, search_queries=None,
