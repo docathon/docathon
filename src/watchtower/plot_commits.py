@@ -85,7 +85,7 @@ def plot_commits(user, project, search_queries=None,
 
 
 # --- Run the script ---
-informations = np.loadtxt(".downloaded_projects", dtype=bytes)
+informations = pd.read_csv(".downloaded_projects").values
 try:
     os.makedirs("build/images")
 except OSError:
@@ -94,8 +94,13 @@ except OSError:
 groupby = 'weekday'
 since = '2017-02-02'
 
+exceptions = []
 for user, project in tqdm(informations):
-    fig, ax = plot_commits(user.decode(), project.decode(),
-                           groupby=groupby, since=since)
-    filename = os.path.join("build/images", project.decode() + ".png")
-    fig.savefig(filename)
+    try:
+        fig, ax = plot_commits(user, project,
+                               groupby=groupby, since=since)
+        filename = os.path.join("build/images", project + ".png")
+        fig.savefig(filename, bbox_inches='tight')
+    except:
+        exceptions.append(project)
+print('Finished building images.\nExceptions: {}'.format(exceptions))

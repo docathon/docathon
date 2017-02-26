@@ -16,7 +16,7 @@ columns = ["timestamp", "username", "name", "contact", "github_org",
            "has_github_project",
            "github_project_url"]
 information = pd.read_csv(args.filename, header=None, skiprows=1,
-                          names=columns).as_matrix()
+                          names=columns)
 
 header = (
     "Title: {project_name}\n"
@@ -36,33 +36,40 @@ try:
 except OSError:
     pass
 
+print('Creating pages for {} projects'.format(len(information)))
 projects = {}
+for ix, project in information.iterrows():
 
-for project in information:
-
-    project_name = project[2]
-    project_url = project[7]
-    project_description = project[5]
+    project_name = project['name']
+    project_url = project['url']
+    project_user = project['github_org'].split('/')[-2:][0]
+    project_description = project['description']
     project_name_lc = project_name.lower().replace(" ", "_")
     filename = os.path.join(args.outdir, project_name_lc + ".md")
     header_formatted = header.format(
         project_name=project_name,
-        registration_date=project[0],
+        registration_date=project['timestamp'],
         now=date.today().strftime("%Y-%m-%d"),
         project_description=project_description)
 
     projects[project_name] = os.path.join(args.outdir,
                                           project_name_lc + ".html")
 
+    # Write the content page
     with open(filename, "w") as f:
         f.write(header_formatted)
         if isinstance(project_url, str):
             f.write(
-                "**Documentation** [{project_url}]({project_url})\n".format(
+                "* **Documentation** [{project_url}]({project_url})\n".format(
                     project_url=project_url))
         f.write(
-            "**Description** {project_description}\n".format(
+            "* **Description** {project_description}\n".format(
                 project_description=project_description))
+    
+    # Compile list of which projects we've pulled
+    open_as = 'w' if ix == 0 else 'a'
+    with open('.downloaded_projects', open_as) as ff:
+        ff.writelines('{},{}\n'.format(project_user, project_name))
 
 # Now create one page for all the projects
 header_index = (

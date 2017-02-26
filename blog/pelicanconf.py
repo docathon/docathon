@@ -69,7 +69,7 @@ MENUITEMS = (
 #    ('Linux Kernel', 'https://www.kernel.org/'),
 )
 
-STATIC_PATHS = ['images', 'extras/favicon.ico']
+STATIC_PATHS = ['images', 'extras/favicon.ico', 'pages/projects/images']
 HEADER_IMAGE = "logo.svg"
 
 EXTRA_PATH_METADATA = {

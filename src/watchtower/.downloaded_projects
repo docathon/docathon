@@ -1,8 +1,13 @@
-pmagpy pmagpy
-gallantlab pycortex
-gallantlab cottoncandy
-data-8 connector-instructors
-matplotlib matplotlib
-jupyter notebook
-jmschrei pomegranate
-pandas-dev pandas
+pmagpy,PmagPy
+gallantlab,pycortex
+gallantlab,cottoncandy
+data-8,Data Science Education Infrastructure
+matplotlib,Matplotlib
+jupyter,IPython
+jmschrei,pomegranate
+pandas-dev,Pandas
+yt_analysis,yt
+scikit-image,scikit-image
+clawpack,Clawpack
+mne-tools,MNE-python
+scikit-learn-contrib,hdbscan
