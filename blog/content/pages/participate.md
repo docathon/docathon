@@ -9,7 +9,7 @@ Summary: Information about how to help with the docathon.
 
 # What can I do at the docathon?
 
-There are two main ways to get involved with the docathon.
+We'd love if you came to one of our [host locations](hosts.html), but we're happy for you to contribute to documentation wherever you are. We'll also have a few tutorials on the first day that are live-streamed on Youtube (more info coming). Sign up below so that we can keep track of your project's stats throughout the week. There are two main ways to get involved:
 
 ## Offer a project that could use some documentation love
 

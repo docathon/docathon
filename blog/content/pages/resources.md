@@ -11,9 +11,19 @@ Below we'll keep a semi-updated list of resources that we've found useful in wri
 
 # Table of Contents
 
+1. [Getting involved](#getting-involved)
 1. [Documentation tools](#documentation-tools)
-2. [Guides and articles on technical communication](#guides-comm)
-3. [Events and resources for holding events](#events)
+1. [Guides and articles on technical communication](#guides-comm)
+1. [Events and resources for holding events](#events)
+
+
+# Getting involved <a name="getting-involved"></a>
+---
+First things first, you need to have a project before you can make documentation. Below are a couple of resources on both finding projects as a new user, and helping users contribute to documentation if you manage a project:
+
+* [Encouraging users to contribute to documentation](https://bids.github.io/docathon/encouraging-user-docathon.html)
+* [Contributing to documentation as a new user](https://bids.github.io/docathon/contributing-documentation.html)
+
 
 # Documentation tools <a name="documentation-tools"></a>
 ---

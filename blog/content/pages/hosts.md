@@ -10,10 +10,10 @@ Summary: Information about how to help with the docathon.
 # Hosts
 
 
-While the Docathon is primarly a remote event, where opensource developers
-choose to focus on documentation for a specific week of the year, some will
-gather around for tutorials, hack together on a specific
-project or simply share a good time amongst documentation-lovers!
+While it's totally fine to participate inthe Docathon remotely (all you
+need to do is contribute to documentation!), some will
+gather at host sites for tutorials, hacking sessions on a specific
+project, or simply to share a good time amongst documentation-lovers!
 
 Here is a list of organizations / groups that are holding docathon parties
 during the week. You are welcome to host your own Docathon, [click here](hosting.html).
