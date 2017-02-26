@@ -12,5 +12,5 @@ echo "Build blog"
 cd blog
 make html
 cd ..
-# doctr deploy --deploy-repo BIDS/docathon --built-docs blog/output --gh-pages-docs='.'
+doctr deploy --deploy-repo BIDS/docathon --built-docs blog/output --gh-pages-docs='.'
 
