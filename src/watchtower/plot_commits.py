@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 import calendar
 import pandas as pd
+import traceback
 
 
 
@@ -31,6 +32,8 @@ def plot_commits(user, project, search_queries=None,
         search_queries = ['DOC', 'docs', 'docstring']
     since = pd.to_datetime(since)
     commits = commits_.load_commits(user, project)
+    if not commits:
+        raise ValueError('No commits: load_commits returned None, or None like : %s', commits)
     dates = pd.to_datetime([ii['author']['date']
                            for ii in commits['commit']])
     # Remove commits from the past we don't want
@@ -101,6 +104,7 @@ for user, project in tqdm(informations):
                                groupby=groupby, since=since)
         filename = os.path.join("build/images", project + ".png")
         fig.savefig(filename, bbox_inches='tight')
-    except:
+    except Exception as e:
         exceptions.append(project)
+        traceback.print_exception(None, e, e.__traceback__)
 print('Finished building images.\nExceptions: {}'.format(exceptions))
