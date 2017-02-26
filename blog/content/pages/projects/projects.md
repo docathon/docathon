@@ -6,7 +6,6 @@ Category: info
 Slug: projects/projects
 Authors: watchtower
 Summary: List of projects
-Status: hidden
 
 	* [PmagPy](build/pmagpy.html)
 	* [cottoncandy](build/cottoncandy.html)
