@@ -24,7 +24,7 @@ header = (
     "modified: {now}\n"
     "tags: projects, docathon\n"
     "category: info\n"
-    "slug: projects/{project_name}\n"
+    "slug: projects/{target}\n"
     "authors: watchtower\n"
     "summary: {project_name}\n"
     "status: hidden\n"
@@ -46,14 +46,16 @@ for ix, project in information.iterrows():
     project_user = project['github_org'].split('/')[-2:][0]
     project_description = project['description']
     project_name_lc = project_name.lower().replace(" ", "_")
-    filename = os.path.join(args.outdir, project_name_lc + ".md")
+    filename = os.path.join(args.outdir, project_name_lc.replace(" ", "_")
+                            + ".md")
     header_formatted = header.format(
         project_name=project_name,
         registration_date=project['timestamp'],
+        target=project_name_lc.replace(" ", "_").lower(),
         now=date.today().strftime("%Y-%m-%d"),
         project_description=project_description)
 
-    projects[project_name] = project_name_lc
+    projects[project_name] = project_name_lc.replace(" ", "_")
 
     # Write the content page
     with open(filename, "w") as f:
@@ -65,7 +67,7 @@ for ix, project in information.iterrows():
         f.write(
             "* **Description** {project_description}\n".format(
                 project_description=project_description))
-    
+
     # Compile list of which projects we've pulled
     open_as = 'w' if ix == 0 else 'a'
     with open('.downloaded_projects', open_as) as ff:
@@ -91,4 +93,4 @@ with open(filename, "w") as f:
 
     for project, url in projects.items():
         f.write(project_template.format(project_name=project,
-                project_url=url))
+                project_url=url.lower()+".html"))
