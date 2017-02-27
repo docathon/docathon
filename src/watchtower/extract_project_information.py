@@ -19,16 +19,17 @@ information = pd.read_csv(args.filename, header=None, skiprows=1,
                           names=columns)
 
 header = (
-    "Title: {project_name}\n"
-    "Date: {registration_date}\n"
-    "Modified: {now}\n"
-    "Tags: projects, docathon\n"
-    "Category: info\n"
-    "Slug: projects/{project_name}\n"
-    "Authors: watchtower\n"
-    "Summary: {project_name}\n"
-    "Status: hidden\n"
+    "title: {project_name}\n"
+    "date: {registration_date}\n"
+    "modified: {now}\n"
+    "tags: projects, docathon\n"
+    "category: info\n"
+    "slug: projects/{project_name}\n"
+    "authors: watchtower\n"
+    "summary: {project_name}\n"
+    "status: hidden\n"
     "\n"
+    "# {project_name}\n"
       )
 
 try:
@@ -52,8 +53,7 @@ for ix, project in information.iterrows():
         now=date.today().strftime("%Y-%m-%d"),
         project_description=project_description)
 
-    projects[project_name] = os.path.join(args.outdir,
-                                          project_name_lc + ".html")
+    projects[project_name] = project_name_lc
 
     # Write the content page
     with open(filename, "w") as f:
