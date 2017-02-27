@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Docathon</title><link href="https://bids.github.io/docathon/" rel="alternate"></link><link href="https://bids.github.io/docathon/feeds/all.atom.xml" rel="self"></link><id>https://bids.github.io/docathon/</id><updated>2017-02-27T08:00:00-08:00</updated><entry><title>Don't forget to register!</title><link href="https://bids.github.io/docathon/registration.html" rel="alternate"></link><published>2017-02-27T08:00:00-08:00</published><updated>2017-02-27T08:00:00-08:00</updated><author><name>Nelle Varoquaux</name></author><id>tag:bids.github.io,2017-02-27:docathon/registration.html</id><summary type="html">&lt;p&gt;As the Docathon draws near (-J7!), don't forget to register if you'd like to
-come physically to one of the host locations!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Docathon</title><link href="https://bids.github.io/docathon/" rel="alternate"></link><link href="https://bids.github.io/docathon/feeds/all.atom.xml" rel="self"></link><id>https://bids.github.io/docathon/</id><updated>2017-02-27T08:00:00-08:00</updated><entry><title>Don't forget to register!</title><link href="https://bids.github.io/docathon/registration.html" rel="alternate"></link><published>2017-02-27T08:00:00-08:00</published><updated>2017-02-27T08:00:00-08:00</updated><author><name>Nelle Varoquaux</name></author><id>tag:bids.github.io,2017-02-27:docathon/registration.html</id><summary type="html">&lt;p&gt;As the Docathon draws near (t-minus 7 days!), don't forget to register if you'd like to
+come physically to one of the host locations! At BIDS we'll have a kickoff event on the first day with some tutorials (&lt;a class="reference external" href="https://www.eventbrite.com/e/bids-docathon-kickoff-tickets-32302896834?aff=mcivte"&gt;signup here&lt;/a&gt;). During the week there will also be docathon groups working remotely at these locations:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="pages/hosts/bids.html"&gt;BIDS, UC Berkeley, CA&lt;/a&gt;: register &lt;a class="reference external" href="https://www.eventbrite.com/e/bids-docathon-kickoff-tickets-32302896834?aff=mcivte"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="pages/hosts/uwescience.html"&gt;eScience Institute, UW Seattle, WA&lt;/a&gt; register
+&lt;li&gt;&lt;a class="reference external" href="pages/hosts/uwescience.html"&gt;eScience Institute, UW Seattle, WA&lt;/a&gt;: register
 &lt;a class="reference external" href="https://goo.gl/forms/GMyMPJZ9eLT6eQuF2"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="pages/hosts/gc.html"&gt;Digital Fellows (GCDI), The Graduate Center, NY&lt;/a&gt;
+&lt;li&gt;&lt;a class="reference external" href="pages/hosts/gc.html"&gt;Digital Fellows (GCDI), The Graduate Center, NY&lt;/a&gt;:
 register &lt;a class="reference external" href="https://www.eventbrite.com/e/doc-a-thon-tickets-32309998074"&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
