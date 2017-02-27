@@ -21,7 +21,6 @@ args = parser.parse_args()
 # auth = ':'.join([auth_user, auth_token])
 # XXX should fix this to have choldgraf's technic work on travis
 auth = get_API_token(args.auth)
-print(auth)
 
 per_page = args.per_page,
 max_pages = args.max_pages
