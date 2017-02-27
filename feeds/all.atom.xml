@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Docathon</title><link href="https://bids.github.io/docathon/" rel="alternate"></link><link href="https://bids.github.io/docathon/feeds/all.atom.xml" rel="self"></link><id>https://bids.github.io/docathon/</id><updated>2017-02-27T08:00:00-08:00</updated><entry><title>Don't forget to register!</title><link href="https://bids.github.io/docathon/registration.html" rel="alternate"></link><published>2017-02-27T08:00:00-08:00</published><updated>2017-02-27T08:00:00-08:00</updated><author><name>Nelle Varoquaux</name></author><id>tag:bids.github.io,2017-02-27:docathon/registration.html</id><summary type="html">&lt;p&gt;As the Docathon draws near (t-minus 7 days!), don't forget to register if you'd like to
-come physically to one of the host locations! At BIDS we'll have a kickoff event on the first day with some tutorials (&lt;a class="reference external" href="https://www.eventbrite.com/e/bids-docathon-kickoff-tickets-32302896834?aff=mcivte"&gt;signup here&lt;/a&gt;). During the week there will also be docathon groups working remotely at these locations:&lt;/p&gt;
+come physically to one of the host locations! During the week there will be docathon groups working remotely at these locations:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="pages/hosts/bids.html"&gt;BIDS, UC Berkeley, CA&lt;/a&gt;: register &lt;a class="reference external" href="https://www.eventbrite.com/e/bids-docathon-kickoff-tickets-32302896834?aff=mcivte"&gt;here&lt;/a&gt;&lt;/li&gt;
@@ -10,6 +10,8 @@ come physically to one of the host locations! At BIDS we'll have a kickoff event
 register &lt;a class="reference external" href="https://www.eventbrite.com/e/doc-a-thon-tickets-32309998074"&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Docathon Kickoff&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In addition, on the first day we'll have a kickoff event at BIDS with some tutorials to help you build great documentation (&lt;a class="reference external" href="https://www.eventbrite.com/e/bids-docathon-kickoff-tickets-32302896834?aff=mcivte"&gt;signup here&lt;/a&gt;). We'll be streaming this live on the internet as well, so check back soon for a link.&lt;/p&gt;
 </summary><category term="communication"></category><category term="coding"></category></entry><entry><title>How to contribute to documentation as a new user</title><link href="https://bids.github.io/docathon/contributing-documentation.html" rel="alternate"></link><published>2017-02-26T00:00:00-08:00</published><updated>2017-02-26T00:00:00-08:00</updated><author><name>Chris Holdgraf</name></author><id>tag:bids.github.io,2017-02-26:docathon/contributing-documentation.html</id><summary type="html">&lt;p&gt;Contributing to a project is often a daunting challenge. Each project has an
 idiosyncratic way of organizing folders, accepting contributions, writing
 examples, etc. Fortunately, documentation is a great way to get started. You
