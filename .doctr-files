@@ -18,15 +18,15 @@
 ./pages/hosts/gc.html
 ./pages/hosts/uwescience.html
 ./pages/participate.html
-./pages/projects/Clawpack.html
-./pages/projects/Data Science Education Infrastructure.html
-./pages/projects/IPython.html
-./pages/projects/MNE-python.html
-./pages/projects/Matplotlib.html
-./pages/projects/Pandas.html
-./pages/projects/PmagPy.html
+./pages/projects/clawpack.html
 ./pages/projects/cottoncandy.html
+./pages/projects/data_science_education_infrastructure.html
 ./pages/projects/hdbscan.html
+./pages/projects/ipython.html
+./pages/projects/matplotlib.html
+./pages/projects/mne-python.html
+./pages/projects/pandas.html
+./pages/projects/pmagpy.html
 ./pages/projects/pomegranate.html
 ./pages/projects/projects.html
 ./pages/projects/pycortex.html
