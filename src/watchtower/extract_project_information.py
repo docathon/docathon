@@ -64,9 +64,31 @@ for ix, project in information.iterrows():
             f.write(
                 "* **Documentation** [{project_url}]({project_url})\n".format(
                     project_url=project_url))
+        if isinstance(project['github_org'], str):
+            if project["github_org"].startswith("http"):
+                github_org = project["github_org"]
+            elif len(project["github_org"].split("/")) == 2:
+                github_org = (
+                    "https://github.org/%s/%s" %
+                    (project["github_org"].split("/")[0],
+                    project["github_org"].split("/")[1]))
+            else:
+                github_org = None
+
+            if github_org is not None:
+                f.write(
+                    "* **Github organization** [{github_org}]({github_org})\n".format(
+                        github_org=github_org))
+        if isinstance(project["github_project_url"], str):
+            if len(project["github_project_url"].split(" ")) == 1:
+                f.write(
+                    "* **Docathon project** "
+                    "[{github_project_org}]({github_project_org})\n".format(
+                        github_project_org=project["github_project_url"]))
         f.write(
             "* **Description** {project_description}\n".format(
                 project_description=project_description))
+
 
     # Compile list of which projects we've pulled
     open_as = 'w' if ix == 0 else 'a'
@@ -83,6 +105,12 @@ header_index = (
     "Slug: projects/projects\n"
     "Authors: watchtower\n"
     "Summary: List of projects\n"
+    "\n"
+    "# Projects\n"
+    "\n "
+    "Here is a list of projects involved in the Docathon. "
+    "To add a project here, please fill in [this "
+    "registration form](https://goo.gl/forms/0cPpw01zehrEyDDE3) \n"
     "\n")
 
 filename = os.path.join(args.outdir, "projects.md")
