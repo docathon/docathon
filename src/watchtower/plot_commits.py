@@ -32,8 +32,10 @@ def plot_commits(user, project, search_queries=None,
         search_queries = ['DOC', 'docs', 'docstring']
     since = pd.to_datetime(since)
     commits = commits_.load_commits(user, project)
-    if not commits:
-        raise ValueError('No commits: load_commits returned None, or None like : %s', commits)
+    if commits is None or not len(commits):
+        raise ValueError(
+            'No commits: load_commits returned None, '
+            'or None like : %r' % commits)
     dates = pd.to_datetime([ii['author']['date']
                            for ii in commits['commit']])
     # Remove commits from the past we don't want
