@@ -81,12 +81,11 @@ header_index = (
     "Slug: projects/projects\n"
     "Authors: watchtower\n"
     "Summary: List of projects\n"
-    "Status: hidden\n"
     "\n")
 
 filename = os.path.join(args.outdir, "projects.md")
 header_formatted = header_index.format(now=date.today().strftime("%Y-%m-%d"))
-project_template = "\t* [{project_name}]({project_url})\n"
+project_template = "* [{project_name}]({project_url})\n"
 with open(filename, "w") as f:
     f.write(header_formatted)
 
