@@ -113,7 +113,7 @@ def plot_commits(all_dates):
     ax.set_yticks(yticks)
 
     ax.legend(loc=1)
-    ax.set_title(project, fontweight="bold")
+    ax.set_title(project, fontweight="bold", fontsize=22)
     plt.tight_layout()
     plt.autoscale(tight=True)
     return fig, ax
