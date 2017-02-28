@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import matplotlib
+matplotlib.use('agg')
 import matplotlib.dates as mpd
 from watchtower import commits_
 import matplotlib.pyplot as plt
@@ -8,7 +9,6 @@ from tqdm import tqdm
 import calendar
 import pandas as pd
 import traceback
-matplotlib.use('agg')
 
 
 def count_doc_commits(user, project, search_queries=None,
