@@ -1,6 +1,7 @@
 import argparse
 from datetime import date
 import os
+import os.path as op
 import pandas as pd
 
 
@@ -40,10 +41,15 @@ except OSError:
 print('Creating pages for {} projects'.format(len(information)))
 projects = {}
 for ix, project in information.iterrows():
-
-    project_name = project['name']
     project_url = project['url']
-    project_user = project['github_org'].split('/')[-2:][0]
+
+    # Try to be clever about pulling project information
+    project_info = project['github_org'].split('/')[-2:]
+    if len(project_info) == 2:
+        project_user, project_name = project_info
+    else:
+        project_user = project_info[0]
+        project_name = project['name']
     project_description = project['description']
     project_name_lc = project_name.lower().replace(" ", "_")
     filename = os.path.join(args.outdir, project_name_lc.replace(" ", "_")
@@ -94,31 +100,3 @@ for ix, project in information.iterrows():
     open_as = 'w' if ix == 0 else 'a'
     with open('.downloaded_projects', open_as) as ff:
         ff.writelines('{},{}\n'.format(project_user, project_name))
-
-# Now create one page for all the projects
-header_index = (
-    "Title: Projects\n"
-    "Date: 2017-02-18\n"
-    "Modified: {now}\n"
-    "Tags: projects, docathon\n"
-    "Category: info\n"
-    "Slug: projects/projects\n"
-    "Authors: watchtower\n"
-    "Summary: List of projects\n"
-    "\n"
-    "# Projects\n"
-    "\n "
-    "Here is a list of projects involved in the Docathon. "
-    "To add a project here, please fill in [this "
-    "registration form](https://goo.gl/forms/0cPpw01zehrEyDDE3) \n"
-    "\n")
-
-filename = os.path.join(args.outdir, "projects.md")
-header_formatted = header_index.format(now=date.today().strftime("%Y-%m-%d"))
-project_template = "* [{project_name}]({project_url})\n"
-with open(filename, "w") as f:
-    f.write(header_formatted)
-
-    for project, url in projects.items():
-        f.write(project_template.format(project_name=project,
-                project_url=url.lower()+".html"))
