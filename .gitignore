@@ -98,3 +98,4 @@ ENV/
 # Docathon ignored pages
 blog/content/pages/projects/*
 src/watchtower/.*
+src/data/*
