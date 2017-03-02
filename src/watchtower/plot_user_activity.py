@@ -19,9 +19,11 @@ header = (
     "# User contributions\n\n"
       )
 
+n_plot = 40
 df = pd.read_csv('./.user_totals.csv', index_col=0)
 df['perc'] = (df['perc'] * 100).replace(np.nan, 0).astype(int)
-ax = df.iloc[:20]['perc'].plot.bar()
+fig, ax = plt.sublots(figsize=(10, 5))
+ax = df.iloc[:n_plot]['perc'].plot.bar(ax=ax)
 ax.xaxis.label.set(visible=False)
 ax.set_ylabel('Percent DOC commits')
 plt.tight_layout()
