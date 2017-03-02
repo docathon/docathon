@@ -22,11 +22,9 @@ def format_axis(ax):
 def plot_bar(df, ax, ylabel='Number commits'):
     # Make plot for totals
     for i_type in ['all', 'doc']:
-        fillcolor = 'w' if i_type == 'all' else 'C0'
         i_data = df.iloc[:n_plot][i_type]
         ixs = range(i_data.shape[0])
-        ax.bar(ixs, i_data.values, color=fillcolor,
-               label=i_type, edgecolor='k')
+        ax.bar(ixs, i_data.values, label=i_type)
         ax.set_xticks(ixs)
         ax.set_xticklabels(i_data.index)
         plt.setp(ax.get_xticklabels(), rotation=45,
