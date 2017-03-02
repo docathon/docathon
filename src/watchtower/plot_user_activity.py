@@ -68,6 +68,7 @@ path_content = '../../blog/content/'
 path_img = os.path.join(path_content, 'images', 'users.png')
 ax.figure.savefig(path_img, bbox_inches='tight')
 
+img_text = "<img src='../images/users.png' style='box-shadow: none; margin: auto' />"
 with open(os.path.join(path_content, 'pages', 'users.md'), 'w') as ff:
     ff.write(header)
-    ff.write('![](../images/users.png)')
+    ff.write(img_text)
