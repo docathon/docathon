@@ -84,7 +84,7 @@ ax = plot_bar(df, ax)
 format_axis(ax)
 ax.legend()
 ax.set_ylim([0, 25])
-ax.set_title('Commits from\n{:%D} to {:%D}'.format(date_min, date_max))
+ax.set_title('Weekly commits from\n{:%D} to {:%D}'.format(date_min, date_max))
 
 
 path_content = '../../blog/content/'
@@ -92,16 +92,18 @@ path_img = os.path.join(path_content, 'images', 'users_all.png')
 ax.figure.savefig(path_img, bbox_inches='tight')
 
 # Plot weekly user commits
+n_users_weekly = 10
 grp_date = df_week.groupby(level='date')
 n_dates = len(grp_date)
 fig, axs = plt.subplots(1, n_dates, figsize=(n_dates * 5, 5))
 for ax, (date, values) in zip(axs, grp_date):
     values = values.reset_index('date', drop=True)
     values = values.sort_values('doc', ascending=False)
+    values = values.iloc[:n_users_weekly]
     if len(values) != 0:
         ax = plot_bar(values, ax)
     format_axis(ax)
-    ax.set_title('{:%a (%d)}'.format(date))
+    ax.set_title('{:%a (%b %d)}'.format(date))
 
 path_img = os.path.join(path_content, 'images', 'users_week.png')
 fig.savefig(path_img, bbox_inches='tight')
@@ -109,8 +111,7 @@ fig.savefig(path_img, bbox_inches='tight')
 img_text = "<img src='../images/{img_name}' style='box-shadow: none; margin: auto' />\n"
 with open(os.path.join(path_content, 'pages', 'users.md'), 'w') as ff:
     ff.write(header)
-    ff.write('# Weekly total per user\n---\n')
     ff.write(img_text.format(img_name='users_all.png'))
 
-    ff.write('\n# Daily totals per user\n---\n')
+    ff.write('\n# Daily totals\n---\n')
     ff.write(img_text.format(img_name='users_week.png'))
