@@ -82,7 +82,8 @@ ax = plot_bar(df, ax)
 format_axis(ax)
 ax.legend()
 ax.set_ylim([0, 25])
-ax.set_title('Weekly commits from\n{:%D} to {:%D}'.format(date_min, date_max))
+ax.set_title('Weekly commits from\n{:%D} to {:%D}'.format(date_min, date_max),
+             fontsize=26)
 
 
 path_content = '../../blog/content/'
@@ -100,6 +101,7 @@ for ax, (date, values) in zip(axs, grp_date):
     values = values.iloc[:n_users_weekly]
     if len(values) != 0:
         ax = plot_bar(values, ax)
+        ax.set_ylim([0, 20])
     format_axis(ax)
     ax.set_title('{:%a (%b %d)}'.format(date))
 
