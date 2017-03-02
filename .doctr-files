@@ -11,7 +11,8 @@
 ./favicon.ico
 ./feeds/all.atom.xml
 ./images/logo.svg
-./images/users.png
+./images/users_all.png
+./images/users_week.png
 ./index.html
 ./index2.html
 ./pages/about.html
