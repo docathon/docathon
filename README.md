@@ -23,7 +23,7 @@ As a group, we'll spend the week working on various projects that aim to improve
 Check back here soon for a form that we'll use to field ideas for projects and organize people to work on them!
 
 
-
+ 
 
 
 ## Projects that may be interested
