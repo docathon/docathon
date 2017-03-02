@@ -12,12 +12,10 @@ Don't forget to register!
 As the Docathon draws near (t-minus 7 days!), don't forget to register if you'd like to
 come physically to one of the host locations! During the week there will be docathon groups working remotely at these locations: 
 
-  - `BIDS, UC Berkeley, CA <pages/hosts/bids.html>`_: register `here <https://www.eventbrite.com/e/bids-docathon-kickoff-tickets-32302896834?aff=mcivte>`__
-  - `eScience Institute, UW Seattle, WA <pages/hosts/uwescience.html>`_: register
-    `here <https://goo.gl/forms/GMyMPJZ9eLT6eQuF2>`__
-  - `Digital Fellows (GCDI), The Graduate Center, NY <pages/hosts/gc.html>`_:
-    register `here
-    <https://www.eventbrite.com/e/doc-a-thon-tickets-32309998074>`__
+  - BIDS, UC Berkeley, CA: `register here <https://www.eventbrite.com/e/bids-docathon-kickoff-tickets-32302896834?aff=mcivte>`__ | `Agenda <pages/hosts/bids.html>`__ 
+  - eScience Institute, UW Seattle, WA : `register here <https://goo.gl/forms/GMyMPJZ9eLT6eQuF2>`__ | `Agenda <pages/hosts/uwescience.html>`__
+  - Digital Fellows (GCDI), The Graduate Center, NY : `register here
+    <https://www.eventbrite.com/e/doc-a-thon-tickets-32309998074>`__ | `Agenda <pages/hosts/gc.html>`__
 
 **Docathon Kickoff**
 
