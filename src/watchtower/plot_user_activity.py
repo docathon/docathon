@@ -19,13 +19,49 @@ header = (
     "# User contributions\n\n"
       )
 
-n_plot = 40
+# Load data and drop admins
+exclude = ['Carreau', 'NelleV', 'choldgraf']
+plot_type = 'doc'  # 'perc'
+n_plot = 30
 df = pd.read_csv('./.user_totals.csv', index_col=0)
-df['perc'] = (df['perc'] * 100).replace(np.nan, 0).astype(int)
-fig, ax = plt.sublots(figsize=(10, 5))
-ax = df.iloc[:n_plot]['perc'].plot.bar(ax=ax)
+df = df.query('user not in @exclude')
+df = df.sort_values(plot_type, ascending=False)
+
+# Pull the values we want
+if plot_type == 'perc':
+    df[plot_type] = df[plot_type] * 100
+    ylabel = 'Percent DOC commits'
+else:
+    ylabel = 'Number commits'
+df = df.replace(np.nan, 0).astype(int)
+
+# Make plot
+fig, ax = plt.subplots(figsize=(10, 5))
+i_types = [plot_type] if plot_type == 'perc' else ['all', 'doc']
+for i_type in i_types:
+    fillcolor = 'w' if i_type == 'all' else 'C1'
+    edgecolor = 'k'
+    i_data = df.iloc[:n_plot][i_type]
+    ixs = range(i_data.shape[0])
+    ax.bar(ixs, i_data.values, color=fillcolor,
+           edgecolor=edgecolor, label=i_type)
+    plt.xticks(ixs, i_data.index)
+    plt.setp(ax.get_xticklabels(), rotation=45,
+             horizontalalignment='right', fontsize=14)
+if plot_type != 'perc':
+    ax.legend()
+    ax.set_ylim([0, 25])
+
+# Formatting
+plt.setp([ax.spines[ii] for ii in ['top', 'right']], visible=False)
+ax.grid("off")
+yticks = ax.get_yticks()
+for l in yticks:
+    ax.axhline(l, linewidth=0.75, zorder=-10, color="0.5")
+ax.set_yticks(yticks)
+
 ax.xaxis.label.set(visible=False)
-ax.set_ylabel('Percent DOC commits')
+ax.set_ylabel(ylabel)
 plt.tight_layout()
 
 path_content = '../../blog/content/'
