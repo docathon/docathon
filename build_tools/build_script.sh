@@ -11,6 +11,8 @@ python plot_commits.py
 python add_images_to_md.py
 python create_projects_summary.py
 python move_project_pages.py
+python fetch_user_activity.py ../data/docathon_user_registration.csv
+python plot_user_activity.py
 popd
 
 echo "Build blog"
