@@ -85,8 +85,40 @@ header, #wrapper {
 .offset-container {
   margin: 0;
   background-color: #f1f1f1;
+  padding-bottom: 0.6em;
 }
 
+.offset-container .front_button {
+    margin-top: 0.5em;
+}
+
+.agenda-banner {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
+}
+
+.agenda-banner .container {
+    font-size: 120%;
+}
+
+.agenda-banner .container a {
+    font-size: 150%;
+    padding: auto;
+}
+
+.agenda-link {
+    display: inline-block;
+    width: 10em;
+    margin: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    text-align: center;
+}
 
 .container {
   padding: 0 10px;
