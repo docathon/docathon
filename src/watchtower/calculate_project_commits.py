@@ -1,12 +1,10 @@
 import numpy as np
 import os
-from watchtower import commits_
+from watchtower import GithubDatabase
 from tqdm import tqdm
 import pandas as pd
 import traceback
 
-# THIS SHOULD BE BROKEN UP INTO 'CALCULATE_PROJECT_COMMITS' and "PLOT_COMMITS"
-# CALCULATE WOULD BE RUN ON THE USER SIDE, and PLOT WOULD BE RUN ON THE SERVER
 
 def count_doc_commits(user, project, search_queries=None,
                       groupby='month', start='2017-01-01', stop=None):
@@ -34,17 +32,13 @@ def count_doc_commits(user, project, search_queries=None,
     else:
         stop = pd.to_datetime(stop)
 
-    commits = commits_.load_commits(user, project)
+    commits = db.load(user, project).commits
     if commits is None:
         return None, None
-    commits['message'] = [commit['message'] for commit in commits['commit']]
     if commits is None or not len(commits):
         raise ValueError(
             'No commits: load_commits returned None, '
             'or None like : %r' % commits)
-    dates = pd.to_datetime([ii['author']['date']
-                           for ii in commits['commit']])
-    commits.index = dates
 
     # Define full date range
     all_dates = pd.date_range(start, stop, freq='D')
@@ -52,7 +46,7 @@ def count_doc_commits(user, project, search_queries=None,
                              index=all_dates)
 
     # Remove commits from the past we don't want
-    mask_since = (dates > start) * (dates < stop)
+    mask_since = (commits.index > start) * (commits.index < stop)
     commits = commits[mask_since]
     if len(commits) == 0:
         # In case no commits for this project
@@ -88,18 +82,19 @@ def count_doc_commits(user, project, search_queries=None,
 
 
 # --- Run the script ---
-informations = pd.read_csv(".downloaded_projects").values
 try:
     os.makedirs("build/images")
 except OSError:
     pass
 
+db = GithubDatabase()
+projects = [ii.split('/') for ii in db.projects]
 groupby = 'weekday'
-start = '2017-03-01'
+start = '2017-02-20'
 stop = '2017-03-10'
 exceptions = []
 all_dates = []
-for user, project in tqdm(informations):
+for user, project in tqdm(projects):
     try:
         this_all_dates = count_doc_commits(
             user, project, groupby=groupby, start=start, stop=stop)
@@ -114,4 +109,4 @@ for user, project in tqdm(informations):
 print('Exceptions: {}'.format(exceptions))
 all_dates = pd.concat(all_dates, axis=0)
 all_dates.index.name = 'date'
-all_dates.to_csv('.totals.csv')
+all_dates.to_csv('.project_totals.csv')

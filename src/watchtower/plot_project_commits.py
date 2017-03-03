@@ -11,12 +11,12 @@ import pandas as pd
 import traceback
 
 today = pd.datetime.today()
-
+figsize = (8, 4)
 
 def plot_commits(all_dates):
 
     # --- Plotting ---
-    fig, ax = plt.subplots(figsize=(8, 4))
+    fig, ax = plt.subplots(figsize=figsize)
     for label in all_dates.columns:
         ax.bar(all_dates.index.to_pydatetime(), all_dates[label].values,
                label=label)
@@ -44,7 +44,7 @@ def plot_commits(all_dates):
     plt.autoscale(tight=True)
     return fig, ax
 
-commits = pd.read_csv('.totals.csv')
+commits = pd.read_csv('.project_totals.csv')
 commits['date'] = pd.to_datetime(commits['date'])
 grp_projects = commits.groupby('project')
 exceptions = []
@@ -55,10 +55,16 @@ for project, values in tqdm(grp_projects):
         if fig is None:
             exceptions.append(project)
             continue
-        filename = os.path.join("build/images", project.lower() + ".png")
-        fig.savefig(filename, bbox_inches='tight')
+        plt.close(fig)
     except Exception as e:
+        fig, ax = plot_commits(values, figsize=figsize)
+        ax.set_title(project, fontweight="bold", fontsize=22)
+        ax.text(.5, .5, 'No info for project\n{}'.format(project),
+                horizontalalignment='center', fontsize=16)
         exceptions.append(project)
         traceback.print_exception(None, e, e.__traceback__)
+    # Save the figure
+    filename = os.path.join("build/images", project.lower() + ".png")
+    fig.savefig(filename, bbox_inches='tight')
 
 print('Finished building images.\nExceptions: {}'.format(exceptions))

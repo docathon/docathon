@@ -115,3 +115,4 @@ with open(os.path.join(path_content, 'pages', 'users.md'), 'w') as ff:
 
     ff.write('\n# Daily totals\n---\n')
     ff.write(img_text.format(img_name='users_week.png'))
+print('Finished plotting user activity...')
