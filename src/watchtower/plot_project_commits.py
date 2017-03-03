@@ -1,0 +1,64 @@
+import numpy as np
+import os
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.dates as mpd
+from watchtower import commits_
+import matplotlib.pyplot as plt
+from tqdm import tqdm
+import calendar
+import pandas as pd
+import traceback
+
+today = pd.datetime.today()
+
+
+def plot_commits(all_dates):
+
+    # --- Plotting ---
+    fig, ax = plt.subplots(figsize=(8, 4))
+    for label in all_dates.columns:
+        ax.bar(all_dates.index.to_pydatetime(), all_dates[label].values,
+               label=label)
+    # Plot today
+    ax.axvline(today, ls='--', alpha=.5, lw=2, color='k')
+    ax.grid("off")
+    ax.spines['right'].set_color('none')
+    ax.spines['left'].set_color('none')
+    ax.spines['top'].set_color('none')
+    ax.xaxis.set_ticks_position('bottom')
+    ax.yaxis.set_ticks_position('left')
+    ax.xaxis.set_major_formatter(mpd.DateFormatter('%b\n%d'))
+
+    # Y-axis formatting
+    ax.set_ylabel("# commits")
+    ax.set_ylim([0, np.max([5, int(ax.get_ylim()[-1])])])
+    yticks = ax.get_yticks()
+    for l in yticks:
+        ax.axhline(l, linewidth=0.75, zorder=-10, color="0.5")
+    ax.set_yticks(yticks)
+
+    ax.legend(loc=1)
+    ax.set_title(project, fontweight="bold", fontsize=22)
+    plt.tight_layout()
+    plt.autoscale(tight=True)
+    return fig, ax
+
+commits = pd.read_csv('.totals.csv')
+commits['date'] = pd.to_datetime(commits['date'])
+grp_projects = commits.groupby('project')
+exceptions = []
+for project, values in tqdm(grp_projects):
+    try:
+        values = values.set_index('date').drop('project', axis=1)
+        fig, ax = plot_commits(values)
+        if fig is None:
+            exceptions.append(project)
+            continue
+        filename = os.path.join("build/images", project.lower() + ".png")
+        fig.savefig(filename, bbox_inches='tight')
+    except Exception as e:
+        exceptions.append(project)
+        traceback.print_exception(None, e, e.__traceback__)
+
+print('Finished building images.\nExceptions: {}'.format(exceptions))

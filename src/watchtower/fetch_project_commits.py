@@ -28,7 +28,7 @@ since = args.since
 
 # Load data from google drive questionnaire
 info = pd.read_csv(args.filename).values
-
+import IPython; IPython.embed()
 # Iterate projects and retrieve its latest info
 print('Updating commits for %s projects' % len(info))
 downloaded_commits = []
