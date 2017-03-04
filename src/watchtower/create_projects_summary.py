@@ -2,6 +2,8 @@ from datetime import date
 import os
 import os.path as op
 import pandas as pd
+import matplotlib
+matplotlib.use('agg')
 import matplotlib.pyplot as plt
 
 
