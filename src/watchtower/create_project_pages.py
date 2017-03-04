@@ -44,7 +44,7 @@ for ix, project in projects.iterrows():
 
     project_name = project['name']
     project_name_lc = project_name.lower().replace(" ", "_")
-    filename = os.path.join(args.outdir, '{}.md'.format(project_name_lc))
+    filename = os.path.join(args.outdir, '{}.md'.format(repo.lower()))
 
     # Find doc issues
     doc_issues = project['doc_issues']
