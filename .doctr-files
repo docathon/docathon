@@ -11,6 +11,7 @@
 ./favicon.ico
 ./feeds/all.atom.xml
 ./images/logo.svg
+./images/project_summary.png
 ./images/users_all.png
 ./images/users_week.png
 ./index.html
@@ -76,6 +77,7 @@
 ./pages/projects/sylius.html
 ./pages/projects/yt.html
 ./pages/resources.html
+./pages/stats.html
 ./pages/users.html
 ./registration.html
 ./tag/coding.html
