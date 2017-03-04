@@ -29,7 +29,8 @@ def plot_bar(df, ax, ylabel='Number commits'):
         ax.set_xticklabels(i_data.index)
         plt.setp(ax.get_xticklabels(), rotation=45,
                  horizontalalignment='right', fontsize=14)
-        ax.set_ylabel(ylabel)
+        if ylabel is not None:
+            ax.set_ylabel(ylabel)
     return ax
 
 
@@ -78,16 +79,17 @@ df_week.columns = ['all', 'doc']
 
 # Plotting
 fig, ax = plt.subplots(figsize=(10, 5))
-ax = plot_bar(df, ax)
+ax = plot_bar(df, ax, ylabel=None)
+ax.set_ylim([0, 30])
 format_axis(ax)
 ax.legend()
-ax.set_ylim([0, 25])
-ax.set_title('Weekly commits from\n{:%D} to {:%D}'.format(date_min, date_max),
+ax.set_title('Commits from {:%D} to {:%D}'.format(date_min, date_max),
              fontsize=26)
 
 
 path_content = '../../blog/content/'
 path_img = os.path.join(path_content, 'images', 'users_all.png')
+plt.tight_layout()
 ax.figure.savefig(path_img, bbox_inches='tight')
 
 # Plot weekly user commits

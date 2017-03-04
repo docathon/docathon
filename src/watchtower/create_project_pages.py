@@ -59,7 +59,7 @@ for ix, project in projects.iterrows():
             ff.write(
                 "* **Documentation**:  [{url}]({url})\n".format(
                     url=url))
-        if is_github:
+        if is_github == 'yes':
             url_org = 'http://github.org/{}/{}'.format(
                 user, repo)
             ff.write(
