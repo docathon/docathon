@@ -59,10 +59,10 @@
 ./pages/projects/images/scipy.png
 ./pages/projects/images/sncosmo.png
 ./pages/projects/images/sylius.png
+./pages/projects/images/watchtower.png
 ./pages/projects/ipython.html
 ./pages/projects/julia.html
 ./pages/projects/jupyter.html
-./pages/projects/libraries.io.html
 ./pages/projects/matplotlib.html
 ./pages/projects/mne-python.html
 ./pages/projects/msnoise.html
@@ -73,12 +73,14 @@
 ./pages/projects/projects.html
 ./pages/projects/pulse2percept.html
 ./pages/projects/pycortex.html
-./pages/projects/quanteda_(r_package).html
+./pages/projects/quanteda_-_quanteda.html
+./pages/projects/quanteda_-_readtext.html
 ./pages/projects/scikit-image.html
 ./pages/projects/scikit-learn.html
 ./pages/projects/scipy.html
 ./pages/projects/sncosmo.html
 ./pages/projects/sylius.html
+./pages/projects/watchtower.html
 ./pages/projects/yt.html
 ./pages/resources.html
 ./pages/stats.html
