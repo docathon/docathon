@@ -13,13 +13,15 @@ import traceback
 today = pd.datetime.today()
 figsize = (8, 4)
 
-def plot_commits(all_dates):
+def plot_commits(all_dates, ylim=[0, 20]):
 
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)
     for label in all_dates.columns:
         ax.bar(all_dates.index.to_pydatetime(), all_dates[label].values,
                label=label)
+    ax.set_ylim(ylim)
+
     # Plot today
     ax.axvline(today, ls='--', alpha=.5, lw=2, color='k')
     ax.grid("off")
@@ -32,11 +34,11 @@ def plot_commits(all_dates):
 
     # Y-axis formatting
     ax.set_ylabel("# commits")
-    ax.set_ylim([0, np.max([5, int(ax.get_ylim()[-1])])])
     yticks = ax.get_yticks()
     for l in yticks:
         ax.axhline(l, linewidth=0.75, zorder=-10, color="0.5")
     ax.set_yticks(yticks)
+    ax.set_ylim(ylim)
 
     ax.legend(loc=1)
     ax.set_title(project, fontweight="bold", fontsize=22)

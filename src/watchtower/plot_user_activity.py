@@ -94,6 +94,7 @@ ax.figure.savefig(path_img, bbox_inches='tight')
 
 # Plot weekly user commits
 n_users_weekly = 10
+y_max = 20
 grp_date = df_week.groupby(level='date')
 n_dates = len(grp_date)
 fig, axs = plt.subplots(1, n_dates, figsize=(n_dates * 5, 5))
@@ -103,7 +104,7 @@ for ax, (date, values) in zip(axs, grp_date):
     values = values.iloc[:n_users_weekly]
     if len(values) != 0:
         ax = plot_bar(values, ax)
-        ax.set_ylim([0, 20])
+        ax.set_ylim([0, y_max])
     format_axis(ax)
     ax.set_title('{:%a (%b %d)}'.format(date))
 
