@@ -69,7 +69,7 @@ plt.setp(ax.get_xticklabels(), rotation=45,
          horizontalalignment='right', fontsize=16)
 format_axis(ax)
 ax.legend()
-ax.set_title('Commits from {:%D} to {:%D}'.format(count_since, now))
+ax.set_title('Commits from {:%D} to {:%D}'.format(count_since, now), fontsize=26)
 fig.savefig('../../blog/content/images/project_summary.png', bbox_inches='tight')
 
 # Create a summary page
