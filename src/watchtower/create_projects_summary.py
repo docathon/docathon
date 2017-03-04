@@ -89,8 +89,8 @@ with open(filename, "w") as f:
     repos_names = np.split(repos_names, ixs_split)
     for group in repos_names:
         f.write('&nbsp;&nbsp;-&nbsp;&nbsp;'.join(
-            ['**[{repo}]({repo}.html)**'.format(org=org, repo=repo.lower())
-                              for org, repo in group]) + '<br />')
+            ['[{org}/{repo}]({repo}.html)'.format(org=org, repo=repo.lower())
+             for org, repo in group]) + '<br />')
     f.write('\n')
     f.write('# Project leaders\n')
     f.write("<img src='../../images/project_summary.png' style='box-shadow: none; margin: auto' />\n")

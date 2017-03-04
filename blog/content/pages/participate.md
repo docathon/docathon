@@ -44,10 +44,11 @@ Here are some projects that have already signed up. See the full list at (projec
 
 ---
 * [yt](projects/yt.html)
+* [watchtower](projects/watchtower.html)
 * [scikit-learn](projects/scikit-learn.html)
 * [scikit-image](projects/scikit-image.html)
-* [quanteda (R package)](projects/readtext.html)
-* [quanteda (R package)](projects/quanteda.html)
+* [quanteda - readtext](projects/readtext.html)
+* [quanteda - quanteda](projects/quanteda.html)
 * [pycortex](projects/pycortex.html)
 * [pulse2percept](projects/pulse2percept.html)
 * [pomegranate](projects/pomegranate.html)
