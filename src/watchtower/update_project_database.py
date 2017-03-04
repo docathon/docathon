@@ -1,6 +1,6 @@
 import argparse
 import pandas as pd
-from watchtower import commits_
+from watchtower import commits_, issues_
 from watchtower._config import get_API_token
 
 parser = argparse.ArgumentParser()
@@ -42,6 +42,8 @@ for user, project in projects:
     try:
         commits_.update_commits(user, project, auth,
                                 since=since)
+        issues_.update_issues(user, project, auth,
+                              since=since, state='all')
     except:
         exceptions.append(project)
 
