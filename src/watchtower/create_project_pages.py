@@ -2,6 +2,7 @@ from datetime import date
 import argparse
 import os
 import pandas as pd
+import numpy as np
 
 header = (
     "title: {repo}\n"
@@ -45,6 +46,10 @@ for ix, project in projects.iterrows():
     project_name_lc = project_name.lower().replace(" ", "_")
     filename = os.path.join(args.outdir, '{}.md'.format(project_name_lc))
 
+    # Find doc issues
+    doc_issues = project['doc_issues']
+    doc_issues = None if isinstance(doc_issues, float) else eval(doc_issues)
+
     # Prep header and write
     header_formatted = header.format(
         repo=repo,
@@ -55,9 +60,10 @@ for ix, project in projects.iterrows():
 
     with open(filename, "w") as ff:
         ff.write(header_formatted)
+        ff.write('## Information\n\n')
         if isinstance(url, str):
             ff.write(
-                "* **Documentation**:  [{url}]({url})\n".format(
+                "* **Documentation**: [{url}]({url})\n".format(
                     url=url))
         if is_github == 'yes':
             url_org = 'http://github.org/{}/{}'.format(
@@ -71,6 +77,16 @@ for ix, project in projects.iterrows():
                 "* **Docathon project**: "
                 "[{url_doc}]({url_doc})\n".format(
                     url_doc=url_doc))
+
         ff.write(
-            "* **Description**: {description}\n".format(
+            "## Description\n{description}\n\n".format(
                 description=description))
+
+        if isinstance(doc_issues, list):
+            ff.write(
+                "## Open Doc issues\n\n"
+                )
+            for issue in doc_issues:
+                ff.write(
+                    "* [{title_issue}]({url_issue})\n".format(
+                        title_issue=issue['title'], url_issue=issue['url']))

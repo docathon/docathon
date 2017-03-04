@@ -3,6 +3,7 @@ import os
 import os.path as op
 import pandas as pd
 import matplotlib
+import numpy as np
 matplotlib.use('agg')
 import matplotlib.pyplot as plt
 
@@ -79,9 +80,18 @@ project_template = "<a href='{project_url}'><img src='{project_image}' style='wi
 with open(filename, "w") as f:
     f.write(header_formatted)
     f.write('Docathon projects\n---\n')
-    f.write('  -  '.join(['[{name}]({name}.html)'.format(name=proj.lower())
-                          for proj in proj_info['name'].values]) + '\n')
+    repos_names = [github_org.lower().split('/')[-2:]
+                   for github_org in proj_info['github_org'].values
+                   if isinstance(github_org, str)]
+    repos_names = np.array(repos_names)
 
+    ixs_split = np.arange(len(repos_names))[::4][1:-1]
+    repos_names = np.split(repos_names, ixs_split)
+    for group in repos_names:
+        f.write('&nbsp;&nbsp;-&nbsp;&nbsp;'.join(
+            ['**[{repo}]({repo}.html)**'.format(org=org, repo=repo.lower())
+                              for org, repo in group]) + '<br />')
+    f.write('\n')
     f.write('# Project leaders\n')
     f.write("<img src='../../images/project_summary.png' style='box-shadow: none; margin: auto' />\n")
     f.write('# Project contributions\n')

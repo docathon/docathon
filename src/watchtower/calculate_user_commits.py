@@ -18,6 +18,10 @@ activity = []
 for user in users:
     try:
         user_db = db.load(user)
+        if len(user_db.PushEvent) == 0:
+            activity.append((user, np.nan, np.nan))
+            print('No commits for user: {}'.format(user))
+            continue
         messages, dates = zip(*[(jj['message'], idate)
                               for idate, ii in user_db.PushEvent.iterrows()
                               for jj in ii['payload']['commits']])
@@ -40,7 +44,7 @@ for user in users:
         exceptions.append((user, e))
         activity.append((user, np.nan, np.nan))
         continue
-print('\n'.join([str(ii) for ii in exceptions]))
+print('Exceptions: ', '\n'.join([str(ii) for ii in exceptions]))
 activity = pd.DataFrame(activity, columns=['user', 'date', 'is_doc'])
 activity = activity.set_index('date')
 activity.to_csv('.user_totals.csv')
