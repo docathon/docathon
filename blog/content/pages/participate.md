@@ -40,22 +40,39 @@ Second, you can offer your own time during the Docathon to work on the projects
 that are officially on-board. Alternatively, you can work on your own personal
 projects (so long as you're working on documentation!). Check out [our guide](../contributing-documentation.html) for more tips on how to contribute.
 
-Here are some [projects that have already signed up](projects/projects.html):
+Here are some projects that have already signed up. See the full list at (projects/projects.html):
 
 ---
-* [hdbscan](http://hdbscan.readthedocs.io)
-* [MNE-python](https://mne-tools.github.io/stable/index.html)
-* [Clawpack](http://clawpack.org)
-* [scikit-image](http://scikit-image.org)
-* [yt](http://yt-project.org/doc)
-* [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
-* [pomegranate](http://pomegranate.readthedocs.io/en/latest/)
-* [IPython](http://jupyter.readthedocs.org)
-* [Matplotlib](http://matplotlib.org)
-* [Data Science Education Infrastructure](http://bids.github.io/docathon)
-* [cottoncandy](http://gallantlab.github.io/cottoncandy/)
-* [pycortex](http://gallantlab.org/pycortex/docs/)
-* [PmagPy](https://earthref.org/PmagPy/cookbook/)
+* [yt](projects/yt.html)
+* [scikit-learn](projects/scikit-learn.html)
+* [scikit-image](projects/scikit-image.html)
+* [quanteda (R package)](projects/readtext.html)
+* [quanteda (R package)](projects/quanteda.html)
+* [pycortex](projects/pycortex.html)
+* [pulse2percept](projects/pulse2percept.html)
+* [pomegranate](projects/pomegranate.html)
+* [hdbscan](projects/hdbscan.html)
+* [cottoncandy](projects/cottoncandy.html)
+* [Sylius](projects/sylius.html)
+* [SciPy](projects/scipy.html)
+* [SNCosmo](projects/sncosmo.html)
+* [PmagPy](projects/pmagpy.html)
+* [Pandas](projects/pandas.html)
+* [Omeka](projects/omeka.html)
+* [Matplotlib](projects/matplotlib.html)
+* [MSNoise](projects/msnoise.html)
+* [MNE-python](projects/mne-python.html)
+* [Libraries.io](projects/.html)
+* [Jupyter](projects/notebook.html)
+* [Julia](projects/julia.html)
+* [IPython](projects/ipython.html)
+* [Henson](projects/henson.html)
+* [Galaxy](projects/galaxy.html)
+* [Deeplearning4j](projects/deeplearning4j.html)
+* [Data Science Education Infrastructure](projects/connector-instructors.html)
+* [DIY](projects/diy.html)
+* [Clawpack](projects/clawpack.html)
+* [Bokeh](projects/bokeh.html)
  ---
 
 ## Host your own docathon!
