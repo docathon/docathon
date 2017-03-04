@@ -10,16 +10,12 @@ parser.add_argument("--auth", default="GITHUB_API")
 parser.add_argument("--outdir", "-o", default="build")
 parser.add_argument("--per_page", "-n", default=100)
 parser.add_argument("--max_pages", "-m", default=100)
-parser.add_argument("--since", "-s", default="2017-01-01",
+parser.add_argument("--since", "-s", default="2017-02-01",
                     help="Date from which to search, YYYY-MM-DD")
 
 args = parser.parse_args()
 
 # Generate the github API user:token pair
-# auth_user = args.auth_user
-# auth_token = get_API_token(args.auth_token)
-# auth = ':'.join([auth_user, auth_token])
-# XXX should fix this to have choldgraf's technic work on travis
 auth = get_API_token(args.auth)
 
 per_page = args.per_page,
@@ -27,17 +23,16 @@ max_pages = args.max_pages
 since = args.since
 
 # Load data from google drive questionnaire
-info = pd.read_csv(args.filename).values
+users = pd.read_csv(args.filename)
+usernames = users['GitHub User Name'].values
 
 # Iterate projects and retrieve its latest info
-print('Updating commits for %s projects' % len(info))
-downloaded_commits = []
+print('Updating commits for %s users' % len(usernames))
 exceptions = []
-for user, project in info:
+for user in usernames:
     try:
-        commits_.update_commits(user, project, auth,
-                                since=since)
+        commits_.update_commits(user, auth=auth, since=since)
     except:
-        exceptions.append(project)
+        exceptions.append(user)
 
 print('Finished updating commits.\nFailed for: {}'.format(exceptions))

@@ -1,8 +1,9 @@
 
 
 all:
-	python update_project_questionnaire.py
-	python extract_project_information.py ../data/docathon_project_registration.csv
-	python fetch_project_commits.py .downloaded_projects
-	python plot_commits.py
-	python add_images_to_md.py
+	python update_questionnaires.py
+	python update_project_database.py ../data/docathon_project_registration.csv
+	python update_user_database.py ../data/docathon_user_registration.csv
+	python extract_projects_information.py ../data/docathon_project_registration.csv
+	python calculate_user_commits.py
+	python calculate_project_commits.py

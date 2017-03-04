@@ -27,8 +27,8 @@ header_index = (
 
 
 # Pull commit totals
-commit_totals = pd.read_csv('.totals.csv', index_col=0, parse_dates=True)
-sorted_totals = commit_totals.groupby('project').sum()['Doc'].sort_values(ascending=False)
+commit_totals = pd.read_csv('.project_totals.csv', index_col=0, parse_dates=True)
+sorted_totals = commit_totals.groupby('project').sum()['doc'].sort_values(ascending=False)
 
 # Create a summary page
 filename = os.path.join('build', "projects.md")
@@ -45,3 +45,4 @@ with open(filename, "w") as f:
         project_image = path_img_write
         f.write(project_template.format(project_image=project_image,
                 project_url=project_name.lower()+".html"))
+print('Finished creating projects summary...')

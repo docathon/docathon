@@ -2,20 +2,22 @@ import pandas as pd
 from tqdm import tqdm
 import os.path as op
 
-informations = pd.read_csv(".downloaded_projects").values
+projects = pd.read_csv(".project_info.csv")
 path_root = op.abspath('.')
 exceptions = []
-for user, project in tqdm(informations):
-    filename = project.replace(" ", "_").lower()
+for ix, project in tqdm(projects.iterrows()):
+    if not isinstance(project['github_org'], str):
+        continue
+    org, repo = project['github_org'].split('/')[-2:]
+    filename = repo.replace(" ", "_").lower()
     try:
         with open('build/{}.md'.format(filename), 'a') as ff:
-            path_img_read = 'build/images/{}.png'.format(project)
+            path_img_read = 'build/images/{}.png'.format(repo)
             if not op.exists(path_img_read):
-                print('Skipping {}'.format(project))
-                continue
-            path_img_write = 'images/{}.png'.format(project)
+                raise ValueError("path doesn't exist for {}".format(repo))
+            path_img_write = 'images/{}.png'.format(repo)
             ff.writelines(
                 '\n\n# Activity\n---\n![]({})'.format(path_img_write))
-    except:
-        exceptions.append(project)
+    except Exception as ee:
+        exceptions.append(ee)
 print('Finished inserting images.\nExceptions: {}'.format(exceptions))
