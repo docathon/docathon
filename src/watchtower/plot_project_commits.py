@@ -64,6 +64,8 @@ for project, values in tqdm(grp_projects):
         exceptions.append(project)
         traceback.print_exception(None, e, e.__traceback__)
     # Save the figure
+    if not os.path.exists("build/images"):
+        os.makedirs("build/images")
     filename = os.path.join("build/images", project.lower() + ".png")
     fig.savefig(filename, bbox_inches='tight')
 

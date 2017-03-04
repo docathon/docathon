@@ -293,6 +293,7 @@ date,user,is_doc
 2017-02-28 20:44:51,jsta,False
 2017-02-28 20:01:56,jsta,False
 2017-02-28 18:30:19,jsta,True
+2017-03-03 15:26:26,jsta,False
 2017-02-28 18:24:41,jsta,False
 2017-02-28 17:10:08,jsta,False
 2017-03-03 14:29:35,jsta,False
@@ -367,6 +368,7 @@ date,user,is_doc
 2017-02-27 00:01:17,lmcinnes,False
 2017-02-27 16:51:48,mandli,False
 2017-02-27 16:51:48,mandli,False
+2017-03-03 14:47:02,minrk,False
 2017-03-03 14:20:17,minrk,False
 2017-03-03 14:20:17,minrk,False
 2017-03-02 19:17:05,minrk,False
@@ -476,6 +478,8 @@ date,user,is_doc
 2017-03-02 17:08:10,NelleV,False
 2017-03-02 05:33:08,NelleV,False
 2017-03-02 05:33:08,NelleV,False
+2017-03-03 15:14:39,ngoldbaum,False
+2017-03-03 15:14:39,ngoldbaum,False
 2017-03-01 19:54:41,ngoldbaum,False
 2017-03-01 19:54:41,ngoldbaum,False
 ,njamescouk,
@@ -536,6 +540,7 @@ date,user,is_doc
 2017-03-03 07:36:43,shubham0704,False
 2017-03-03 07:36:43,shubham0704,False
 2017-03-03 07:36:43,shubham0704,True
+2017-03-03 15:48:42,souravsingh,False
 2017-03-01 15:53:09,souravsingh,True
 2017-02-28 23:55:04,souravsingh,False
 2017-02-28 23:53:15,souravsingh,False
@@ -552,8 +557,6 @@ date,user,is_doc
 2017-02-27 15:15:24,souravsingh,False
 2017-02-26 20:07:14,souravsingh,True
 2017-02-26 19:35:50,souravsingh,False
-2017-02-26 15:29:39,souravsingh,False
-2017-02-26 15:28:15,souravsingh,True
 2017-02-28 17:37:27,stanczakdominik,True
 2017-02-28 17:37:27,stanczakdominik,False
 2017-03-03 02:12:30,varunu28,False
