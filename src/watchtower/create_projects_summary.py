@@ -80,17 +80,19 @@ project_template = "<a href='{project_url}'><img src='{project_image}' style='wi
 with open(filename, "w") as f:
     f.write(header_formatted)
     f.write('Docathon projects\n---\n')
-    repos_names = [github_org.lower().split('/')[-2:]
-                   for github_org in proj_info['github_org'].values
-                   if isinstance(github_org, str)]
+    repos_names = []
+    for ix, row in proj_info.iterrows():
+        if isinstance(row['github_org'], str):
+            org, repo = row['github_org'].split('/')[-2:]
+            name = row['name']
+            repos_names.append((name, org, repo))
     repos_names = np.array(repos_names)
-
     ixs_split = np.arange(len(repos_names))[::4][1:-1]
     repos_names = np.split(repos_names, ixs_split)
     for group in repos_names:
         f.write('&nbsp;&nbsp;-&nbsp;&nbsp;'.join(
-            ['[{org}/{repo}]({repo}.html)'.format(org=org, repo=repo.lower())
-             for org, repo in group]) + '<br />')
+            ['[{name}]({repo}.html)'.format(name=name, repo=repo.lower())
+             for name, org, repo in group]) + '<br />')
     f.write('\n')
     f.write('# Project leaders\n')
     f.write("<img src='../../images/project_summary.png' style='box-shadow: none; margin: auto' />\n")
