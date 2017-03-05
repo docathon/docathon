@@ -90,8 +90,8 @@ except OSError:
 db = GithubDatabase()
 projects = [ii.split('/') for ii in db.projects]
 groupby = 'weekday'
-start = '2017-02-20'
-stop = '2017-03-10'
+start = '2017-03-01'
+stop = '2017-03-11'
 exceptions = []
 all_dates = []
 for user, project in tqdm(projects):
@@ -103,7 +103,7 @@ for user, project in tqdm(projects):
         this_all_dates['project'] = project
         all_dates.append(this_all_dates)
     except Exception as e:
-        exceptions.append(project)
+        exceptions.append((user, project))
         traceback.print_exception(None, e, e.__traceback__)
 
 print('Exceptions: {}'.format(exceptions))

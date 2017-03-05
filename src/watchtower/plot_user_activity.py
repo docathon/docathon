@@ -93,12 +93,17 @@ plt.tight_layout()
 ax.figure.savefig(path_img, bbox_inches='tight')
 
 # Plot weekly user commits
+# Only plot the last 5 days
 n_users_weekly = 10
 y_max = 20
+n_days_plot = 7
 grp_date = df_week.groupby(level='date')
-n_dates = len(grp_date)
+ixs_plot = range(len(grp_date))[-n_days_plot:]
+n_dates = len(ixs_plot)
 fig, axs = plt.subplots(1, n_dates, figsize=(n_dates * 5, 5))
-for ax, (date, values) in zip(axs, grp_date):
+for ii, (ax, (date, values)) in enumerate(zip(axs, grp_date)):
+    if ii not in ixs_plot:
+        continue
     values = values.reset_index('date', drop=True)
     values = values.sort_values('doc', ascending=False)
     values = values.iloc[:n_users_weekly]

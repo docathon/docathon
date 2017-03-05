@@ -6,10 +6,11 @@ from watchtower.handlers_ import GithubDatabase
 db = GithubDatabase(auth='GITHUB_API')
 users = [ii for ii in db.users if len(ii) > 0]
 # Times for inclusion
-end = pd.datetime.now()
-include_last_n_days = 4
-delta = datetime.timedelta(days=include_last_n_days + 1)
-start = end - delta
+# end = pd.datetime.now()
+# include_last_n_days = 4
+# delta = datetime.timedelta(days=include_last_n_days + 1)
+start = '2017-03-01'
+end = '2017-03-11'
 print('Calculating user activity from {} to {}'.format(start, end))
 
 start, end = (pd.to_datetime(ii) for ii in [start, end])
