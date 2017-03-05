@@ -73,6 +73,7 @@ Here are some projects that have already signed up. See the full list at (projec
 * [Data Science Education Infrastructure](projects/connector-instructors.html)
 * [DIY](projects/diy.html)
 * [Clawpack](projects/clawpack.html)
+* [CARLsim3](projects/carlsim3.html)
 * [Bokeh](projects/bokeh.html)
  ---
 

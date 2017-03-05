@@ -36,7 +36,7 @@ date,all,doc,project
 2017-03-02,17,0,deeplearning4j
 2017-03-03,5,0,deeplearning4j
 2017-03-04,1,0,deeplearning4j
-2017-03-05,0,0,deeplearning4j
+2017-03-05,2,0,deeplearning4j
 2017-03-06,0,0,deeplearning4j
 2017-03-07,0,0,deeplearning4j
 2017-03-08,0,0,deeplearning4j
@@ -189,8 +189,8 @@ date,all,doc,project
 2017-03-01,0,0,watchtower
 2017-03-02,2,0,watchtower
 2017-03-03,6,0,watchtower
-2017-03-04,0,0,watchtower
-2017-03-05,0,0,watchtower
+2017-03-04,1,0,watchtower
+2017-03-05,1,0,watchtower
 2017-03-06,0,0,watchtower
 2017-03-07,0,0,watchtower
 2017-03-08,0,0,watchtower
@@ -212,7 +212,7 @@ date,all,doc,project
 2017-03-02,10,6,pandas
 2017-03-03,4,0,pandas
 2017-03-04,8,2,pandas
-2017-03-05,1,0,pandas
+2017-03-05,2,0,pandas
 2017-03-06,0,0,pandas
 2017-03-07,0,0,pandas
 2017-03-08,0,0,pandas
@@ -307,6 +307,17 @@ date,all,doc,project
 2017-03-09,0,0,Sylius
 2017-03-10,0,0,Sylius
 2017-03-11,0,0,Sylius
+2017-03-01,0,0,CARLsim3
+2017-03-02,0,0,CARLsim3
+2017-03-03,0,0,CARLsim3
+2017-03-04,0,0,CARLsim3
+2017-03-05,7,0,CARLsim3
+2017-03-06,0,0,CARLsim3
+2017-03-07,0,0,CARLsim3
+2017-03-08,0,0,CARLsim3
+2017-03-09,0,0,CARLsim3
+2017-03-10,0,0,CARLsim3
+2017-03-11,0,0,CARLsim3
 2017-03-01,0,0,pulse2percept
 2017-03-02,0,0,pulse2percept
 2017-03-03,0,0,pulse2percept
