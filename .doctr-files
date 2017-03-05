@@ -43,6 +43,7 @@
 ./pages/projects/images/hdbscan.png
 ./pages/projects/images/ipython.png
 ./pages/projects/images/julia.png
+./pages/projects/images/libraries.io.png
 ./pages/projects/images/matplotlib.png
 ./pages/projects/images/mne-python.png
 ./pages/projects/images/msnoise.png
@@ -64,6 +65,7 @@
 ./pages/projects/ipython.html
 ./pages/projects/julia.html
 ./pages/projects/jupyter.html
+./pages/projects/libraries.io.html
 ./pages/projects/matplotlib.html
 ./pages/projects/mne-python.html
 ./pages/projects/msnoise.html
