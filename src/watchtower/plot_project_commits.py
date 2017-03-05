@@ -12,9 +12,10 @@ import traceback
 
 today = pd.datetime.today()
 docathon_start = '2017-03-06'
+docathon_end = '2017-03-10'
 figsize = (8, 4)
 
-def plot_commits(all_dates, ylim=[0, 20]):
+def plot_commits(all_dates, ylim=[0, 20], figsize=(10, 5)):
 
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)
@@ -24,8 +25,9 @@ def plot_commits(all_dates, ylim=[0, 20]):
     ax.set_ylim(ylim)
 
     # Plot today
-    ax.axvline(today, ls='--', alpha=.5, lw=2, color='k')
-    ax.axvline(docathon_start, ls='--', alpha=.5, lw=2, color='r')
+    ax.axvline(today, ls='--', alpha=.5, lw=2, color='r')
+    ax.fill_between([docathon_start, docathon_end], *ax.get_ylim(),
+                    alpha=.1, color='k')
     ax.grid("off")
     ax.spines['right'].set_color('none')
     ax.spines['left'].set_color('none')
