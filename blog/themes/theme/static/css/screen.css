@@ -100,6 +100,7 @@ header, #wrapper {
   background-color: #f1f1f1;
   padding-top: 0.5em;
   padding-bottom: 0.3em;
+  text-align: center;
 }
 
 .agenda-banner .container {
