@@ -25,6 +25,7 @@
 ./pages/hosts/uwescience.html
 ./pages/participate.html
 ./pages/projects/bokeh.html
+./pages/projects/carlsim3.html
 ./pages/projects/clawpack.html
 ./pages/projects/cottoncandy.html
 ./pages/projects/data_science_education_infrastructure.html
@@ -34,6 +35,7 @@
 ./pages/projects/hdbscan.html
 ./pages/projects/henson.html
 ./pages/projects/images/bokeh.png
+./pages/projects/images/carlsim3.png
 ./pages/projects/images/clawpack.png
 ./pages/projects/images/connector-instructors.png
 ./pages/projects/images/cottoncandy.png
