@@ -99,3 +99,4 @@ ENV/
 blog/content/pages/projects/*
 src/data/*
 src/.users.csv
+src/ntbk/

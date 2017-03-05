@@ -86,6 +86,7 @@ with open(filename, "w") as f:
             org, repo = row['github_org'].split('/')[-2:]
             name = row['name']
             repos_names.append((name, org, repo))
+    import IPython; IPython.embed()
     repos_names = np.array(repos_names)
     ixs_split = np.arange(len(repos_names))[::4][1:-1]
     repos_names = np.split(repos_names, ixs_split)
