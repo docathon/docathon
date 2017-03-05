@@ -88,7 +88,7 @@ except OSError:
     pass
 
 db = GithubDatabase()
-projects = [ii.split('/') for ii in db.projects]
+projects = [ii.split('/')[-2:] for ii in db.projects]
 groupby = 'weekday'
 start = '2017-03-01'
 stop = '2017-03-11'

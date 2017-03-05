@@ -63,7 +63,7 @@ Here are some projects that have already signed up. See the full list at (projec
 * [Matplotlib](projects/matplotlib.html)
 * [MSNoise](projects/msnoise.html)
 * [MNE-python](projects/mne-python.html)
-* [Libraries.io](projects/.html)
+* [Libraries.io](projects/libraries.io.html)
 * [Jupyter](projects/notebook.html)
 * [Julia](projects/julia.html)
 * [IPython](projects/ipython.html)
