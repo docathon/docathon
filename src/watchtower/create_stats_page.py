@@ -28,7 +28,7 @@ filename = os.path.join('build', "stats.md")
 img_template = "<a href='{url}'><img src='{img_source}' style='width: 80%; box-shadow: none; margin: auto' /></a>\n"
 with open(filename, 'w') as ff:
     ff.write(header_index.format(now=now))
-    ff.write('# Projects\n')
+    ff.write('# [Projects](projects/projects.html)\n')
     ff.write(img_template.format(url='projects/projects.html', img_source='../images/project_summary.png'))
-    ff.write('# Users\n')
+    ff.write('# [Users](users.html)\n')
     ff.write(img_template.format(url='users.html', img_source='../images/users_all.png'))

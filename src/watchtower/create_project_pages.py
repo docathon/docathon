@@ -45,6 +45,8 @@ for ix, project in projects.iterrows():
     project_name = project['name']
     project_name_lc = project_name.lower().replace(" ", "_")
     filename = os.path.join(args.outdir, '{}.md'.format(repo.lower()))
+    if 'anteda' in repo:
+        import IPython; IPython.embed()
 
     # Find doc issues
     doc_issues = project['doc_issues']

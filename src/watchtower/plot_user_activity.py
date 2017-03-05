@@ -116,7 +116,7 @@ for ii, (ax, (date, values)) in enumerate(zip(axs, grp_date)):
 path_img = os.path.join(path_content, 'images', 'users_week.png')
 fig.savefig(path_img, bbox_inches='tight')
 
-img_text = "<img src='../images/{img_name}' style='box-shadow: none; margin: auto' />\n"
+img_text = "<img src='../images/{img_name}' alt='{img_name} style='box-shadow: none; margin: auto' />\n"
 with open(os.path.join(path_content, 'pages', 'users.md'), 'w') as ff:
     ff.write(header)
     ff.write(img_text.format(img_name='users_all.png'))

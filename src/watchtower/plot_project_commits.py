@@ -11,6 +11,7 @@ import pandas as pd
 import traceback
 
 today = pd.datetime.today()
+docathon_start = '2017-03-06'
 figsize = (8, 4)
 
 def plot_commits(all_dates, ylim=[0, 20]):
@@ -24,6 +25,7 @@ def plot_commits(all_dates, ylim=[0, 20]):
 
     # Plot today
     ax.axvline(today, ls='--', alpha=.5, lw=2, color='k')
+    ax.axvline(docathon_start, ls='--', alpha=.5, lw=2, color='r')
     ax.grid("off")
     ax.spines['right'].set_color('none')
     ax.spines['left'].set_color('none')

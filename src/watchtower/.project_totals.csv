@@ -212,7 +212,7 @@ date,all,doc,project
 2017-03-02,10,6,pandas
 2017-03-03,4,0,pandas
 2017-03-04,8,2,pandas
-2017-03-05,0,0,pandas
+2017-03-05,1,0,pandas
 2017-03-06,0,0,pandas
 2017-03-07,0,0,pandas
 2017-03-08,0,0,pandas
@@ -256,7 +256,7 @@ date,all,doc,project
 2017-03-02,4,2,scikit-learn
 2017-03-03,3,1,scikit-learn
 2017-03-04,7,0,scikit-learn
-2017-03-05,0,0,scikit-learn
+2017-03-05,1,0,scikit-learn
 2017-03-06,0,0,scikit-learn
 2017-03-07,0,0,scikit-learn
 2017-03-08,0,0,scikit-learn

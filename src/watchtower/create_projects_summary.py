@@ -76,7 +76,7 @@ fig.savefig('../../blog/content/images/project_summary.png', bbox_inches='tight'
 # Create a summary page
 filename = os.path.join('build', "projects.md")
 header_formatted = header_index.format(now=date.today().strftime("%Y-%m-%d"))
-project_template = "<a href='{project_url}'><img src='{project_image}' style='width: 48%; float:left; box-shadow: none; margin: auto' /></a>"
+project_template = "<a href='{project_url}'><img src='{project_image}' alt='{project_image}' style='width: 48%; float:left; box-shadow: none; margin: auto' /></a>"
 with open(filename, "w") as f:
     f.write(header_formatted)
     f.write('Docathon projects\n---\n')
@@ -95,7 +95,7 @@ with open(filename, "w") as f:
              for name, org, repo in group]) + '<br />')
     f.write('\n')
     f.write('# Project leaders\n')
-    f.write("<img src='../../images/project_summary.png' style='box-shadow: none; margin: auto' />\n")
+    f.write("<img src='../../images/project_summary.png' alt='project_summary' style='box-shadow: none; margin: auto' />\n")
     f.write('# Project contributions\n')
     for project_name in sorted_totals.index:
         path_img_read = 'build/images/{}.png'.format(project_name)

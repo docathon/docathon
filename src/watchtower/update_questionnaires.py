@@ -1,5 +1,8 @@
 """Update the project registration CSV with the latest version on dropbox"""
 import mne
+from watchtower._config import clear_data_home
+
+clear_data_home()
 
 # Projects
 url_proj = "https://www.dropbox.com/s/0xendp6g404ntzh/Docathon%20Project%20registration%20%28Responses%29%20-%20Form%20Responses%201.csv?dl=0"
