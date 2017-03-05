@@ -10,7 +10,7 @@ header = (
     "modified: {now}\n"
     "tags: projects, docathon\n"
     "category: info\n"
-    "slug: projects/{target}\n"
+    "slug: projects/{repo}\n"
     "authors: watchtower\n"
     "summary: {repo}\n"
     "status: hidden\n"
@@ -54,7 +54,6 @@ for ix, project in projects.iterrows():
     header_formatted = header.format(
         repo=repo,
         registration_date=timestamp,
-        target=project_name_lc,
         now=now,
         description=description)
 
