@@ -88,7 +88,7 @@ with open(filename, "w") as f:
             repos_names.append((name, org, repo))
 
     repos_names = np.array(repos_names)
-    ixs_split = np.arange(len(repos_names))[::4][1:-1]
+    ixs_split = np.arange(len(repos_names))[::5][1:-1]
     repos_names = np.split(repos_names, ixs_split)
     for group in repos_names:
         f.write('&nbsp;&nbsp;-&nbsp;&nbsp;'.join(
