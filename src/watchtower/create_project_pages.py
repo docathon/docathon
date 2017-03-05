@@ -15,7 +15,7 @@ header = (
     "summary: {repo}\n"
     "status: hidden\n"
     "\n"
-    "# {repo}\n"
+    "# {repo}\n\n"
       )
 
 parser = argparse.ArgumentParser()
@@ -75,7 +75,7 @@ for ix, project in projects.iterrows():
         if isinstance(url_doc, str) and len(url_doc) > 0:
             ff.write(
                 "* **Docathon project**: "
-                "[{url_doc}]({url_doc})\n".format(
+                "[{url_doc}]({url_doc})\n\n".format(
                     url_doc=url_doc))
 
         ff.write(
