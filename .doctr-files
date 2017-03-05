@@ -1,5 +1,6 @@
 ./archives/index.html
 ./author/chris-holdgraf.html
+./author/chris-holdgraf2.html
 ./author/nelle-varoquaux.html
 ./author/rebecca-barter.html
 ./authors/index.html
@@ -95,4 +96,5 @@
 ./theme/css/print.css
 ./theme/css/pygments.css
 ./theme/css/screen.css
+./three-steps-to-start.html
 ./why-host-a-docathon.html
