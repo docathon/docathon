@@ -28,6 +28,9 @@ def plot_commits(all_dates, ylim=[0, 20], figsize=(10, 5)):
     ax.axvline(today, ls='--', alpha=.5, lw=2, color='r')
     ax.fill_between([docathon_start, docathon_end], *ax.get_ylim(),
                     alpha=.1, color='k')
+    yticks = np.arange(0, ylim[1] + 1, 4).astype(int)
+    ax.set_yticks(yticks)
+    ax.set_yticklabels(yticks)
     ax.grid("off")
     ax.spines['right'].set_color('none')
     ax.spines['left'].set_color('none')
