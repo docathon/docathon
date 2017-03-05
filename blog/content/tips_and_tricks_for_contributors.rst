@@ -10,7 +10,6 @@ How to contribute to documentation as a new user
 :summary: Tips and tricks to help you contribute to documentation!
 
 
-
 Contributing to a project is often a daunting challenge. Each project has an
 idiosyncratic way of organizing folders, accepting contributions, writing
 examples, etc. Fortunately, documentation is a great way to get started. You
