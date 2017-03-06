@@ -16,6 +16,7 @@ python plot_user_activity.py
 # General stats page
 python create_stats_page.py
 python move_project_pages.py
+python plot_global_activity.py
 popd
 
 echo "Build blog"
