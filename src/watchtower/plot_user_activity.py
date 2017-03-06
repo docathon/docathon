@@ -4,6 +4,7 @@ import matplotlib
 matplotlib.use('agg')
 import matplotlib.pyplot as plt
 import os
+from datetime import date
 
 
 def format_axis(ax):
@@ -53,12 +54,14 @@ plot_type = 'doc'  # 'perc'
 n_plot = 30
 df = pd.read_csv('./.user_totals.csv', index_col=0)
 df.index = pd.to_datetime(df.index)
-date_min = np.min(df.index)
-date_max = np.max(df.index)
+date_min = pd.to_datetime('2017-03-03')
+date_max = pd.to_datetime(date.today())
+
 df = df.query('date != "NaT"')
 df = df.query('user not in @exclude')
 df['is_doc'] = df['is_doc'].astype(int)
 df = df.replace(np.nan, 0)
+df = df.query('date > @date_min and date < @date_max')
 all_commits = df.groupby('user').resample('D').\
     count()
 doc_commits = df.groupby('user').resample('D').sum().\

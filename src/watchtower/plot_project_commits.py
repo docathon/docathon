@@ -11,6 +11,7 @@ import pandas as pd
 import traceback
 
 today = pd.datetime.today()
+plot_start = '2017-03-03'
 docathon_start = '2017-03-06'
 docathon_end = '2017-03-10'
 figsize = (8, 4)
@@ -55,6 +56,7 @@ def plot_commits(all_dates, ylim=[0, 20], figsize=(10, 5)):
 
 commits = pd.read_csv('.project_totals.csv')
 commits['date'] = pd.to_datetime(commits['date'])
+commits = commits.query('date > @plot_start')
 grp_projects = commits.groupby('project')
 exceptions = []
 for project, values in tqdm(grp_projects):

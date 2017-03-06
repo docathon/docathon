@@ -44,7 +44,7 @@ header_index = (
 
 
 # Pull commit totals
-count_since = pd.to_datetime('2017-02-25')
+count_since = pd.to_datetime('2017-03-03')
 now = pd.to_datetime(date.today())
 
 proj_info = pd.read_csv('.project_info.csv')
