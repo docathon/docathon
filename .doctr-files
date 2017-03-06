@@ -25,6 +25,7 @@
 ./pages/hosts/uwescience.html
 ./pages/participate.html
 ./pages/projects/CARLsim3.html
+./pages/projects/CARLsim4.html
 ./pages/projects/MSNoise.html
 ./pages/projects/Omeka.html
 ./pages/projects/Sylius.html
@@ -39,6 +40,7 @@
 ./pages/projects/henson.html
 ./pages/projects/images/bokeh.png
 ./pages/projects/images/carlsim3.png
+./pages/projects/images/carlsim4.png
 ./pages/projects/images/clawpack.png
 ./pages/projects/images/connector-instructors.png
 ./pages/projects/images/cottoncandy.png
