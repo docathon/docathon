@@ -11,9 +11,9 @@
 &lt;h2&gt;Check out the docboards!&lt;/h2&gt;
 &lt;p&gt;My favorite thing about today is that you can totally see a bump in the documentation commits for our projects. You can check that out on our global activity board below:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Global Activity&lt;/strong&gt;&lt;/p&gt;
-&lt;img alt="" src="https://bids.github.io/docathon/images/global_activity.png" style="width: 500px;" /&gt;
+&lt;img alt="" src="https://bids.github.io/docathon/images/global_activity.png" style="width: 60%;" /&gt;
 &lt;p&gt;We should also give a shout out to our docstar projects that showed a big bump in activity today. Here's our docboard for project commits:&lt;/p&gt;
-&lt;img alt="" src="https://bids.github.io/docathon/images/project_summary.png" style="width: 500px;" /&gt;
+&lt;img alt="" src="https://bids.github.io/docathon/images/project_summary.png" style="width: 60%;" /&gt;
 &lt;p&gt;Three cheers for:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://pmagpy.github.io/"&gt;PMagPy&lt;/a&gt;, a python project for analyzing paleomagnetic data&lt;/li&gt;
@@ -21,7 +21,7 @@
 &lt;li&gt;&lt;a class="reference external" href="https://bids.github.io/docathon/pages/projects/Sylius.html"&gt;Sylius&lt;/a&gt;, a platform for e-commerce using PHP&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We also got a big bump in commits from individual users! Here's what everybody has been up to:&lt;/p&gt;
-&lt;img alt="" src="https://bids.github.io/docathon/images/users_all.png" style="width: 500px;" /&gt;
+&lt;img alt="" src="https://bids.github.io/docathon/images/users_all.png" style="width: 60%;" /&gt;
 &lt;p&gt;Let's give a shout out to this day's docstars &lt;strong&gt;anwarnunez&lt;/strong&gt;, &lt;strong&gt;willingc&lt;/strong&gt;, and &lt;strong&gt;swanson-hysell&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="keep-it-going"&gt;
