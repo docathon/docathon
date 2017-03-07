@@ -29,7 +29,7 @@ def plot_bar(df, ax, ylabel='Number commits'):
         ax.set_xticks(ixs)
         ax.set_xticklabels(i_data.index)
         plt.setp(ax.get_xticklabels(), rotation=45,
-                 horizontalalignment='right', fontsize=14)
+                 horizontalalignment='right', fontsize=18)
         if ylabel is not None:
             ax.set_ylabel(ylabel)
     return ax
@@ -109,7 +109,7 @@ for ii, (ax, idate) in enumerate(zip(axs, dates_plot)):
     mask = idate == days
     this_date = pd.to_datetime('2017-03-{:02}'.format(idate))
     this_day = df_week.loc[mask].reset_index('date', drop=True)
-    ax.set_title('Commits for {:%a}'.format(this_date))
+    ax.set_title('Commits for {:%a}'.format(this_date), fontsize=22)
     if len(this_day) == 0:
         # Skip if we have no commits yet
         ax.set_axis_off()
@@ -121,7 +121,7 @@ for ii, (ax, idate) in enumerate(zip(axs, dates_plot)):
         ax.bar(ixs, this_day[col].values)
         ax.set_xticks(ixs)
         ax.set_xticklabels(this_day.index, rotation=45,
-                           horizontalalignment='right')
+                           horizontalalignment='right', fontsize=18)
     format_axis(ax)
 
 path_img = os.path.join(path_content, 'images', 'users_week.png')

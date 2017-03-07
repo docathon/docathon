@@ -29,7 +29,7 @@ def plot_commits(all_dates, ylim=[0, 100], figsize=(10, 5)):
                     alpha=.1, color='k')
     yticks = np.arange(0, ylim[1] + 1, 10).astype(int)
     ax.set_yticks(yticks)
-    ax.set_yticklabels(yticks)
+    ax.set_yticklabels(yticks, fontsize=18)
     ax.grid("off")
     ax.spines['right'].set_color('none')
     ax.spines['left'].set_color('none')

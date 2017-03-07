@@ -92,7 +92,7 @@ ax.set_xticks(ixs)
 ax.set_xticklabels(projects_plot)
 ax.set_ylim([None, 50])
 plt.setp(ax.get_xticklabels(), rotation=45,
-         horizontalalignment='right', fontsize=16)
+         horizontalalignment='right', fontsize=18)
 format_axis(ax)
 ax.legend()
 ax.set_title('Commits from {:%D} to {:%D}'.format(count_since, now), fontsize=26)
