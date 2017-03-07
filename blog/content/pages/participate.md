@@ -45,6 +45,7 @@ Here are some projects that have already signed up. See the full list at (projec
 ---
 * [yt](projects/yt.html)
 * [watchtower](projects/watchtower.html)
+* [sunpy](projects/sunpy.html)
 * [scikit-learn](projects/scikit-learn.html)
 * [scikit-image](projects/scikit-image.html)
 * [quanteda_readtext](projects/readtext.html)
