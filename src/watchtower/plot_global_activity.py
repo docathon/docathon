@@ -17,7 +17,7 @@ docathon_end = '2017-03-10'
 figsize = (8, 4)
 
 
-def plot_commits(all_dates, ylim=[0, 50], figsize=(10, 5)):
+def plot_commits(all_dates, ylim=[0, 100], figsize=(10, 5)):
 
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)
