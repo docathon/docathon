@@ -78,9 +78,7 @@ for project, values in tqdm(grp_projects):
     # Save the figure
     if not os.path.exists("build/images"):
         os.makedirs("build/images")
-    print(project)
     filename = os.path.join("build/images", project + ".png")
-    print(filename)
     fig.savefig(filename, bbox_inches='tight')
 
 print('Finished building images.\nExceptions: {}'.format(exceptions))

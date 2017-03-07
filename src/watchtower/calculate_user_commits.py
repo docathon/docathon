@@ -14,7 +14,8 @@ start = '2017-03-01'
 end = '2017-03-11'
 print('Calculating user activity from {} to {}'.format(start, end))
 
-start, end = (pd.to_datetime(ii) for ii in [start, end])
+start, end = (pd.to_datetime(ii).tz_localize('UTC').tz_convert('US/Pacific')
+              for ii in [start, end])
 exceptions = []
 activity = []
 for user in users:
@@ -24,9 +25,11 @@ for user in users:
             activity.append((user, np.nan, np.nan))
             print('No commits for user: {}'.format(user))
             continue
+
         messages, dates = zip(*[(jj['message'], idate)
                               for idate, ii in user_db.PushEvent.iterrows()
                               for jj in ii['payload']['commits']])
+        dates = [ii.tz_localize('UTC').tz_convert('US/Pacific') for ii in dates]
         dates = np.array(dates)
         messages = np.array(messages)
         mask = (dates > start) * (dates <= end)

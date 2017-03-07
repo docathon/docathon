@@ -41,8 +41,10 @@ def count_doc_commits(user, project, search_queries=None,
             'No commits: load_commits returned None, '
             'or None like : %r' % commits)
 
+    commits.index = commits.index.tz_localize('UTC').tz_convert('US/Pacific')
+
     # Define full date range
-    all_dates = pd.date_range(start, stop, freq='D')
+    all_dates = pd.date_range(start, stop, freq='D').tz_localize('UTC').tz_convert('US/Pacific')
     all_dates = pd.DataFrame(np.zeros(all_dates.shape[0], dtype=int),
                              index=all_dates)
 
