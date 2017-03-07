@@ -57,6 +57,7 @@ def plot_commits(all_dates, ylim=[0, 20], figsize=(10, 5)):
 commits = pd.read_csv('.project_totals.csv')
 commits['date'] = pd.to_datetime(commits['date'])
 commits = commits.query('date > @plot_start')
+
 grp_projects = commits.groupby('project')
 exceptions = []
 for project, values in tqdm(grp_projects):
@@ -77,7 +78,9 @@ for project, values in tqdm(grp_projects):
     # Save the figure
     if not os.path.exists("build/images"):
         os.makedirs("build/images")
-    filename = os.path.join("build/images", project.lower() + ".png")
+    print(project)
+    filename = os.path.join("build/images", project + ".png")
+    print(filename)
     fig.savefig(filename, bbox_inches='tight')
 
 print('Finished building images.\nExceptions: {}'.format(exceptions))
