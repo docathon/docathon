@@ -11,7 +11,7 @@ import pandas as pd
 import traceback
 
 today = pd.datetime.today()
-plot_start = '2017-03-01'
+plot_start = '2017-03-02'
 docathon_start = '2017-03-06'
 docathon_end = '2017-03-10'
 figsize = (8, 4)
@@ -27,7 +27,7 @@ def plot_commits(all_dates, ylim=[0, 50], figsize=(10, 5)):
     # Plot today
     ax.fill_between([docathon_start, docathon_end], *ax.get_ylim(),
                     alpha=.1, color='k')
-    yticks = np.arange(0, ylim[1] + 1, 4).astype(int)
+    yticks = np.arange(0, ylim[1] + 1, 5).astype(int)
     ax.set_yticks(yticks)
     ax.set_yticklabels(yticks)
     ax.grid("off")
