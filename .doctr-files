@@ -30,6 +30,7 @@
 ./pages/projects/MSNoise.html
 ./pages/projects/Omeka.html
 ./pages/projects/Sylius.html
+./pages/projects/academicpages.github.io.html
 ./pages/projects/bokeh.html
 ./pages/projects/clawpack.html
 ./pages/projects/connector-instructors.html
@@ -37,6 +38,7 @@
 ./pages/projects/deeplearning4j.html
 ./pages/projects/diy.html
 ./pages/projects/galaxy.html
+./pages/projects/getorg.html
 ./pages/projects/hdbscan.html
 ./pages/projects/henson.html
 ./pages/projects/images/CARLsim3.png
@@ -44,6 +46,7 @@
 ./pages/projects/images/MSNoise.png
 ./pages/projects/images/Omeka.png
 ./pages/projects/images/Sylius.png
+./pages/projects/images/academicpages.github.io.png
 ./pages/projects/images/bokeh.png
 ./pages/projects/images/clawpack.png
 ./pages/projects/images/connector-instructors.png
