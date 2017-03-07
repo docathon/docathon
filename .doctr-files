@@ -49,6 +49,7 @@
 ./pages/projects/images/diy.png
 ./pages/projects/images/galaxy.png
 ./pages/projects/images/hdbscan.png
+./pages/projects/images/henson.png
 ./pages/projects/images/ipython.png
 ./pages/projects/images/julia.png
 ./pages/projects/images/libraries.io.png
@@ -68,6 +69,7 @@
 ./pages/projects/images/scikit-learn.png
 ./pages/projects/images/scipy.png
 ./pages/projects/images/sncosmo.png
+./pages/projects/images/sunpy.png
 ./pages/projects/images/sylius.png
 ./pages/projects/images/watchtower.png
 ./pages/projects/ipython.html
@@ -88,6 +90,7 @@
 ./pages/projects/scikit-learn.html
 ./pages/projects/scipy.html
 ./pages/projects/sncosmo.html
+./pages/projects/sunpy.html
 ./pages/projects/watchtower.html
 ./pages/projects/yt.html
 ./pages/resources.html
