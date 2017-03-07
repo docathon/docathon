@@ -1,4 +1,15 @@
 date,all,doc,project
+2017-03-01,0,0,academicpages.github.io
+2017-03-02,0,0,academicpages.github.io
+2017-03-03,0,0,academicpages.github.io
+2017-03-04,0,0,academicpages.github.io
+2017-03-05,0,0,academicpages.github.io
+2017-03-06,0,0,academicpages.github.io
+2017-03-07,0,0,academicpages.github.io
+2017-03-08,0,0,academicpages.github.io
+2017-03-09,0,0,academicpages.github.io
+2017-03-10,0,0,academicpages.github.io
+2017-03-11,0,0,academicpages.github.io
 2017-03-01,7,1,bokeh
 2017-03-02,3,0,bokeh
 2017-03-03,1,0,bokeh
@@ -170,7 +181,7 @@ date,all,doc,project
 2017-03-04,1,0,matplotlib
 2017-03-05,2,1,matplotlib
 2017-03-06,3,2,matplotlib
-2017-03-07,0,0,matplotlib
+2017-03-07,1,1,matplotlib
 2017-03-08,0,0,matplotlib
 2017-03-09,0,0,matplotlib
 2017-03-10,0,0,matplotlib
@@ -236,7 +247,7 @@ date,all,doc,project
 2017-03-04,2,0,pmagpy
 2017-03-05,1,0,pmagpy
 2017-03-06,16,11,pmagpy
-2017-03-07,3,3,pmagpy
+2017-03-07,10,10,pmagpy
 2017-03-08,0,0,pmagpy
 2017-03-09,0,0,pmagpy
 2017-03-10,0,0,pmagpy
