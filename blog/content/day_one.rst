@@ -25,12 +25,12 @@ My favorite thing about today is that you can totally see a bump in the document
 **Global Activity**
 
 .. image:: https://bids.github.io/docathon/images/global_activity.png
-  :width: 500px
+  :width: 60%
 
 We should also give a shout out to our docstar projects that showed a big bump in activity today. Here's our docboard for project commits:
 
 .. image:: https://bids.github.io/docathon/images/project_summary.png
-  :width: 500px
+  :width: 60%
 
 Three cheers for:
 
@@ -41,7 +41,7 @@ Three cheers for:
 We also got a big bump in commits from individual users! Here's what everybody has been up to:
 
 .. image:: https://bids.github.io/docathon/images/users_all.png
-  :width: 500px
+  :width: 60%
 
 Let's give a shout out to this day's docstars **anwarnunez**, **willingc**, and **swanson-hysell**.
 
