@@ -17,7 +17,7 @@ docathon_end = '2017-03-10'
 figsize = (8, 4)
 
 
-def plot_commits(all_dates, ylim=[0, 20], figsize=(10, 5)):
+def plot_commits(all_dates, ylim=[0, 25], figsize=(10, 5)):
 
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)
@@ -51,7 +51,6 @@ def plot_commits(all_dates, ylim=[0, 20], figsize=(10, 5)):
     ax.legend(loc=1)
     ax.set_title(project, fontweight="bold", fontsize=22)
     plt.tight_layout()
-    plt.autoscale(tight=True)
     return fig, ax
 
 commits = pd.read_csv('.project_totals.csv')
