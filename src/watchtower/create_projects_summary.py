@@ -64,7 +64,7 @@ for idate, ax in zip(plt_dates, axs):
     days = commit_totals.index.day
     this_commits = commit_totals.loc[days == idate]
     this_date = pd.to_datetime('2017-03-{:02}'.format(idate))
-    ax.set_title('Commits for {:%a}'.format(this_date))
+    ax.set_title('Commits for {:%a}'.format(this_date), fontsize=22)
     if len(this_commits) == 0:
         ax.set_axis_off()
         continue
@@ -77,7 +77,8 @@ for idate, ax in zip(plt_dates, axs):
     format_axis(ax)
     ax.set_xticks(ixs)
     ax.set_xticklabels(this_commits.index)
-    plt.setp(ax.get_xticklabels(), rotation=45, horizontalalignment='right')
+    plt.setp(ax.get_xticklabels(), rotation=45, horizontalalignment='right',
+             fontsize=18)
 fig.savefig('../../blog/content/images/project_week.png', bbox_inches='tight')
 
 # --- Create leaderboard PNG ---
