@@ -36,3 +36,8 @@ div.page h3 {
 a.banner_link {
     font-size: 110% !important;
 }
+
+img.docathon_image {
+    box-shadow: none;
+    margin: auto
+}

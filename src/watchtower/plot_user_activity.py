@@ -36,7 +36,7 @@ def plot_bar(df, ax, ylabel='Number commits'):
 
 
 header = (
-    "title: User Leaderboard\n"
+    "title: Users\n"
     "date: 2017-03-01\n"
     "modified: 2017-03-01\n"
     "tags: users, docathon\n"
@@ -44,41 +44,36 @@ header = (
     "slug: users\n"
     "authors: watchtower\n"
     "summary: A page to celebrate user contributions for the docathon\n"
-    "status: hidden\n"
     "\n"
       )
 
-# Load data and drop admins
-exclude = ['Carreau', 'NelleV', 'choldgraf']
+# --- Load data ---
+exclude = ['NelleV', 'choldgraf']  # if we want to drop admins
 plot_type = 'doc'  # 'perc'
 n_plot = 30
 df = pd.read_csv('./.user_totals.csv', index_col=0)
 df.index = pd.to_datetime(df.index)
-date_min = pd.to_datetime('2017-03-03')
-date_max = pd.to_datetime(date.today())
+date_min = pd.to_datetime('2017-03-06')
+date_max = pd.to_datetime(date.today()).tz_localize('US/Pacific')
 
+# --- Choose a date ---
 df = df.query('date != "NaT"')
 df = df.query('user not in @exclude')
 df['is_doc'] = df['is_doc'].astype(int)
 df = df.replace(np.nan, 0)
-df = df.query('date > @date_min and date < @date_max')
+df = df.query('date >= @date_min and date <= @date_max')
 all_commits = df.groupby('user').resample('D').\
     count()
 doc_commits = df.groupby('user').resample('D').sum().\
     replace('NaN', 0).astype(int)
 
+# --- Plot leaderboard ---
 total_doc = doc_commits.unstack('date').sum(1).astype(int)
 total_doc.name = 'doc'
 total_all = all_commits.unstack('date').sum(1).astype(int)
 total_all.name = 'all'
 df = pd.concat([total_doc, total_all], axis=1).\
     sort_values('doc', ascending=False)
-
-# Now join together the totals so that we can plot by day
-all_commits = all_commits['user'].to_frame('all')
-df_week = pd.merge(all_commits, doc_commits, how='outer',
-                   left_index=True, right_index=True)
-df_week.columns = ['all', 'doc']
 
 # Plotting
 fig, ax = plt.subplots(figsize=(10, 5))
@@ -95,31 +90,44 @@ path_img = os.path.join(path_content, 'images', 'users_all.png')
 plt.tight_layout()
 ax.figure.savefig(path_img, bbox_inches='tight')
 
-# Plot weekly user commits
+# --- Plot weekly user commits ---
+# Now join together the totals so that we can plot by day
+all_commits = all_commits['user'].to_frame('all')
+df_week = pd.merge(all_commits, doc_commits, how='outer',
+                   left_index=True, right_index=True)
+df_week.columns = ['all', 'doc']
+days = pd.to_datetime(df_week.index.get_level_values('date')).day
+
 # Only plot the last 5 days
 n_users_weekly = 10
 y_max = 20
-n_days_plot = 7
-grp_date = df_week.groupby(level='date')
-ixs_plot = range(len(grp_date))[-n_days_plot:]
+dates_plot = [6, 7, 8, 9, 10]
+ixs_plot = range(len(dates_plot))
 n_dates = len(ixs_plot)
-fig, axs = plt.subplots(1, n_dates, figsize=(n_dates * 5, 5))
-for ii, (ax, (date, values)) in enumerate(zip(axs, grp_date)):
-    if ii not in ixs_plot:
+fig, axs = plt.subplots(1, n_dates, figsize=(n_dates * 5, 5), sharey=True)
+for ii, (ax, idate) in enumerate(zip(axs, dates_plot)):
+    mask = idate == days
+    this_date = pd.to_datetime('2017-03-{:02}'.format(idate))
+    this_day = df_week.loc[mask].reset_index('date', drop=True)
+    ax.set_title('Commits for {:%a}'.format(this_date))
+    if len(this_day) == 0:
+        # Skip if we have no commits yet
+        ax.set_axis_off()
         continue
-    values = values.reset_index('date', drop=True)
-    values = values.sort_values('doc', ascending=False)
-    values = values.iloc[:n_users_weekly]
-    if len(values) != 0:
-        ax = plot_bar(values, ax)
-        ax.set_ylim([0, y_max])
+    this_day = this_day.sort_values('doc', ascending=False)
+    this_day = this_day.iloc[:n_users_weekly]
+    ixs = range(this_day.shape[0])
+    for col in this_day.columns:
+        ax.bar(ixs, this_day[col].values)
+        ax.set_xticks(ixs)
+        ax.set_xticklabels(this_day.index, rotation=45,
+                           horizontalalignment='right')
     format_axis(ax)
-    ax.set_title('{:%a (%b %d)}'.format(date))
 
 path_img = os.path.join(path_content, 'images', 'users_week.png')
 fig.savefig(path_img, bbox_inches='tight')
 
-img_text = "<img src='../images/{img_name}' alt='{img_name} style='box-shadow: none; margin: auto' />\n"
+img_text = "<img src='../images/{img_name}' class='docathon_image' alt='{img_name}' />\n"
 with open(os.path.join(path_content, 'pages', 'users.md'), 'w') as ff:
     ff.write(header)
     ff.write(img_text.format(img_name='users_all.png'))
