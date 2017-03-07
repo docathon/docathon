@@ -39,9 +39,12 @@
 ./pages/projects/galaxy.html
 ./pages/projects/hdbscan.html
 ./pages/projects/henson.html
+./pages/projects/images/CARLsim3.png
+./pages/projects/images/CARLsim4.png
+./pages/projects/images/MSNoise.png
+./pages/projects/images/Omeka.png
+./pages/projects/images/Sylius.png
 ./pages/projects/images/bokeh.png
-./pages/projects/images/carlsim3.png
-./pages/projects/images/carlsim4.png
 ./pages/projects/images/clawpack.png
 ./pages/projects/images/connector-instructors.png
 ./pages/projects/images/cottoncandy.png
@@ -55,9 +58,7 @@
 ./pages/projects/images/libraries.io.png
 ./pages/projects/images/matplotlib.png
 ./pages/projects/images/mne-python.png
-./pages/projects/images/msnoise.png
 ./pages/projects/images/notebook.png
-./pages/projects/images/omeka.png
 ./pages/projects/images/pandas.png
 ./pages/projects/images/pmagpy.png
 ./pages/projects/images/pomegranate.png
@@ -70,7 +71,6 @@
 ./pages/projects/images/scipy.png
 ./pages/projects/images/sncosmo.png
 ./pages/projects/images/sunpy.png
-./pages/projects/images/sylius.png
 ./pages/projects/images/watchtower.png
 ./pages/projects/ipython.html
 ./pages/projects/julia.html
