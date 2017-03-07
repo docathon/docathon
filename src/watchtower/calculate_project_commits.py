@@ -8,7 +8,8 @@ import traceback
 
 
 def count_doc_commits(user, project, search_queries=None,
-                      groupby='month', start='2017-01-01', stop=None):
+                      groupby='month', start='2017-01-01', branch=None,
+                      stop=None):
     """
     Parameters
     ----------
@@ -33,7 +34,7 @@ def count_doc_commits(user, project, search_queries=None,
     else:
         stop = pd.to_datetime(stop)
 
-    commits = db.load(user, project).commits
+    commits = db.load(user, project, branch=branch).commits
     if commits is None:
         return None, None
     if commits is None or not len(commits):
@@ -82,6 +83,8 @@ try:
 except OSError:
     pass
 
+branches = {'pycortex': 'glrework-merged'}
+
 db = GithubDatabase()
 projects = [ii.split('/')[-2:] for ii in db.projects]
 groupby = 'weekday'
@@ -91,8 +94,10 @@ exceptions = []
 all_dates = []
 for user, project in tqdm(projects):
     try:
+        branch = branches.get(project, None)
         this_all_dates = count_doc_commits(
-            user, project, groupby=groupby, start=start, stop=stop)
+            user, project, groupby=groupby, start=start, stop=stop,
+            branch=branch)
 
         # Collect data so we can save it
         this_all_dates['project'] = project

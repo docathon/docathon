@@ -1,5 +1,6 @@
 import argparse
 import pandas as pd
+import numpy as np
 from watchtower import commits_, issues_
 from watchtower._config import get_API_token
 
@@ -29,22 +30,24 @@ since = args.since
 # Load data from google drive questionnaire
 projects = pd.read_csv(args.filename)
 # Pull user/project info
-projects = projects['Github organization and project (if applicable)'].values
+columns = ['Github organization and project (if applicable)', 'branch']
+projects = projects[columns].values
 # Remove missing projects
-projects = [ii.split('/') for ii in projects if isinstance(ii, str)]
+projects = [ii.split('/') + [br] for ii, br in projects if isinstance(ii, str)]
 # Remove non GH projects
-projects = [ii for ii in projects if len(ii) == 2]
+projects = [ii for ii in projects if len(ii) == 3]
 
 # Iterate projects and retrieve its latest info
 print('Updating commits for %s projects' % len(projects))
 exceptions = []
-for user, project in projects:
+for user, project, branch in projects:
     try:
+        branch = None if isinstance(branch, float) else branch
         commits_.update_commits(user, project, auth,
-                                since=since)
+                                since=since, branch=branch)
         issues_.update_issues(user, project, auth,
                               since=since, state='all')
-    except:
+    except Exception as e:
         exceptions.append(project)
 
 print('Finished updating commits.\nFailed for: {}'.format(exceptions))
