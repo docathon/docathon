@@ -92,7 +92,7 @@ with open(filename, "w") as f:
     repos_names = np.split(repos_names, ixs_split)
     for group in repos_names:
         f.write('&nbsp;&nbsp;-&nbsp;&nbsp;'.join(
-            ['[{name}]({repo}.html)'.format(name=name, repo=repo.lower())
+            ['[{name}]({repo}.html)'.format(name=name, repo=repo)
              for name, org, repo in group]) + '<br />')
     f.write('\n')
     f.write('# Project leaders\n')
@@ -106,5 +106,5 @@ with open(filename, "w") as f:
         path_img_write = 'images/{}.png'.format(project_name)
         project_image = path_img_write
         f.write(project_template.format(project_image=project_image,
-                project_url=project_name.lower()+".html"))
+                project_url=project_name+".html"))
 print('Finished creating projects summary...')
