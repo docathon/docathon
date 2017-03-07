@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import datetime
 from watchtower.handlers_ import GithubDatabase
+from watchtower.commits_ import find_word_in_string
 
 db = GithubDatabase(auth='GITHUB_API')
 users = [ii for ii in db.users if len(ii) > 0]
@@ -34,11 +35,7 @@ for user in users:
         for message, date in zip(messages, dates):
             search_queries = ['DOC', 'docs', 'docstring',
                               'documentation', 'docathon']
-            is_doc = 0
-            for query in search_queries:
-                if message.find(query) != -1:
-                    is_doc += 1
-            is_doc = is_doc > 0
+            is_doc = find_word_in_string(message, search_queries)
             activity.append((user, date, is_doc))
 
     except Exception as e:

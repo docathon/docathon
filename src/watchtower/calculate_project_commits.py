@@ -1,6 +1,7 @@
 import numpy as np
 import os
 from watchtower import GithubDatabase
+from watchtower.commits_ import find_word_in_string
 from tqdm import tqdm
 import pandas as pd
 import traceback
@@ -46,8 +47,7 @@ def count_doc_commits(user, project, search_queries=None,
                              index=all_dates)
 
     # Remove commits from the past we don't want
-    mask_since = (commits.index > start) * (commits.index < stop)
-    commits = commits[mask_since]
+    commits = commits.query('date > @start and date < @stop')
     if len(commits) == 0:
         # In case no commits for this project
         all_dates = all_dates.drop(0, axis=1).astype(int)
@@ -55,15 +55,8 @@ def count_doc_commits(user, project, search_queries=None,
         all_dates['doc'] = 0
         return all_dates
 
-    # Find commits that match our queries
-    mask_doc = np.zeros(commits.shape[0])
-    for query in search_queries:
-        # This is a really hacky way to do this but python keeps giving me errors
-        for ix, message in enumerate(commits['message'].values):
-            if message.find(query) != -1:
-                mask_doc[ix] += 1
-    mask_doc = np.array(mask_doc) > 0
-    commits['is_doc'] = mask_doc
+    commits.loc[:, 'is_doc'] = commits['message'].apply(
+        find_word_in_string, args=(search_queries,))
 
     # Tally the total number vs. doc-related commits
     commits_doc = commits['is_doc'].resample('D').sum()
