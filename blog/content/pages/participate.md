@@ -72,6 +72,7 @@ Here are some projects that have already signed up. See the full list at (projec
 * [Julia](projects/julia.html)
 * [IPython](projects/ipython.html)
 * [Henson](projects/henson.html)
+* [Galaxy Hub](projects/galaxy-hub.html)
 * [Galaxy](projects/galaxy.html)
 * [Deeplearning4j](projects/deeplearning4j.html)
 * [Data Science Education Infrastructure](projects/connector-instructors.html)
