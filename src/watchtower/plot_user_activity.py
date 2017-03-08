@@ -25,7 +25,8 @@ def plot_bar(df, ax, ylabel='Number commits'):
     for i_type in ['all', 'doc']:
         i_data = df.iloc[:n_plot][i_type]
         ixs = range(i_data.shape[0])
-        ax.bar(ixs, i_data.values, label=i_type)
+        color = '#f44265' if i_type == 'doc' else None
+        ax.bar(ixs, i_data.values, label=i_type, color=color)
         ax.set_xticks(ixs)
         ax.set_xticklabels(i_data.index)
         plt.setp(ax.get_xticklabels(), rotation=45,

@@ -98,7 +98,8 @@ fig, ax = plt.subplots(figsize=(10, 5))
 for column in sorted_totals.columns:
     ixs = range(n_plot)
     projects_plot = sorted_totals.index[:n_plot]
-    ax.bar(ixs, sorted_totals.iloc[:n_plot][column], label=column)
+    color = '#f44265' if column == 'doc' else None
+    ax.bar(ixs, sorted_totals.iloc[:n_plot][column], label=column, color=color)
 
 ax.set_xticks(ixs)
 ax.set_xticklabels(projects_plot)
