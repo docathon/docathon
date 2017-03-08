@@ -39,6 +39,7 @@
 ./pages/projects/cottoncandy.html
 ./pages/projects/deeplearning4j.html
 ./pages/projects/diy.html
+./pages/projects/galaxy-hub.html
 ./pages/projects/galaxy.html
 ./pages/projects/getorg.html
 ./pages/projects/hdbscan.html
@@ -54,7 +55,8 @@
 ./pages/projects/images/cottoncandy.png
 ./pages/projects/images/deeplearning4j.png
 ./pages/projects/images/diy.png
-./pages/projects/images/galaxy.png
+./pages/projects/images/galaxy-hub.png
+./pages/projects/images/getorg.png
 ./pages/projects/images/hdbscan.png
 ./pages/projects/images/henson.png
 ./pages/projects/images/ipython.png
