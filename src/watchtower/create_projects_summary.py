@@ -84,7 +84,8 @@ for idate, ax in zip(plt_dates, axs):
     this_commits = this_commits.iloc[:n_week_plot]
     ixs = range(len(this_commits))
     for col in this_commits.columns:
-        ax.bar(ixs, this_commits[col].values)
+        color = '#f44265' if col == 'doc' else None
+        ax.bar(ixs, this_commits[col].values, color=color)
     format_axis(ax)
     ax.set_xticks(ixs)
     ax.set_xticklabels(this_commits.index)

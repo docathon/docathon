@@ -128,7 +128,8 @@ for ii, (ax, idate) in enumerate(zip(axs, dates_plot)):
     this_day = this_day.iloc[:n_users_weekly]
     ixs = range(this_day.shape[0])
     for col in this_day.columns:
-        ax.bar(ixs, this_day[col].values)
+        color = '#f44265' if col == 'doc' else None
+        ax.bar(ixs, this_day[col].values, color=color)
         ax.set_xticks(ixs)
         ax.set_xticklabels(this_day.index, rotation=45,
                            horizontalalignment='right', fontsize=18)
