@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import datetime
 from watchtower.handlers_ import GithubDatabase
+from watchtower.commits_ import find_word_in_string
 
 db = GithubDatabase(auth='GITHUB_API')
 users = [ii for ii in db.users if len(ii) > 0]
@@ -13,7 +14,8 @@ start = '2017-03-01'
 end = '2017-03-11'
 print('Calculating user activity from {} to {}'.format(start, end))
 
-start, end = (pd.to_datetime(ii) for ii in [start, end])
+start, end = (pd.to_datetime(ii).tz_localize('UTC').tz_convert('US/Pacific')
+              for ii in [start, end])
 exceptions = []
 activity = []
 for user in users:
@@ -23,9 +25,17 @@ for user in users:
             activity.append((user, np.nan, np.nan))
             print('No commits for user: {}'.format(user))
             continue
+
         messages, dates = zip(*[(jj['message'], idate)
                               for idate, ii in user_db.PushEvent.iterrows()
                               for jj in ii['payload']['commits']])
+        dates = list(dates)
+
+        for ii, idate in enumerate(dates):
+            if idate.tzinfo is None:
+                idate = idate.tz_localize('UTC')
+            idate = idate.tz_convert('US/Pacific')
+            dates[ii] = idate
         dates = np.array(dates)
         messages = np.array(messages)
         mask = (dates > start) * (dates <= end)
@@ -33,12 +43,8 @@ for user in users:
         dates = dates[mask]
         for message, date in zip(messages, dates):
             search_queries = ['DOC', 'docs', 'docstring',
-                              'documentation', 'docathon']
-            is_doc = 0
-            for query in search_queries:
-                if message.find(query) != -1:
-                    is_doc += 1
-            is_doc = is_doc > 0
+                              'documentation', 'docathon', 'readme', 'guide', 'tutorial']
+            is_doc = find_word_in_string(message, search_queries)
             activity.append((user, date, is_doc))
 
     except Exception as e:

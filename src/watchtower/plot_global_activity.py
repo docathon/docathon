@@ -11,7 +11,7 @@ import pandas as pd
 import traceback
 
 today = pd.datetime.today()
-plot_start = '2017-03-03'
+plot_start = '2017-03-02'
 docathon_start = '2017-03-06'
 docathon_end = '2017-03-10'
 figsize = (8, 4)
@@ -26,21 +26,19 @@ def parse_dates(dates):
     return pd.to_datetime(dates)
 
 
-def plot_commits(all_dates, ylim=[0, 25], figsize=(10, 5)):
+def plot_commits(all_dates, ylim=[0, 100], figsize=(10, 5)):
 
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)
-    for label in all_dates.columns:
-        ax.bar(all_dates.index.to_pydatetime(), all_dates[label].values,
-               label=label)
+    ax.bar(all_dates.index.to_pydatetime(), all_dates.values)
     ax.set_ylim(ylim)
 
     # Plot today
     ax.fill_between([docathon_start, docathon_end], *ax.get_ylim(),
                     alpha=.1, color='k')
-    yticks = np.arange(0, ylim[1] + 1, 4).astype(int)
+    yticks = np.arange(0, ylim[1] + 1, 10).astype(int)
     ax.set_yticks(yticks)
-    ax.set_yticklabels(yticks)
+    ax.set_yticklabels(yticks, fontsize=18)
     ax.grid("off")
     ax.spines['right'].set_color('none')
     ax.spines['left'].set_color('none')
@@ -57,36 +55,19 @@ def plot_commits(all_dates, ylim=[0, 25], figsize=(10, 5)):
     ax.set_yticks(yticks)
     ax.set_ylim(ylim)
 
-    ax.legend(loc=1)
-    ax.set_title(project, fontweight="bold", fontsize=22)
     plt.tight_layout()
+    plt.autoscale(tight=True)
     return fig, ax
 
 commits = pd.read_csv('.project_totals.csv')
 commits['date'] = parse_dates(commits['date'])
 commits = commits.query('date > @plot_start')
+all_commits = commits.groupby('date').sum()['doc']
+fig, ax = plot_commits(all_commits, figsize=figsize)
+ax.set_title('Docathon activity')
+ax.set_ylabel('Number of doc commits')
 
-grp_projects = commits.groupby('project')
-exceptions = []
-for project, values in tqdm(grp_projects):
-    try:
-        values = values.set_index('date').drop('project', axis=1)
-        fig, ax = plot_commits(values)
-        if fig is None:
-            exceptions.append(project)
-            continue
-        plt.close(fig)
-    except Exception as e:
-        fig, ax = plot_commits(values, figsize=figsize)
-        ax.set_title(project, fontweight="bold", fontsize=22)
-        ax.text(.5, .5, 'No info for project\n{}'.format(project),
-                horizontalalignment='center', fontsize=16)
-        exceptions.append(project)
-        traceback.print_exception(None, e, e.__traceback__)
-    # Save the figure
-    if not os.path.exists("build/images"):
-        os.makedirs("build/images")
-    filename = os.path.join("build/images", project + ".png")
-    fig.savefig(filename, bbox_inches='tight')
-
-print('Finished building images.\nExceptions: {}'.format(exceptions))
+# Save the figure
+filename = os.path.join('..', '..', 'blog', 'content', 'images', "global_activity.png")
+fig.savefig(filename, bbox_inches='tight')
+print('Finished global activity!')

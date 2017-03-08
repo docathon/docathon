@@ -21,6 +21,15 @@ def format_axis(ax):
     plt.tight_layout()
 
 
+def parse_dates(dates):
+    dates = list(dates)
+    for ii, iindex in enumerate(dates):
+        if isinstance(iindex, str):
+            dates[ii] = iindex.split(' ')[0]
+
+    return pd.to_datetime(dates)
+
+
 # Now create one page for all the projects
 header_index = (
     "Title: Projects\n"
@@ -44,18 +53,46 @@ header_index = (
 
 
 # Pull commit totals
-count_since = pd.to_datetime('2017-03-03')
+count_since = pd.to_datetime('2017-03-06')
 now = pd.to_datetime(date.today())
 
 proj_info = pd.read_csv('.project_info.csv')
 proj_info['name'] = proj_info['name'].str.lower()
 proj_info = proj_info.sort_values('name')
 
-commit_totals = pd.read_csv('.project_totals.csv', index_col=0, parse_dates=True)
-sorted_totals = commit_totals.query('date > @count_since')
+commit_totals = pd.read_csv('.project_totals.csv', index_col=0)
+commit_totals.index = parse_dates(commit_totals.index)
+commit_totals.index.name = 'date'
+sorted_totals = commit_totals.query('date >= @count_since')
 sorted_totals = sorted_totals.groupby('project').sum().sort_values('doc', ascending=False)
 
-# Create leaderboard PNG
+# --- Plot weekly commits ---
+n_week_plot = 10
+plt_dates = [6, 7, 8, 9, 10]
+fig, axs = plt.subplots(1, len(plt_dates), figsize=(5 * len(plt_dates), 5),
+                        sharey=True)
+for idate, ax in zip(plt_dates, axs):
+    days = commit_totals.index.day
+    this_commits = commit_totals.loc[days == idate]
+    this_date = pd.to_datetime('2017-03-{:02}'.format(idate))
+    ax.set_title('Commits for {:%a}'.format(this_date), fontsize=22)
+    if len(this_commits) == 0:
+        ax.set_axis_off()
+        continue
+    this_commits = this_commits.groupby('project').sum().\
+        sort_values('doc', ascending=False)
+    this_commits = this_commits.iloc[:n_week_plot]
+    ixs = range(len(this_commits))
+    for col in this_commits.columns:
+        ax.bar(ixs, this_commits[col].values)
+    format_axis(ax)
+    ax.set_xticks(ixs)
+    ax.set_xticklabels(this_commits.index)
+    plt.setp(ax.get_xticklabels(), rotation=45, horizontalalignment='right',
+             fontsize=18)
+fig.savefig('../../blog/content/images/project_week.png', bbox_inches='tight')
+
+# --- Create leaderboard PNG ---
 n_plot = 20
 fig, ax = plt.subplots(figsize=(10, 5))
 for column in sorted_totals.columns:
@@ -67,16 +104,16 @@ ax.set_xticks(ixs)
 ax.set_xticklabels(projects_plot)
 ax.set_ylim([None, 50])
 plt.setp(ax.get_xticklabels(), rotation=45,
-         horizontalalignment='right', fontsize=16)
+         horizontalalignment='right', fontsize=18)
 format_axis(ax)
 ax.legend()
 ax.set_title('Commits from {:%D} to {:%D}'.format(count_since, now), fontsize=26)
 fig.savefig('../../blog/content/images/project_summary.png', bbox_inches='tight')
 
-# Create a summary page
+# --- Create a summary page ---
 filename = os.path.join('build', "projects.md")
 header_formatted = header_index.format(now=date.today().strftime("%Y-%m-%d"))
-project_template = "<a href='{project_url}'><img src='{project_image}' alt='{project_image}' style='width: 48%; float:left; box-shadow: none; margin: auto' /></a>"
+project_template = "<a href='{project_url}'><img src='{project_image}' alt='{project_image}' class='docathon_image' style='width: 48%; float:left;' /></a>"
 with open(filename, "w") as f:
     f.write(header_formatted)
     f.write('Docathon projects\n---\n')
@@ -92,11 +129,12 @@ with open(filename, "w") as f:
     repos_names = np.split(repos_names, ixs_split)
     for group in repos_names:
         f.write('&nbsp;&nbsp;-&nbsp;&nbsp;'.join(
-            ['[{name}]({repo}.html)'.format(name=name, repo=repo.lower())
+            ['[{name}]({repo}.html)'.format(name=name, repo=repo)
              for name, org, repo in group]) + '<br />')
     f.write('\n')
     f.write('# Project leaders\n')
-    f.write("<img src='../../images/project_summary.png' alt='project_summary' style='box-shadow: none; margin: auto' />\n")
+    f.write("<img src='../../images/project_summary.png' alt='project_summary' class='docathon_image' />\n")
+    f.write("<img src='../../images/project_week.png' alt='project_weekly' class='docathon_image' />\n")
     f.write('# Project contributions\n')
     for project_name in sorted_totals.index:
         path_img_read = 'build/images/{}.png'.format(project_name)
@@ -106,5 +144,5 @@ with open(filename, "w") as f:
         path_img_write = 'images/{}.png'.format(project_name)
         project_image = path_img_write
         f.write(project_template.format(project_image=project_image,
-                project_url=project_name.lower()+".html"))
+                project_url=project_name+".html"))
 print('Finished creating projects summary...')

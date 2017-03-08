@@ -1,13 +1,15 @@
 import numpy as np
 import os
 from watchtower import GithubDatabase
+from watchtower.commits_ import find_word_in_string
 from tqdm import tqdm
 import pandas as pd
 import traceback
 
 
 def count_doc_commits(user, project, search_queries=None,
-                      groupby='month', start='2017-01-01', stop=None):
+                      groupby='month', start='2017-01-01', branch=None,
+                      stop=None):
     """
     Parameters
     ----------
@@ -24,15 +26,15 @@ def count_doc_commits(user, project, search_queries=None,
     """
     # Load commit data and return the date of each commit
     if search_queries is None:
-        search_queries = ['DOC', 'docs', 'docstring', 'documentation', 'docathon']
-
+        search_queries = ['DOC', 'docs', 'docstring', 'documentation', 'docathon',
+                          'readme', 'guide', 'tutorial']
     start = pd.to_datetime(start)
     if stop is None:
         stop = pd.datetime.today()
     else:
         stop = pd.to_datetime(stop)
 
-    commits = db.load(user, project).commits
+    commits = db.load(user, project, branch=branch).commits
     if commits is None:
         return None, None
     if commits is None or not len(commits):
@@ -40,14 +42,17 @@ def count_doc_commits(user, project, search_queries=None,
             'No commits: load_commits returned None, '
             'or None like : %r' % commits)
 
+    if commits.index.tzinfo is None:
+        commits.index = commits.index.tz_localize('UTC')
+    commits.index = commits.index.tz_convert('US/Pacific')
+
     # Define full date range
-    all_dates = pd.date_range(start, stop, freq='D')
+    all_dates = pd.date_range(start, stop, freq='D').tz_localize('UTC').tz_convert('US/Pacific')
     all_dates = pd.DataFrame(np.zeros(all_dates.shape[0], dtype=int),
                              index=all_dates)
 
     # Remove commits from the past we don't want
-    mask_since = (commits.index > start) * (commits.index < stop)
-    commits = commits[mask_since]
+    commits = commits.query('date > @start and date < @stop')
     if len(commits) == 0:
         # In case no commits for this project
         all_dates = all_dates.drop(0, axis=1).astype(int)
@@ -55,15 +60,8 @@ def count_doc_commits(user, project, search_queries=None,
         all_dates['doc'] = 0
         return all_dates
 
-    # Find commits that match our queries
-    mask_doc = np.zeros(commits.shape[0])
-    for query in search_queries:
-        # This is a really hacky way to do this but python keeps giving me errors
-        for ix, message in enumerate(commits['message'].values):
-            if message.find(query) != -1:
-                mask_doc[ix] += 1
-    mask_doc = np.array(mask_doc) > 0
-    commits['is_doc'] = mask_doc
+    commits.loc[:, 'is_doc'] = commits['message'].apply(
+        find_word_in_string, args=(search_queries,))
 
     # Tally the total number vs. doc-related commits
     commits_doc = commits['is_doc'].resample('D').sum()
@@ -87,6 +85,9 @@ try:
 except OSError:
     pass
 
+branches = {'pycortex': 'glrework-merged',
+            'galaxy': 'dev'}
+
 db = GithubDatabase()
 projects = [ii.split('/')[-2:] for ii in db.projects]
 groupby = 'weekday'
@@ -96,8 +97,11 @@ exceptions = []
 all_dates = []
 for user, project in tqdm(projects):
     try:
+        branch = branches.get(project, None)
+
         this_all_dates = count_doc_commits(
-            user, project, groupby=groupby, start=start, stop=stop)
+            user, project, groupby=groupby, start=start, stop=stop,
+            branch=branch)
 
         # Collect data so we can save it
         this_all_dates['project'] = project
