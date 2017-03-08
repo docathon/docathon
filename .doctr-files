@@ -7,8 +7,10 @@
 ./categories/index.html
 ./category/info.html
 ./category/info2.html
+./category/info3.html
 ./contributing-documentation.html
 ./docathon-day-one.html
+./docathon-day-two.html
 ./encouraging-user-docathon.html
 ./favicon.ico
 ./feeds/all.atom.xml
@@ -20,6 +22,7 @@
 ./images/users_week.png
 ./index.html
 ./index2.html
+./index3.html
 ./pages/about.html
 ./pages/hosting.html
 ./pages/hosts.html
@@ -106,8 +109,10 @@
 ./registration.html
 ./tag/coding.html
 ./tag/coding2.html
+./tag/coding3.html
 ./tag/communication.html
 ./tag/communication2.html
+./tag/communication3.html
 ./tags/index.html
 ./theme/css/custom.css
 ./theme/css/print.css

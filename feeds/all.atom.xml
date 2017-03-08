@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Docathon</title><link href="https://bids.github.io/docathon/" rel="alternate"></link><link href="https://bids.github.io/docathon/feeds/all.atom.xml" rel="self"></link><id>https://bids.github.io/docathon/</id><updated>2017-03-06T00:00:00-08:00</updated><entry><title>The Docathon is One Day Old!</title><link href="https://bids.github.io/docathon/docathon-day-one.html" rel="alternate"></link><published>2017-03-06T00:00:00-08:00</published><updated>2017-03-06T00:00:00-08:00</updated><author><name>Chris Holdgraf</name></author><id>tag:bids.github.io,2017-03-06:docathon/docathon-day-one.html</id><summary type="html">&lt;p&gt;The docathon just turned one (day old)! Here's a quick update to congratulate everybody on a great first day.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Docathon</title><link href="https://bids.github.io/docathon/" rel="alternate"></link><link href="https://bids.github.io/docathon/feeds/all.atom.xml" rel="self"></link><id>https://bids.github.io/docathon/</id><updated>2017-03-07T00:00:00-08:00</updated><entry><title>Docathon Day Two Update: Even doccier</title><link href="https://bids.github.io/docathon/docathon-day-two.html" rel="alternate"></link><published>2017-03-07T00:00:00-08:00</published><updated>2017-03-07T00:00:00-08:00</updated><author><name>Chris Holdgraf</name></author><id>tag:bids.github.io,2017-03-07:docathon/docathon-day-two.html</id><summary type="html">&lt;p&gt;As the sun goes down on Docathon Day two, we have more great contributions to celebrate! At BIDS, we held a special session of The Hacker Within, teaching attendees how to set up Travis to auto-build their own documentation. But you don't care about this...you want to get to the stats!&lt;/p&gt;
+&lt;div class="section" id="docstars-for-the-day"&gt;
+&lt;h2&gt;Docstars for the day&lt;/h2&gt;
+&lt;p&gt;We got another nice bump in commits for the day, as seen on our global activity board:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Global Activity&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="" src="https://bids.github.io/docathon/images/global_activity.png" style="width: 60%;" /&gt;
+&lt;p&gt;And here is the list of projects that upped their documentation game:&lt;/p&gt;
+&lt;img alt="" src="https://bids.github.io/docathon/images/project_summary.png" style="width: 60%;" /&gt;
+&lt;p&gt;Way to go &lt;a class="reference external" href="http://pmagpy.github.io/"&gt;PMagPy&lt;/a&gt;, for managing to hit the top three two days running. In addition, we saw two new leaders pop up in &lt;a class="reference external" href="http://gallantlab.org/pycortex/docs/"&gt;pycortex&lt;/a&gt;, which creates beautiful javascript maps of brain activity, and &lt;a class="reference external" href="https://github.com/scikit-learn-contrib/hdbscan"&gt;HDBSCAN&lt;/a&gt;, which is a high-performance implementation of a machine learning method built for scikit-learn. Way to go!&lt;/p&gt;
+&lt;p&gt;Our user leaderboard saw three new folks at the top today:&lt;/p&gt;
+&lt;img alt="" src="https://bids.github.io/docathon/images/users_week.png" style="width: 60%;" /&gt;
+&lt;p&gt;Congrats to &lt;strong&gt;lmcinnes&lt;/strong&gt;, &lt;strong&gt;staeiou&lt;/strong&gt;, and another victory lap for &lt;strong&gt;willingc&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="quick-notes"&gt;
+&lt;h2&gt;Quick notes&lt;/h2&gt;
+&lt;p&gt;A few projects have been working on a branch that isn't master for their doc work. If you won't merge this before the end of the week, let us know on slack or via a github issue which branch you're working on. This way we can give you credit as you make new commits!&lt;/p&gt;
+&lt;p&gt;We'll try to get the youtube video from yesterday's lecture split up and combined with links to repositories of information by sometime tomorrow. In the meantime, I want you all to keep documenting! Do it for the partyparrot!&lt;/p&gt;
+&lt;img alt="" src="http://cultofthepartyparrot.com/parrots/middleparrot.gif" /&gt;
+&lt;p&gt;Until then,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The Docathon Team&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="communication"></category><category term="coding"></category></entry><entry><title>The Docathon is One Day Old!</title><link href="https://bids.github.io/docathon/docathon-day-one.html" rel="alternate"></link><published>2017-03-06T00:00:00-08:00</published><updated>2017-03-06T00:00:00-08:00</updated><author><name>Chris Holdgraf</name></author><id>tag:bids.github.io,2017-03-06:docathon/docathon-day-one.html</id><summary type="html">&lt;p&gt;The docathon just turned one (day old)! Here's a quick update to congratulate everybody on a great first day.&lt;/p&gt;
 &lt;div class="section" id="updates"&gt;
 &lt;h2&gt;Updates&lt;/h2&gt;
 &lt;ul class="simple"&gt;
