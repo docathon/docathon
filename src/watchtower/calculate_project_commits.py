@@ -26,8 +26,8 @@ def count_doc_commits(user, project, search_queries=None,
     """
     # Load commit data and return the date of each commit
     if search_queries is None:
-        search_queries = ['DOC', 'docs', 'docstring', 'documentation', 'docathon']
-
+        search_queries = ['DOC', 'docs', 'docstring', 'documentation', 'docathon',
+                          'readme', 'guide', 'tutorial']
     start = pd.to_datetime(start)
     if stop is None:
         stop = pd.datetime.today()
@@ -42,7 +42,9 @@ def count_doc_commits(user, project, search_queries=None,
             'No commits: load_commits returned None, '
             'or None like : %r' % commits)
 
-    commits.index = commits.index.tz_localize('UTC').tz_convert('US/Pacific')
+    if commits.index.tzinfo is None:
+        commits.index = commits.index.tz_localize('UTC')
+    commits.index = commits.index.tz_convert('US/Pacific')
 
     # Define full date range
     all_dates = pd.date_range(start, stop, freq='D').tz_localize('UTC').tz_convert('US/Pacific')
@@ -83,7 +85,8 @@ try:
 except OSError:
     pass
 
-branches = {'pycortex': 'glrework-merged'}
+branches = {'pycortex': 'glrework-merged',
+            'galaxy': 'dev'}
 
 db = GithubDatabase()
 projects = [ii.split('/')[-2:] for ii in db.projects]
@@ -95,6 +98,7 @@ all_dates = []
 for user, project in tqdm(projects):
     try:
         branch = branches.get(project, None)
+
         this_all_dates = count_doc_commits(
             user, project, groupby=groupby, start=start, stop=stop,
             branch=branch)

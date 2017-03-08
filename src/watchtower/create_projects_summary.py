@@ -21,6 +21,15 @@ def format_axis(ax):
     plt.tight_layout()
 
 
+def parse_dates(dates):
+    dates = list(dates)
+    for ii, iindex in enumerate(dates):
+        if isinstance(iindex, str):
+            dates[ii] = iindex.split(' ')[0]
+
+    return pd.to_datetime(dates)
+
+
 # Now create one page for all the projects
 header_index = (
     "Title: Projects\n"
@@ -51,7 +60,9 @@ proj_info = pd.read_csv('.project_info.csv')
 proj_info['name'] = proj_info['name'].str.lower()
 proj_info = proj_info.sort_values('name')
 
-commit_totals = pd.read_csv('.project_totals.csv', index_col=0, parse_dates=True)
+commit_totals = pd.read_csv('.project_totals.csv', index_col=0)
+commit_totals.index = parse_dates(commit_totals.index)
+commit_totals.index.name = 'date'
 sorted_totals = commit_totals.query('date >= @count_since')
 sorted_totals = sorted_totals.groupby('project').sum().sort_values('doc', ascending=False)
 

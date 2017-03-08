@@ -35,6 +35,14 @@ def plot_bar(df, ax, ylabel='Number commits'):
     return ax
 
 
+def parse_dates(dates):
+    dates = list(dates)
+    for ii, iindex in enumerate(dates):
+        if isinstance(iindex, str):
+            dates[ii] = iindex.split(' ')[0]
+
+    return pd.to_datetime(dates)
+
 header = (
     "title: Users\n"
     "date: 2017-03-01\n"
@@ -52,9 +60,10 @@ exclude = ['NelleV', 'choldgraf']  # if we want to drop admins
 plot_type = 'doc'  # 'perc'
 n_plot = 30
 df = pd.read_csv('./.user_totals.csv', index_col=0)
-df.index = pd.to_datetime(df.index)
+df.index = parse_dates(df.index)
+df.index.name = 'date'
 date_min = pd.to_datetime('2017-03-06')
-date_max = pd.to_datetime(date.today()).tz_localize('US/Pacific')
+date_max = pd.to_datetime(date.today())
 
 # --- Choose a date ---
 df = df.query('date != "NaT"')

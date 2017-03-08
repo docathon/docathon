@@ -29,7 +29,13 @@ for user in users:
         messages, dates = zip(*[(jj['message'], idate)
                               for idate, ii in user_db.PushEvent.iterrows()
                               for jj in ii['payload']['commits']])
-        dates = [ii.tz_localize('UTC').tz_convert('US/Pacific') for ii in dates]
+        dates = list(dates)
+
+        for ii, idate in enumerate(dates):
+            if idate.tzinfo is None:
+                idate = idate.tz_localize('UTC')
+            idate = idate.tz_convert('US/Pacific')
+            dates[ii] = idate
         dates = np.array(dates)
         messages = np.array(messages)
         mask = (dates > start) * (dates <= end)
@@ -37,7 +43,7 @@ for user in users:
         dates = dates[mask]
         for message, date in zip(messages, dates):
             search_queries = ['DOC', 'docs', 'docstring',
-                              'documentation', 'docathon']
+                              'documentation', 'docathon', 'readme', 'guide', 'tutorial']
             is_doc = find_word_in_string(message, search_queries)
             activity.append((user, date, is_doc))
 
