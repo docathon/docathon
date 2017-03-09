@@ -88,7 +88,7 @@ df = pd.concat([total_doc, total_all], axis=1).\
 # Plotting
 fig, ax = plt.subplots(figsize=(10, 5))
 ax = plot_bar(df, ax, ylabel=None)
-ax.set_ylim([0, 30])
+ax.set_ylim([0, 70])
 format_axis(ax)
 ax.legend()
 ax.set_title('Commits from {:%D} to {:%D}'.format(date_min, date_max),
