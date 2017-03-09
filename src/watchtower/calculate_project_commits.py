@@ -26,8 +26,11 @@ def count_doc_commits(user, project, search_queries=None,
     """
     # Load commit data and return the date of each commit
     if search_queries is None:
-        search_queries = ['DOC', 'docs', 'docstring', 'documentation', 'docathon',
-                          'readme', 'guide', 'tutorial']
+        search_queries = ['DOC', 'docs', 'docstring', 'documentation',
+                          'docathon', 'readme', 'guide', 'tutorial']
+    if isinstance(search_queries, str):
+        search_queries = [search_queries]
+
     start = pd.to_datetime(start)
     if stop is None:
         stop = pd.datetime.today()
