@@ -85,8 +85,7 @@ try:
 except OSError:
     pass
 
-branches = {'pycortex': 'glrework-merged',
-            'galaxy': 'dev'}
+meta = pd.read_csv('.project_info.csv')
 
 db = GithubDatabase()
 projects = [ii.split('/')[-2:] for ii in db.projects]
@@ -97,11 +96,17 @@ exceptions = []
 all_dates = []
 for user, project in tqdm(projects):
     try:
-        branch = branches.get(project, None)
+        this_meta = meta.query('github_org == "{}/{}"'.format(user, project))
+        words = this_meta['words'].values[0]
+        words = None if isinstance(words, float) else words
+        words = '' if words == '<ALL>' else words
+
+        branch = this_meta['branch'].values[0]
+        branch = None if isinstance(branch, float) else branch
 
         this_all_dates = count_doc_commits(
             user, project, groupby=groupby, start=start, stop=stop,
-            branch=branch)
+            branch=branch, search_queries=words)
 
         # Collect data so we can save it
         this_all_dates['project'] = project

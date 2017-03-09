@@ -28,7 +28,8 @@ rename = {'Documentation URL': 'url', 'Name of the project': 'name',
           'Description': 'description',
           'Timestamp': 'date',
           'is_github': 'is_github',
-          'Would you like any help from others in improving documentation?': 'wants_help'}
+          'Would you like any help from others in improving documentation?': 'wants_help',
+          'branch': 'branch', 'words': 'words'}
 projects = projects.rename(columns=rename)
 projects = projects[list(rename.values())]
 projects['url'] = projects['url'].apply(validate_url)
@@ -44,7 +45,7 @@ def is_doc(row):
             is_doc += 1
     return is_doc > 0
 
-
+projects['doc_issues'] = None
 db = GithubDatabase()
 for ix, project in tqdm(projects.iterrows()):
     if not isinstance(project['github_org'], str):
@@ -65,6 +66,7 @@ for ix, project in tqdm(projects.iterrows()):
                   if issue['is_doc'] is True]
     doc_issues = None if len(doc_issues) is 0 else doc_issues
     projects.loc[ix, 'doc_issues'] = doc_issues
+
 
 projects = projects.replace({'doc_issues': {np.nan: None}})
 projects.to_csv('.project_info.csv')
