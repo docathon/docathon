@@ -104,7 +104,7 @@ for column in sorted_totals.columns:
 
 ax.set_xticks(ixs)
 ax.set_xticklabels(projects_plot)
-ax.set_ylim([None, 50])
+ax.set_ylim([None, 100])
 plt.setp(ax.get_xticklabels(), rotation=45,
          horizontalalignment='right', fontsize=18)
 format_axis(ax)

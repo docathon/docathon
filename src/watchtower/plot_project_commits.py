@@ -26,7 +26,7 @@ def parse_dates(dates):
     return pd.to_datetime(dates)
 
 
-def plot_commits(all_dates, ylim=[0, 25], figsize=(10, 5)):
+def plot_commits(all_dates, ylim=[0, 40], figsize=(10, 5)):
 
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)
