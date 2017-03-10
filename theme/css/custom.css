@@ -41,3 +41,7 @@ img.docathon_image {
     box-shadow: none;
     margin: auto
 }
+
+div.parrotbox img {
+    float:right;
+}
