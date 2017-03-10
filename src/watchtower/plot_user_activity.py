@@ -111,7 +111,7 @@ days = pd.to_datetime(df_week.index.get_level_values('date')).day
 # Only plot the last 5 days
 n_users_weekly = 10
 y_max = 20
-dates_plot = [6, 7, 8, 9, 10]
+dates_plot = [6, 7, 8, 9, 10, 11, 12]
 ixs_plot = range(len(dates_plot))
 n_dates = len(ixs_plot)
 fig, axs = plt.subplots(1, n_dates, figsize=(n_dates * 5, 5), sharey=True)

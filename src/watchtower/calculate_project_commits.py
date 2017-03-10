@@ -94,7 +94,7 @@ db = GithubDatabase()
 projects = [ii.split('/')[-2:] for ii in db.projects]
 groupby = 'weekday'
 start = '2017-03-01'
-stop = '2017-03-11'
+stop = '2017-03-13'
 exceptions = []
 all_dates = []
 for user, project in tqdm(projects):
