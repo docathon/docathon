@@ -68,7 +68,7 @@ sorted_totals = sorted_totals.groupby('project').sum().sort_values('doc', ascend
 
 # --- Plot weekly commits ---
 n_week_plot = 10
-plt_dates = [6, 7, 8, 9, 10, 11, 12]
+plt_dates = [6, 7, 8, 9, 10]
 fig, axs = plt.subplots(1, len(plt_dates), figsize=(5 * len(plt_dates), 5),
                         sharey=True)
 for idate, ax in zip(plt_dates, axs):
