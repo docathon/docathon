@@ -120,8 +120,6 @@ all_diffs = []
 for proj in db.projects:
     print(proj)
     user, project = proj.split('/')
-    if project != 'Sylius':
-        continue
     this_meta = meta.query('github_org == "{}/{}"'.format(user, project))
     branch = this_meta['branch'].values[0]
     branch = None if isinstance(branch, float) else branch
