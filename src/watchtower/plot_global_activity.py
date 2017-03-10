@@ -30,7 +30,7 @@ def plot_commits(all_dates, ylim=[0, 150], figsize=(10, 5)):
 
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)
-    ax.bar(all_dates.index.to_pydatetime(), all_dates.values, color='#f44265')
+    ax.bar(all_dates.index.to_pydatetime(), all_dates.values, color=None)
     ax.set_ylim(ylim)
 
     # Plot today

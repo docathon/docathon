@@ -84,7 +84,7 @@ for idate, ax in zip(plt_dates, axs):
     this_commits = this_commits.iloc[:n_week_plot]
     ixs = range(len(this_commits))
     for col in this_commits.columns:
-        color = '#f44265' if col == 'doc' else None
+        color = None if col == 'doc' else None
         ax.bar(ixs, this_commits[col].values, color=color)
     format_axis(ax)
     ax.set_xticks(ixs)
@@ -99,7 +99,7 @@ fig, ax = plt.subplots(figsize=(10, 5))
 for column in sorted_totals.columns:
     ixs = range(n_plot)
     projects_plot = sorted_totals.index[:n_plot]
-    color = '#f44265' if column == 'doc' else None
+    color = None if column == 'doc' else None
     ax.bar(ixs, sorted_totals.iloc[:n_plot][column], label=column, color=color)
 
 ax.set_xticks(ixs)

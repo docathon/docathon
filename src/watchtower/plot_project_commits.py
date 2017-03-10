@@ -31,7 +31,7 @@ def plot_commits(all_dates, ylim=[0, 40], figsize=(10, 5)):
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)
     for label in all_dates.columns:
-        color = '#f44265' if label == 'doc' else None
+        color = None if label == 'doc' else None
         ax.bar(all_dates.index.to_pydatetime(), all_dates[label].values,
                label=label, color=color)
     ax.set_ylim(ylim)

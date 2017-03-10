@@ -25,7 +25,7 @@ def plot_bar(df, ax, ylabel='Number commits'):
     for i_type in ['all', 'doc']:
         i_data = df.iloc[:n_plot][i_type]
         ixs = range(i_data.shape[0])
-        color = '#f44265' if i_type == 'doc' else None
+        color = None if i_type == 'doc' else None
         ax.bar(ixs, i_data.values, label=i_type, color=color)
         ax.set_xticks(ixs)
         ax.set_xticklabels(i_data.index)
@@ -128,7 +128,7 @@ for ii, (ax, idate) in enumerate(zip(axs, dates_plot)):
     this_day = this_day.iloc[:n_users_weekly]
     ixs = range(this_day.shape[0])
     for col in this_day.columns:
-        color = '#f44265' if col == 'doc' else None
+        color = None if col == 'doc' else None
         ax.bar(ixs, this_day[col].values, color=color)
         ax.set_xticks(ixs)
         ax.set_xticklabels(this_day.index, rotation=45,
