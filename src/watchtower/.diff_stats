@@ -3,7 +3,7 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-01,Sylius,Sylius,True,204,265,61,143
 2017-03-01,bokeh,bokeh,False,369,627,258,111
 2017-03-01,bokeh,bokeh,True,89,89,0,89
-2017-03-01,deeplearning4j,deeplearning4j,False,10,15,5,5
+2017-03-01,deeplearning4j,deeplearning4j,False,597,617,20,577
 2017-03-01,ipython,ipython,False,18,18,0,18
 2017-03-01,julia,JuliaLang,False,992,1078,86,906
 2017-03-01,libraries.io,librariesio,False,6,7,1,5
@@ -69,6 +69,8 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-04,pandas,pandas-dev,True,5,18,13,-8
 2017-03-04,scikit-learn,scikit-learn,False,254,259,5,249
 2017-03-04,scikit-learn,scikit-learn,True,48,49,1,47
+2017-03-05,CARLsim3,UCI-CARL,False,766,4592,3826,-3060
+2017-03-05,CARLsim3,UCI-CARL,True,61,100,39,22
 2017-03-05,Sylius,Sylius,False,2041,2490,449,1592
 2017-03-05,Sylius,Sylius,True,1203,1218,15,1188
 2017-03-05,deeplearning4j,deeplearning4j,False,389,494,105,284
@@ -91,7 +93,7 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-06,pycortex,gallantlab,False,133,773,640,-507
 2017-03-06,pycortex,gallantlab,True,78,85,7,71
 2017-03-06,quanteda,kbenoit,False,61,68,7,54
-2017-03-06,scikit-image,scikit-image,False,210,337,127,83
+2017-03-06,scikit-image,scikit-image,False,258,400,142,116
 2017-03-06,scikit-image,scikit-image,True,99,179,80,19
 2017-03-07,CARLsim3,UCI-CARL,True,420,729,309,111
 2017-03-07,CARLsim4,UCI-CARL,False,420,1097,677,-257
@@ -195,8 +197,8 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-09,scikit-learn,scikit-learn,True,303,436,133,170
 2017-03-09,scipy,scipy,False,89,90,1,88
 2017-03-09,scipy,scipy,True,23,28,5,18
-2017-03-10,CARLsim3,UCI-CARL,False,1109,5305,4196,-3087
-2017-03-10,CARLsim3,UCI-CARL,True,1146,1676,530,616
+2017-03-10,CARLsim3,UCI-CARL,False,508,2436,1928,-1420
+2017-03-10,CARLsim3,UCI-CARL,True,2508,2805,297,2211
 2017-03-10,Sylius,Sylius,False,2525,3401,876,1649
 2017-03-10,Sylius,Sylius,True,3213,4548,1335,1878
 2017-03-10,bokeh,bokeh,False,468,705,237,231
@@ -217,6 +219,8 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-10,mne-python,mne-tools,True,65,78,13,52
 2017-03-10,pandas,pandas-dev,False,8745,16213,7468,1277
 2017-03-10,pandas,pandas-dev,True,877,1472,595,282
+2017-03-10,pycortex,gallantlab,False,1368,1676,308,1060
+2017-03-10,pycortex,gallantlab,True,1045,1140,95,950
 2017-03-10,quanteda,kbenoit,False,30,63,33,-3
 2017-03-10,scikit-learn,scikit-learn,False,12,31,19,-7
 2017-03-10,scikit-learn,scikit-learn,True,31,56,25,6
