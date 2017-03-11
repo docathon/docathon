@@ -32,8 +32,8 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-02,libraries.io,librariesio,False,115,1660,1545,-1430
 2017-03-02,matplotlib,matplotlib,False,47,62,15,32
 2017-03-02,matplotlib,matplotlib,True,8,8,0,8
-2017-03-02,mne-python,mne-tools,False,2744,3545,801,1943
-2017-03-02,mne-python,mne-tools,True,111,135,24,87
+2017-03-02,mne-python,mne-tools,False,2936,3833,897,2039
+2017-03-02,mne-python,mne-tools,True,183,266,83,100
 2017-03-02,pandas,pandas-dev,False,2850,5596,2746,104
 2017-03-02,pandas,pandas-dev,True,15,15,0,15
 2017-03-02,pmagpy,pmagpy,False,75,80,5,70
@@ -53,8 +53,8 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-03,ipython,ipython,True,163,218,55,108
 2017-03-03,libraries.io,librariesio,False,151,197,46,105
 2017-03-03,matplotlib,matplotlib,True,3,6,3,0
-2017-03-03,mne-python,mne-tools,False,1981,2578,597,1384
-2017-03-03,mne-python,mne-tools,True,97,110,13,84
+2017-03-03,mne-python,mne-tools,False,2739,3502,763,1976
+2017-03-03,mne-python,mne-tools,True,152,178,26,126
 2017-03-03,notebook,jupyter,False,404,431,27,377
 2017-03-03,pandas,pandas-dev,False,70,91,21,49
 2017-03-03,pandas,pandas-dev,True,33,34,1,32
@@ -79,6 +79,8 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-05,julia,JuliaLang,False,14,32,18,-4
 2017-03-05,pandas,pandas-dev,False,328,360,32,296
 2017-03-05,pandas,pandas-dev,True,31,33,2,29
+2017-03-05,scikit-image,scikit-image,False,263,411,148,115
+2017-03-05,scikit-image,scikit-image,True,99,179,80,19
 2017-03-06,MSNoise,ROBelgium,False,38,51,13,25
 2017-03-06,MSNoise,ROBelgium,True,5,6,1,4
 2017-03-06,Sylius,Sylius,False,12,14,2,10
@@ -94,7 +96,7 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-06,pycortex,gallantlab,False,133,773,640,-507
 2017-03-06,pycortex,gallantlab,True,78,85,7,71
 2017-03-06,quanteda,kbenoit,False,61,68,7,54
-2017-03-06,scikit-image,scikit-image,False,258,400,142,116
+2017-03-06,scikit-image,scikit-image,False,210,337,127,83
 2017-03-06,scikit-image,scikit-image,True,99,179,80,19
 2017-03-07,CARLsim3,UCI-CARL,True,420,729,309,111
 2017-03-07,CARLsim4,UCI-CARL,False,420,1097,677,-257
@@ -149,6 +151,8 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-08,libraries.io,librariesio,True,528,574,46,482
 2017-03-08,matplotlib,matplotlib,False,169,204,35,134
 2017-03-08,matplotlib,matplotlib,True,1940,2122,182,1758
+2017-03-08,mne-python,mne-tools,False,1974,2573,599,1375
+2017-03-08,mne-python,mne-tools,True,97,110,13,84
 2017-03-08,notebook,jupyter,False,16,25,9,7
 2017-03-08,pandas,pandas-dev,False,159,212,53,106
 2017-03-08,pandas,pandas-dev,True,52,107,55,-3
@@ -159,6 +163,8 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-08,quanteda,kbenoit,False,181,189,8,173
 2017-03-08,readtext,kbenoit,False,61,85,24,37
 2017-03-08,readtext,kbenoit,True,1,6,5,-4
+2017-03-08,scikit-learn,scikit-learn,False,1103,1594,491,612
+2017-03-08,scikit-learn,scikit-learn,True,302,431,129,173
 2017-03-08,sunpy,sunpy,False,324,381,57,267
 2017-03-08,sunpy,sunpy,True,14,22,8,6
 2017-03-08,watchtower,NelleV,False,189,239,50,139
@@ -195,12 +201,14 @@ date,project,user,found,additions,changes,deletions,net
 2017-03-09,pycortex,gallantlab,True,307,353,46,261
 2017-03-09,quanteda,kbenoit,False,673,1018,345,328
 2017-03-09,quanteda,kbenoit,True,1,1,0,1
-2017-03-09,scikit-learn,scikit-learn,False,971,1434,463,508
+2017-03-09,scikit-learn,scikit-learn,False,978,1442,464,514
 2017-03-09,scikit-learn,scikit-learn,True,303,436,133,170
 2017-03-09,scipy,scipy,False,89,90,1,88
 2017-03-09,scipy,scipy,True,23,28,5,18
 2017-03-11,CARLsim3,UCI-CARL,False,878,3178,2300,-1422
 2017-03-11,CARLsim3,UCI-CARL,True,2138,2398,260,1878
+2017-03-11,mne-python,mne-tools,False,818,1130,312,506
+2017-03-11,mne-python,mne-tools,True,67,82,15,52
 2017-03-11,notebook,jupyter,False,726,790,64,662
 2017-03-11,notebook,jupyter,True,1,2,1,0
 2017-03-11,pycortex,gallantlab,False,128,165,37,91
