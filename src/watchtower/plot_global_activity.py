@@ -11,7 +11,7 @@ import pandas as pd
 import traceback
 
 today = pd.datetime.today()
-plot_start = '2017-03-02'
+plot_start = '2017-02-24'
 docathon_start = '2017-03-06'
 docathon_end = '2017-03-10'
 figsize = (8, 4)
@@ -26,7 +26,7 @@ def parse_dates(dates):
     return pd.to_datetime(dates)
 
 
-def plot_commits(all_dates, ylim=[0, 150], figsize=(10, 5)):
+def plot_commits(all_dates, ylim=[0, 200], figsize=(10, 5)):
 
     # --- Plotting ---
     fig, ax = plt.subplots(figsize=figsize)

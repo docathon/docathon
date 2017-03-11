@@ -29,7 +29,7 @@ def find_commit_diffs(user, project, branch=None):
         return None
 
     # Iterate through days, find latest commit for each day
-    days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
     days = [pd.to_datetime('2017-03-{:02}'.format(ii)).date() for ii in days]
     commits = {}
     for ii in days:
