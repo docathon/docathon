@@ -29,11 +29,12 @@ def find_commit_diffs(user, project, branch=None):
         return None
 
     # Iterate through days, find latest commit for each day
-    days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
-    days = [pd.to_datetime('2017-03-{:02}'.format(ii)).date() for ii in days]
+    day_start = '2017-02-20'
+    day_stop = '2017-03-10'
+    days = pd.date_range(day_start, day_stop, freq='D')
     commits = {}
     for ii in days:
-        mask = proj.commits.index.date == ii
+        mask = proj.commits.index.date == ii.date()
         this_commits = proj.commits[mask]
         if len(this_commits) == 0:
             commits[ii] = {'sha1': None, 'sha2': None}
@@ -41,13 +42,17 @@ def find_commit_diffs(user, project, branch=None):
             # Find the last / first commits for the day
             sha2 = this_commits.loc[this_commits.index.max()]['sha']
             sha_min = this_commits.loc[this_commits.index.min()]['sha']
-
+            if isinstance(sha_min, pd.Series):
+                sha_min = sha_min.values[0]
+            if isinstance(sha2, pd.Series):
+                sha2 = sha2.values[0]
             # Now find the commit just before the 1st commit for this day
-            ix = np.argwhere(proj.commits['sha'] == sha_min)
-            sha1 = proj.commits['sha'].values[ix - 1].squeeze()
+            ix = np.argwhere(proj.commits['sha'] == sha_min).squeeze()
+            sha1 = proj.commits['sha'].values[ix - 1]
             commits[ii] = {'sha1': sha1, 'sha2': sha2}
     commits = pd.DataFrame(commits).T.astype(str).replace({'None': None})
-    commits.index = pd.to_datetime(commits.index)
+    commits.index = pd.to_datetime(commits.index)\
+        .tz_localize('UTC').tz_convert('US/Pacific')
 
     # Iterate through start / stop SHAs and return the diff statistics
     diffs = []
@@ -118,8 +123,8 @@ meta = pd.read_csv('.project_info.csv')
 
 all_diffs = []
 for proj in db.projects:
-    print(proj)
     user, project = proj.split('/')
+    print('{}/{}'.format(user, project))
     this_meta = meta.query('github_org == "{}/{}"'.format(user, project))
     branch = this_meta['branch'].values[0]
     branch = None if isinstance(branch, float) else branch

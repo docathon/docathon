@@ -1,217 +1,374 @@
 date,project,user,found,additions,changes,deletions,net
-2017-03-01,Sylius,Sylius,False,392,519,127,265
-2017-03-01,Sylius,Sylius,True,204,265,61,143
-2017-03-01,bokeh,bokeh,False,369,627,258,111
-2017-03-01,bokeh,bokeh,True,89,89,0,89
-2017-03-01,deeplearning4j,deeplearning4j,False,597,617,20,577
-2017-03-01,ipython,ipython,False,18,18,0,18
-2017-03-01,julia,JuliaLang,False,992,1078,86,906
-2017-03-01,libraries.io,librariesio,False,6,7,1,5
-2017-03-01,matplotlib,matplotlib,False,3,6,3,0
-2017-03-01,matplotlib,matplotlib,True,41,62,21,20
-2017-03-01,notebook,jupyter,False,71,91,20,51
-2017-03-01,notebook,jupyter,True,23,34,11,12
-2017-03-01,pmagpy,pmagpy,False,354,673,319,35
-2017-03-01,pomegranate,jmschrei,False,0,5,5,-5
-2017-03-01,quanteda,kbenoit,False,605,1003,398,207
-2017-03-01,quanteda,kbenoit,True,1,1,0,1
-2017-03-01,readtext,kbenoit,False,3,6,3,0
-2017-03-01,scikit-image,scikit-image,False,1,2,1,0
-2017-03-01,scipy,scipy,False,138,178,40,98
-2017-03-01,scipy,scipy,True,7,7,0,7
-2017-03-01,sunpy,sunpy,False,62,72,10,52
-2017-03-02,bokeh,bokeh,False,14,33,19,-5
-2017-03-02,cottoncandy,gallantlab,False,5,8,3,2
-2017-03-02,deeplearning4j,deeplearning4j,False,327,741,414,-87
-2017-03-02,galaxy,galaxyproject,False,33,44,11,22
-2017-03-02,galaxy-hub,galaxyproject,False,154,193,39,115
-2017-03-02,galaxy-hub,galaxyproject,True,5060,5211,151,4909
-2017-03-02,ipython,ipython,False,6,11,5,1
-2017-03-02,ipython,ipython,True,6,11,5,1
-2017-03-02,julia,JuliaLang,False,47,70,23,24
-2017-03-02,libraries.io,librariesio,False,115,1660,1545,-1430
-2017-03-02,matplotlib,matplotlib,False,47,62,15,32
-2017-03-02,matplotlib,matplotlib,True,8,8,0,8
-2017-03-02,mne-python,mne-tools,False,2936,3833,897,2039
-2017-03-02,mne-python,mne-tools,True,183,266,83,100
-2017-03-02,pandas,pandas-dev,False,2850,5596,2746,104
-2017-03-02,pandas,pandas-dev,True,15,15,0,15
-2017-03-02,pmagpy,pmagpy,False,75,80,5,70
-2017-03-02,readtext,kbenoit,False,26,31,5,21
-2017-03-02,readtext,kbenoit,True,5,9,4,1
-2017-03-02,scikit-learn,scikit-learn,False,5,5,0,5
-2017-03-02,scikit-learn,scikit-learn,True,3,5,2,1
-2017-03-02,sunpy,sunpy,False,13,19,6,7
-2017-03-03,Sylius,Sylius,False,2041,2498,457,1584
-2017-03-03,Sylius,Sylius,True,1242,1293,51,1191
-2017-03-03,deeplearning4j,deeplearning4j,False,234,453,219,15
-2017-03-03,galaxy,galaxyproject,False,729,866,137,592
-2017-03-03,galaxy,galaxyproject,True,78,91,13,65
-2017-03-03,galaxy-hub,galaxyproject,False,3,3,0,3
-2017-03-03,galaxy-hub,galaxyproject,True,35,49,14,21
-2017-03-03,ipython,ipython,False,87,151,64,23
-2017-03-03,ipython,ipython,True,163,218,55,108
-2017-03-03,libraries.io,librariesio,False,151,197,46,105
-2017-03-03,matplotlib,matplotlib,True,3,6,3,0
-2017-03-03,mne-python,mne-tools,False,2739,3502,763,1976
-2017-03-03,mne-python,mne-tools,True,152,178,26,126
-2017-03-03,notebook,jupyter,False,404,431,27,377
-2017-03-03,pandas,pandas-dev,False,70,91,21,49
-2017-03-03,pandas,pandas-dev,True,33,34,1,32
-2017-03-03,quanteda,kbenoit,True,2827,3594,767,2060
-2017-03-03,scikit-learn,scikit-learn,False,1,1,0,1
-2017-03-03,sunpy,sunpy,False,32,54,22,10
-2017-03-03,sunpy,sunpy,True,1,2,1,0
-2017-03-03,watchtower,NelleV,False,25,31,6,19
-2017-03-03,watchtower,NelleV,True,2,52,50,-48
-2017-03-04,deeplearning4j,deeplearning4j,False,487,501,14,473
-2017-03-04,julia,JuliaLang,False,60,72,12,48
-2017-03-04,pandas,pandas-dev,False,163,328,165,-2
-2017-03-04,pandas,pandas-dev,True,5,18,13,-8
-2017-03-04,scikit-learn,scikit-learn,False,254,259,5,249
-2017-03-04,scikit-learn,scikit-learn,True,48,49,1,47
-2017-03-05,CARLsim3,UCI-CARL,False,766,4592,3826,-3060
-2017-03-05,CARLsim3,UCI-CARL,True,61,100,39,22
-2017-03-05,Sylius,Sylius,False,2041,2490,449,1592
-2017-03-05,Sylius,Sylius,True,1203,1218,15,1188
-2017-03-05,deeplearning4j,deeplearning4j,False,389,494,105,284
-2017-03-05,galaxy,galaxyproject,False,1312,1347,35,1277
-2017-03-05,julia,JuliaLang,False,14,32,18,-4
-2017-03-05,pandas,pandas-dev,False,328,360,32,296
-2017-03-05,pandas,pandas-dev,True,31,33,2,29
-2017-03-05,scikit-image,scikit-image,False,263,411,148,115
-2017-03-05,scikit-image,scikit-image,True,99,179,80,19
-2017-03-06,MSNoise,ROBelgium,False,38,51,13,25
-2017-03-06,MSNoise,ROBelgium,True,5,6,1,4
-2017-03-06,Sylius,Sylius,False,12,14,2,10
-2017-03-06,deeplearning4j,deeplearning4j,False,1337,1787,450,887
-2017-03-06,galaxy,galaxyproject,False,165,213,48,117
-2017-03-06,galaxy,galaxyproject,True,2,5,3,-1
-2017-03-06,galaxy-hub,galaxyproject,True,8,196,188,-180
-2017-03-06,henson,mrzv,True,27,36,9,18
-2017-03-06,julia,JuliaLang,False,652,917,265,387
-2017-03-06,matplotlib,matplotlib,True,1,1,0,1
-2017-03-06,pandas,pandas-dev,True,9,22,13,-4
-2017-03-06,pmagpy,pmagpy,False,460,631,171,289
-2017-03-06,pycortex,gallantlab,False,133,773,640,-507
-2017-03-06,pycortex,gallantlab,True,78,85,7,71
-2017-03-06,quanteda,kbenoit,False,61,68,7,54
-2017-03-06,scikit-image,scikit-image,False,210,337,127,83
-2017-03-06,scikit-image,scikit-image,True,99,179,80,19
-2017-03-07,CARLsim3,UCI-CARL,True,420,729,309,111
-2017-03-07,CARLsim4,UCI-CARL,False,420,1097,677,-257
-2017-03-07,CARLsim4,UCI-CARL,True,24,72,48,-24
-2017-03-07,Omeka,omeka,False,105,127,22,83
-2017-03-07,Sylius,Sylius,False,789,895,106,683
-2017-03-07,deeplearning4j,deeplearning4j,False,390,495,105,285
-2017-03-07,galaxy,galaxyproject,False,1502,1557,55,1447
-2017-03-07,galaxy-hub,galaxyproject,False,0,19,19,-19
-2017-03-07,galaxy-hub,galaxyproject,True,93,410,317,-224
-2017-03-07,hdbscan,scikit-learn-contrib,False,686,687,1,685
-2017-03-07,hdbscan,scikit-learn-contrib,True,35,35,0,35
-2017-03-07,julia,JuliaLang,False,91,133,42,49
-2017-03-07,libraries.io,librariesio,True,68,111,43,25
-2017-03-07,matplotlib,matplotlib,False,22,22,0,22
-2017-03-07,matplotlib,matplotlib,True,59,70,11,48
-2017-03-07,pandas,pandas-dev,False,974,1773,799,175
-2017-03-07,pandas,pandas-dev,True,43,51,8,35
-2017-03-07,pmagpy,pmagpy,False,663,890,227,436
-2017-03-07,pmagpy,pmagpy,True,382,763,381,1
-2017-03-07,pulse2percept,uwescience,False,138,172,34,104
-2017-03-07,pycortex,gallantlab,False,9,14,5,4
-2017-03-07,pycortex,gallantlab,True,55,60,5,50
-2017-03-07,quanteda,kbenoit,False,32,55,23,9
-2017-03-07,scikit-image,scikit-image,False,63,143,80,-17
-2017-03-07,scikit-image,scikit-image,True,97,176,79,18
-2017-03-07,scikit-learn,scikit-learn,False,522,940,418,104
-2017-03-07,scikit-learn,scikit-learn,True,15,24,9,6
-2017-03-07,scipy,scipy,False,21,23,2,19
-2017-03-07,sncosmo,sncosmo,False,3,6,3,0
-2017-03-08,CARLsim3,UCI-CARL,False,154,294,140,14
-2017-03-08,CARLsim3,UCI-CARL,True,484,621,137,347
-2017-03-08,CARLsim4,UCI-CARL,False,285,621,336,-51
-2017-03-08,CARLsim4,UCI-CARL,True,531,888,357,174
-2017-03-08,Omeka,omeka,False,104,125,21,83
-2017-03-08,Sylius,Sylius,False,3228,4369,1141,2087
-2017-03-08,Sylius,Sylius,True,5568,7485,1917,3651
-2017-03-08,bokeh,bokeh,False,2,4,2,0
-2017-03-08,cottoncandy,gallantlab,False,21,24,3,18
-2017-03-08,deeplearning4j,deeplearning4j,False,162,221,59,103
-2017-03-08,galaxy,galaxyproject,False,1370,1416,46,1324
-2017-03-08,galaxy-hub,galaxyproject,False,183,226,43,140
-2017-03-08,galaxy-hub,galaxyproject,True,80,821,741,-661
-2017-03-08,getorg,getorg,False,14362,14367,5,14357
-2017-03-08,getorg,getorg,True,1470,1470,0,1470
-2017-03-08,hdbscan,scikit-learn-contrib,True,121,134,13,108
-2017-03-08,ipython,ipython,False,295,678,383,-88
-2017-03-08,ipython,ipython,True,207,278,71,136
-2017-03-08,julia,JuliaLang,False,428,717,289,139
-2017-03-08,julia,JuliaLang,True,2,3,1,1
-2017-03-08,libraries.io,librariesio,False,936,2713,1777,-841
-2017-03-08,libraries.io,librariesio,True,528,574,46,482
-2017-03-08,matplotlib,matplotlib,False,169,204,35,134
-2017-03-08,matplotlib,matplotlib,True,1940,2122,182,1758
-2017-03-08,mne-python,mne-tools,False,1974,2573,599,1375
-2017-03-08,mne-python,mne-tools,True,97,110,13,84
-2017-03-08,notebook,jupyter,False,16,25,9,7
-2017-03-08,pandas,pandas-dev,False,159,212,53,106
-2017-03-08,pandas,pandas-dev,True,52,107,55,-3
-2017-03-08,pmagpy,pmagpy,False,1120,1770,650,470
-2017-03-08,pmagpy,pmagpy,True,382,763,381,1
-2017-03-08,pycortex,gallantlab,False,707,1032,325,382
-2017-03-08,pycortex,gallantlab,True,961,1018,57,904
-2017-03-08,quanteda,kbenoit,False,181,189,8,173
-2017-03-08,readtext,kbenoit,False,61,85,24,37
-2017-03-08,readtext,kbenoit,True,1,6,5,-4
-2017-03-08,scikit-learn,scikit-learn,False,1103,1594,491,612
-2017-03-08,scikit-learn,scikit-learn,True,302,431,129,173
-2017-03-08,sunpy,sunpy,False,324,381,57,267
-2017-03-08,sunpy,sunpy,True,14,22,8,6
-2017-03-08,watchtower,NelleV,False,189,239,50,139
-2017-03-08,watchtower,NelleV,True,32,57,25,7
-2017-03-09,CARLsim3,UCI-CARL,False,113,116,3,110
-2017-03-09,MSNoise,ROBelgium,False,106,157,51,55
-2017-03-09,MSNoise,ROBelgium,True,9,13,4,5
-2017-03-09,Sylius,Sylius,False,2630,3703,1073,1557
-2017-03-09,Sylius,Sylius,True,5099,7335,2236,2863
-2017-03-09,bokeh,bokeh,False,47,51,4,43
-2017-03-09,bokeh,bokeh,True,54,66,12,42
-2017-03-09,deeplearning4j,deeplearning4j,False,734,749,15,719
-2017-03-09,diy,diatomic,False,2,4,2,0
-2017-03-09,diy,diatomic,True,295,655,360,-65
-2017-03-09,galaxy,galaxyproject,False,2568,3043,475,2093
-2017-03-09,galaxy,galaxyproject,True,85,102,17,68
-2017-03-09,hdbscan,scikit-learn-contrib,True,17,34,17,0
-2017-03-09,ipython,ipython,False,372,772,400,-28
-2017-03-09,ipython,ipython,True,189,264,75,114
-2017-03-09,julia,JuliaLang,False,1271,1917,646,625
-2017-03-09,julia,JuliaLang,True,2,3,1,1
-2017-03-09,libraries.io,librariesio,False,72,129,57,15
-2017-03-09,libraries.io,librariesio,True,467,510,43,424
-2017-03-09,matplotlib,matplotlib,False,196,244,48,148
-2017-03-09,matplotlib,matplotlib,True,1971,2106,135,1836
-2017-03-09,notebook,jupyter,False,793,876,83,710
-2017-03-09,notebook,jupyter,True,23,34,11,12
-2017-03-09,pandas,pandas-dev,False,417,481,64,353
-2017-03-09,pandas,pandas-dev,True,119,127,8,111
-2017-03-09,pmagpy,pmagpy,False,1271,2044,773,498
-2017-03-09,pmagpy,pmagpy,True,382,763,381,1
-2017-03-09,pulse2percept,uwescience,False,0,2,2,-2
-2017-03-09,pycortex,gallantlab,False,83,102,19,64
-2017-03-09,pycortex,gallantlab,True,307,353,46,261
-2017-03-09,quanteda,kbenoit,False,673,1018,345,328
-2017-03-09,quanteda,kbenoit,True,1,1,0,1
-2017-03-09,scikit-learn,scikit-learn,False,978,1442,464,514
-2017-03-09,scikit-learn,scikit-learn,True,303,436,133,170
-2017-03-09,scipy,scipy,False,89,90,1,88
-2017-03-09,scipy,scipy,True,23,28,5,18
-2017-03-11,CARLsim3,UCI-CARL,False,878,3178,2300,-1422
-2017-03-11,CARLsim3,UCI-CARL,True,2138,2398,260,1878
-2017-03-11,mne-python,mne-tools,False,818,1130,312,506
-2017-03-11,mne-python,mne-tools,True,67,82,15,52
-2017-03-11,notebook,jupyter,False,726,790,64,662
-2017-03-11,notebook,jupyter,True,1,2,1,0
-2017-03-11,pycortex,gallantlab,False,128,165,37,91
-2017-03-11,pycortex,gallantlab,True,1113,1139,26,1087
-2017-03-11,scipy,scipy,False,7,15,8,-1
-2017-03-11,scipy,scipy,True,23,28,5,18
+2017-02-19 16:00:00-08:00,deeplearning4j,deeplearning4j,False,202,235,33,169
+2017-02-19 16:00:00-08:00,ipython,ipython,True,1,1,0,1
+2017-02-19 16:00:00-08:00,julia,JuliaLang,False,76,93,17,59
+2017-02-19 16:00:00-08:00,julia,JuliaLang,True,315,414,99,216
+2017-02-19 16:00:00-08:00,matplotlib,matplotlib,False,198,430,232,-34
+2017-02-19 16:00:00-08:00,scikit-image,scikit-image,False,182,243,61,121
+2017-02-19 16:00:00-08:00,scikit-image,scikit-image,True,1,1,0,1
+2017-02-19 16:00:00-08:00,sncosmo,sncosmo,False,78,89,11,67
+2017-02-20 16:00:00-08:00,Sylius,Sylius,False,1424,2002,578,846
+2017-02-20 16:00:00-08:00,Sylius,Sylius,True,9831,13736,3905,5926
+2017-02-20 16:00:00-08:00,deeplearning4j,deeplearning4j,False,3803,3881,78,3725
+2017-02-20 16:00:00-08:00,galaxy,galaxyproject,False,3470,7409,3939,-469
+2017-02-20 16:00:00-08:00,galaxy,galaxyproject,True,467,970,503,-36
+2017-02-20 16:00:00-08:00,galaxy-hub,galaxyproject,False,221,281,60,161
+2017-02-20 16:00:00-08:00,galaxy-hub,galaxyproject,True,1017,1148,131,886
+2017-02-20 16:00:00-08:00,ipython,ipython,False,12,253,241,-229
+2017-02-20 16:00:00-08:00,ipython,ipython,True,22,23,1,21
+2017-02-20 16:00:00-08:00,julia,JuliaLang,False,210,364,154,56
+2017-02-20 16:00:00-08:00,libraries.io,librariesio,False,806,1199,393,413
+2017-02-20 16:00:00-08:00,matplotlib,matplotlib,False,102,109,7,95
+2017-02-20 16:00:00-08:00,matplotlib,matplotlib,True,1710,1710,0,1710
+2017-02-20 16:00:00-08:00,mne-python,mne-tools,False,113,155,42,71
+2017-02-20 16:00:00-08:00,quanteda,kbenoit,False,71,85,14,57
+2017-02-20 16:00:00-08:00,quanteda,kbenoit,True,2,2,0,2
+2017-02-20 16:00:00-08:00,scikit-image,scikit-image,False,25,38,13,12
+2017-02-20 16:00:00-08:00,scikit-learn,scikit-learn,False,14,15,1,13
+2017-02-20 16:00:00-08:00,scikit-learn,scikit-learn,True,1,2,1,0
+2017-02-20 16:00:00-08:00,scipy,scipy,False,8,12,4,4
+2017-02-21 16:00:00-08:00,MSNoise,ROBelgium,False,0,2,2,-2
+2017-02-21 16:00:00-08:00,Sylius,Sylius,False,2287,3220,933,1354
+2017-02-21 16:00:00-08:00,Sylius,Sylius,True,1887,2897,1010,877
+2017-02-21 16:00:00-08:00,deeplearning4j,deeplearning4j,False,77,151,74,3
+2017-02-21 16:00:00-08:00,galaxy,galaxyproject,False,3521,7490,3969,-448
+2017-02-21 16:00:00-08:00,galaxy,galaxyproject,True,467,970,503,-36
+2017-02-21 16:00:00-08:00,galaxy-hub,galaxyproject,False,3,3,0,3
+2017-02-21 16:00:00-08:00,galaxy-hub,galaxyproject,True,1505,1877,372,1133
+2017-02-21 16:00:00-08:00,ipython,ipython,False,102,104,2,100
+2017-02-21 16:00:00-08:00,ipython,ipython,True,2,2,0,2
+2017-02-21 16:00:00-08:00,julia,JuliaLang,False,1731,2241,510,1221
+2017-02-21 16:00:00-08:00,julia,JuliaLang,True,142,146,4,138
+2017-02-21 16:00:00-08:00,libraries.io,librariesio,False,277,726,449,-172
+2017-02-21 16:00:00-08:00,mne-python,mne-tools,False,251,307,56,195
+2017-02-21 16:00:00-08:00,mne-python,mne-tools,True,28,28,0,28
+2017-02-21 16:00:00-08:00,pandas,pandas-dev,False,606,929,323,283
+2017-02-21 16:00:00-08:00,pandas,pandas-dev,True,59,60,1,58
+2017-02-21 16:00:00-08:00,pmagpy,pmagpy,False,36434,36435,1,36433
+2017-02-21 16:00:00-08:00,pmagpy,pmagpy,True,0,97,97,-97
+2017-02-21 16:00:00-08:00,scikit-image,scikit-image,False,4,9,5,-1
+2017-02-21 16:00:00-08:00,scikit-learn,scikit-learn,False,9,18,9,0
+2017-02-22 16:00:00-08:00,CARLsim4,UCI-CARL,False,164,312,148,16
+2017-02-22 16:00:00-08:00,MSNoise,ROBelgium,False,2,4,2,0
+2017-02-22 16:00:00-08:00,bokeh,bokeh,True,6,12,6,0
+2017-02-22 16:00:00-08:00,connector-instructors,data-8,True,343,343,0,343
+2017-02-22 16:00:00-08:00,galaxy,galaxyproject,False,16,73,57,-41
+2017-02-22 16:00:00-08:00,galaxy-hub,galaxyproject,True,40,137,97,-57
+2017-02-22 16:00:00-08:00,julia,JuliaLang,False,3081,3202,121,2960
+2017-02-22 16:00:00-08:00,julia,JuliaLang,True,10,22,12,-2
+2017-02-22 16:00:00-08:00,libraries.io,librariesio,False,325,469,144,181
+2017-02-22 16:00:00-08:00,libraries.io,librariesio,True,15,29,14,1
+2017-02-22 16:00:00-08:00,matplotlib,matplotlib,False,1,2,1,0
+2017-02-22 16:00:00-08:00,notebook,jupyter,False,29,43,14,15
+2017-02-22 16:00:00-08:00,pmagpy,pmagpy,False,387,1086,699,-312
+2017-02-22 16:00:00-08:00,quanteda,kbenoit,False,117,142,25,92
+2017-02-22 16:00:00-08:00,scikit-learn,scikit-learn,False,27,33,6,21
+2017-02-22 16:00:00-08:00,scikit-learn,scikit-learn,True,23,25,2,21
+2017-02-22 16:00:00-08:00,scipy,scipy,False,25,38,13,12
+2017-02-23 16:00:00-08:00,deeplearning4j,deeplearning4j,False,7645,7889,244,7401
+2017-02-23 16:00:00-08:00,galaxy-hub,galaxyproject,False,65,136,71,-6
+2017-02-23 16:00:00-08:00,galaxy-hub,galaxyproject,True,209,5102,4893,-4684
+2017-02-23 16:00:00-08:00,ipython,ipython,False,13,48,35,-22
+2017-02-23 16:00:00-08:00,ipython,ipython,True,10,29,19,-9
+2017-02-23 16:00:00-08:00,julia,JuliaLang,False,558,911,353,205
+2017-02-23 16:00:00-08:00,julia,JuliaLang,True,51,84,33,18
+2017-02-23 16:00:00-08:00,matplotlib,matplotlib,False,100,186,86,14
+2017-02-23 16:00:00-08:00,mne-python,mne-tools,False,586,867,281,305
+2017-02-23 16:00:00-08:00,mne-python,mne-tools,True,26,34,8,18
+2017-02-23 16:00:00-08:00,notebook,jupyter,True,2,2,0,2
+2017-02-23 16:00:00-08:00,pandas,pandas-dev,False,372,421,49,323
+2017-02-23 16:00:00-08:00,pandas,pandas-dev,True,5,5,0,5
+2017-02-23 16:00:00-08:00,pmagpy,pmagpy,False,4,6,2,2
+2017-02-23 16:00:00-08:00,quanteda,kbenoit,False,254,277,23,231
+2017-02-23 16:00:00-08:00,quanteda,kbenoit,True,11,11,0,11
+2017-02-23 16:00:00-08:00,scipy,scipy,False,11,17,6,5
+2017-02-24 16:00:00-08:00,Sylius,Sylius,False,446,671,225,221
+2017-02-24 16:00:00-08:00,Sylius,Sylius,True,1461,2192,731,730
+2017-02-24 16:00:00-08:00,deeplearning4j,deeplearning4j,False,261,267,6,255
+2017-02-24 16:00:00-08:00,galaxy,galaxyproject,False,294,297,3,291
+2017-02-24 16:00:00-08:00,galaxy-hub,galaxyproject,True,135,1251,1116,-981
+2017-02-24 16:00:00-08:00,julia,JuliaLang,False,60,82,22,38
+2017-02-24 16:00:00-08:00,julia,JuliaLang,True,15,15,0,15
+2017-02-24 16:00:00-08:00,libraries.io,librariesio,False,298,396,98,200
+2017-02-24 16:00:00-08:00,matplotlib,matplotlib,False,3334,5770,2436,898
+2017-02-24 16:00:00-08:00,matplotlib,matplotlib,True,393,718,325,68
+2017-02-24 16:00:00-08:00,notebook,jupyter,False,2,3,1,1
+2017-02-24 16:00:00-08:00,notebook,jupyter,True,10,20,10,0
+2017-02-24 16:00:00-08:00,scikit-image,scikit-image,False,17,23,6,11
+2017-02-24 16:00:00-08:00,scikit-image,scikit-image,True,1,2,1,0
+2017-02-24 16:00:00-08:00,scipy,scipy,False,2,4,2,0
+2017-02-25 16:00:00-08:00,deeplearning4j,deeplearning4j,False,332,366,34,298
+2017-02-25 16:00:00-08:00,galaxy,galaxyproject,False,3664,7664,4000,-336
+2017-02-25 16:00:00-08:00,galaxy,galaxyproject,True,468,971,503,-35
+2017-02-25 16:00:00-08:00,galaxy-hub,galaxyproject,True,114,247,133,-19
+2017-02-25 16:00:00-08:00,hdbscan,scikit-learn-contrib,False,0,0,0,0
+2017-02-25 16:00:00-08:00,hdbscan,scikit-learn-contrib,True,32,64,32,0
+2017-02-25 16:00:00-08:00,julia,JuliaLang,False,7,9,2,5
+2017-02-25 16:00:00-08:00,matplotlib,matplotlib,False,30,74,44,-14
+2017-02-25 16:00:00-08:00,matplotlib,matplotlib,True,621,1057,436,185
+2017-02-25 16:00:00-08:00,quanteda,kbenoit,False,121,216,95,26
+2017-02-25 16:00:00-08:00,scikit-image,scikit-image,True,1,2,1,0
+2017-02-25 16:00:00-08:00,scipy,scipy,False,29,41,12,17
+2017-02-26 16:00:00-08:00,Omeka,omeka,False,2,4,2,0
+2017-02-26 16:00:00-08:00,bokeh,bokeh,False,39,79,40,-1
+2017-02-26 16:00:00-08:00,bokeh,bokeh,True,43,86,43,0
+2017-02-26 16:00:00-08:00,deeplearning4j,deeplearning4j,False,115,641,526,-411
+2017-02-26 16:00:00-08:00,galaxy,galaxyproject,False,3,35,32,-29
+2017-02-26 16:00:00-08:00,ipython,ipython,False,137,201,64,73
+2017-02-26 16:00:00-08:00,ipython,ipython,True,179,252,73,106
+2017-02-26 16:00:00-08:00,libraries.io,librariesio,False,11,16,5,6
+2017-02-26 16:00:00-08:00,libraries.io,librariesio,True,2,2,0,2
+2017-02-26 16:00:00-08:00,matplotlib,matplotlib,True,7,14,7,0
+2017-02-26 16:00:00-08:00,notebook,jupyter,False,62,73,11,51
+2017-02-26 16:00:00-08:00,pandas,pandas-dev,False,296,2755,2459,-2163
+2017-02-26 16:00:00-08:00,pandas,pandas-dev,True,43,339,296,-253
+2017-02-26 16:00:00-08:00,quanteda,kbenoit,False,41,49,8,33
+2017-02-26 16:00:00-08:00,quanteda,kbenoit,True,2,3,1,1
+2017-02-26 16:00:00-08:00,scipy,scipy,False,19,19,0,19
+2017-02-26 16:00:00-08:00,sunpy,sunpy,False,228,240,12,216
+2017-02-27 16:00:00-08:00,Sylius,Sylius,False,1035,1625,590,445
+2017-02-27 16:00:00-08:00,Sylius,Sylius,True,1731,2384,653,1078
+2017-02-27 16:00:00-08:00,deeplearning4j,deeplearning4j,False,590,608,18,572
+2017-02-27 16:00:00-08:00,galaxy,galaxyproject,False,306,317,11,295
+2017-02-27 16:00:00-08:00,galaxy,galaxyproject,True,6,10,4,2
+2017-02-27 16:00:00-08:00,galaxy-hub,galaxyproject,True,50,86,36,14
+2017-02-27 16:00:00-08:00,ipython,ipython,False,40,74,34,6
+2017-02-27 16:00:00-08:00,ipython,ipython,True,162,217,55,107
+2017-02-27 16:00:00-08:00,julia,JuliaLang,False,62,88,26,36
+2017-02-27 16:00:00-08:00,libraries.io,librariesio,False,32,66,34,-2
+2017-02-27 16:00:00-08:00,libraries.io,librariesio,True,58,60,2,56
+2017-02-27 16:00:00-08:00,matplotlib,matplotlib,True,1,1,0,1
+2017-02-27 16:00:00-08:00,mne-python,mne-tools,False,81,165,84,-3
+2017-02-27 16:00:00-08:00,notebook,jupyter,False,67,84,17,50
+2017-02-27 16:00:00-08:00,notebook,jupyter,True,23,34,11,12
+2017-02-27 16:00:00-08:00,pandas,pandas-dev,False,13,15,2,11
+2017-02-27 16:00:00-08:00,pandas,pandas-dev,True,1,2,1,0
+2017-02-27 16:00:00-08:00,pomegranate,jmschrei,False,0,5,5,-5
+2017-02-27 16:00:00-08:00,pomegranate,jmschrei,True,3,4,1,2
+2017-02-28 16:00:00-08:00,Sylius,Sylius,False,392,519,127,265
+2017-02-28 16:00:00-08:00,Sylius,Sylius,True,204,265,61,143
+2017-02-28 16:00:00-08:00,bokeh,bokeh,False,369,627,258,111
+2017-02-28 16:00:00-08:00,bokeh,bokeh,True,89,89,0,89
+2017-02-28 16:00:00-08:00,cottoncandy,gallantlab,False,1,1,0,1
+2017-02-28 16:00:00-08:00,deeplearning4j,deeplearning4j,False,2016,3274,1258,758
+2017-02-28 16:00:00-08:00,ipython,ipython,False,361,752,391,-30
+2017-02-28 16:00:00-08:00,ipython,ipython,True,208,275,67,141
+2017-02-28 16:00:00-08:00,julia,JuliaLang,False,1005,1086,81,924
+2017-02-28 16:00:00-08:00,libraries.io,librariesio,False,6,7,1,5
+2017-02-28 16:00:00-08:00,matplotlib,matplotlib,False,32,49,17,15
+2017-02-28 16:00:00-08:00,matplotlib,matplotlib,True,23,26,3,20
+2017-02-28 16:00:00-08:00,notebook,jupyter,False,464,503,39,425
+2017-02-28 16:00:00-08:00,notebook,jupyter,True,23,34,11,12
+2017-02-28 16:00:00-08:00,pandas,pandas-dev,False,14,15,1,13
+2017-02-28 16:00:00-08:00,pmagpy,pmagpy,False,443,798,355,88
+2017-02-28 16:00:00-08:00,quanteda,kbenoit,False,203,414,211,-8
+2017-02-28 16:00:00-08:00,readtext,kbenoit,False,3,6,3,0
+2017-02-28 16:00:00-08:00,scikit-image,scikit-image,False,31,86,55,-24
+2017-02-28 16:00:00-08:00,scikit-image,scikit-image,True,12,44,32,-20
+2017-02-28 16:00:00-08:00,sunpy,sunpy,False,62,72,10,52
+2017-03-01 16:00:00-08:00,bokeh,bokeh,False,14,33,19,-5
+2017-03-01 16:00:00-08:00,deeplearning4j,deeplearning4j,False,226,443,217,9
+2017-03-01 16:00:00-08:00,galaxy,galaxyproject,False,4,8,4,0
+2017-03-01 16:00:00-08:00,galaxy-hub,galaxyproject,False,154,193,39,115
+2017-03-01 16:00:00-08:00,galaxy-hub,galaxyproject,True,5087,5238,151,4936
+2017-03-01 16:00:00-08:00,ipython,ipython,False,6,11,5,1
+2017-03-01 16:00:00-08:00,ipython,ipython,True,6,11,5,1
+2017-03-01 16:00:00-08:00,julia,JuliaLang,False,105,150,45,60
+2017-03-01 16:00:00-08:00,libraries.io,librariesio,False,115,1660,1545,-1430
+2017-03-01 16:00:00-08:00,matplotlib,matplotlib,False,2197,3754,1557,640
+2017-03-01 16:00:00-08:00,matplotlib,matplotlib,True,1014,1756,742,272
+2017-03-01 16:00:00-08:00,mne-python,mne-tools,False,2936,3833,897,2039
+2017-03-01 16:00:00-08:00,mne-python,mne-tools,True,183,266,83,100
+2017-03-01 16:00:00-08:00,notebook,jupyter,False,3,5,2,1
+2017-03-01 16:00:00-08:00,pandas,pandas-dev,False,180,235,55,125
+2017-03-01 16:00:00-08:00,pandas,pandas-dev,True,13,13,0,13
+2017-03-01 16:00:00-08:00,readtext,kbenoit,False,26,31,5,21
+2017-03-01 16:00:00-08:00,readtext,kbenoit,True,5,9,4,1
+2017-03-01 16:00:00-08:00,scikit-learn,scikit-learn,False,6,7,1,5
+2017-03-01 16:00:00-08:00,sunpy,sunpy,False,13,19,6,7
+2017-03-02 16:00:00-08:00,Sylius,Sylius,False,1066,1258,192,874
+2017-03-02 16:00:00-08:00,Sylius,Sylius,True,262,262,0,262
+2017-03-02 16:00:00-08:00,deeplearning4j,deeplearning4j,False,294,524,230,64
+2017-03-02 16:00:00-08:00,galaxy,galaxyproject,False,741,874,133,608
+2017-03-02 16:00:00-08:00,galaxy,galaxyproject,True,78,91,13,65
+2017-03-02 16:00:00-08:00,julia,JuliaLang,False,84,118,34,50
+2017-03-02 16:00:00-08:00,libraries.io,librariesio,False,151,197,46,105
+2017-03-02 16:00:00-08:00,mne-python,mne-tools,False,2739,3502,763,1976
+2017-03-02 16:00:00-08:00,mne-python,mne-tools,True,152,178,26,126
+2017-03-02 16:00:00-08:00,notebook,jupyter,False,404,431,27,377
+2017-03-02 16:00:00-08:00,quanteda,kbenoit,True,2827,3594,767,2060
+2017-03-02 16:00:00-08:00,scikit-learn,scikit-learn,False,1,1,0,1
+2017-03-02 16:00:00-08:00,sunpy,sunpy,False,32,54,22,10
+2017-03-02 16:00:00-08:00,sunpy,sunpy,True,1,2,1,0
+2017-03-02 16:00:00-08:00,watchtower,NelleV,False,25,31,6,19
+2017-03-02 16:00:00-08:00,watchtower,NelleV,True,2,52,50,-48
+2017-03-03 16:00:00-08:00,CARLsim3,UCI-CARL,False,590,925,335,255
+2017-03-03 16:00:00-08:00,CARLsim3,UCI-CARL,True,36,61,25,11
+2017-03-03 16:00:00-08:00,Sylius,Sylius,True,2,3,1,1
+2017-03-03 16:00:00-08:00,deeplearning4j,deeplearning4j,False,954,1326,372,582
+2017-03-03 16:00:00-08:00,julia,JuliaLang,False,43,54,11,32
+2017-03-03 16:00:00-08:00,pandas,pandas-dev,False,196,365,169,27
+2017-03-03 16:00:00-08:00,pandas,pandas-dev,True,7,22,15,-8
+2017-03-03 16:00:00-08:00,pmagpy,pmagpy,False,5,6,1,4
+2017-03-03 16:00:00-08:00,scikit-learn,scikit-learn,False,255,259,4,251
+2017-03-03 16:00:00-08:00,scikit-learn,scikit-learn,True,63,74,11,52
+2017-03-04 16:00:00-08:00,CARLsim3,UCI-CARL,False,42,64,22,20
+2017-03-04 16:00:00-08:00,CARLsim3,UCI-CARL,True,31,51,20,11
+2017-03-04 16:00:00-08:00,Sylius,Sylius,False,2041,2490,449,1592
+2017-03-04 16:00:00-08:00,Sylius,Sylius,True,1203,1218,15,1188
+2017-03-04 16:00:00-08:00,deeplearning4j,deeplearning4j,False,536,551,15,521
+2017-03-04 16:00:00-08:00,galaxy,galaxyproject,False,1312,1347,35,1277
+2017-03-04 16:00:00-08:00,julia,JuliaLang,False,104,152,48,56
+2017-03-04 16:00:00-08:00,pandas,pandas-dev,False,222,242,20,202
+2017-03-04 16:00:00-08:00,pandas,pandas-dev,True,2,3,1,1
+2017-03-04 16:00:00-08:00,scikit-image,scikit-image,False,263,411,148,115
+2017-03-04 16:00:00-08:00,scikit-image,scikit-image,True,99,179,80,19
+2017-03-05 16:00:00-08:00,CARLsim3,UCI-CARL,True,11,13,2,9
+2017-03-05 16:00:00-08:00,MSNoise,ROBelgium,False,38,51,13,25
+2017-03-05 16:00:00-08:00,MSNoise,ROBelgium,True,5,6,1,4
+2017-03-05 16:00:00-08:00,Sylius,Sylius,False,589,829,240,349
+2017-03-05 16:00:00-08:00,Sylius,Sylius,True,216,364,148,68
+2017-03-05 16:00:00-08:00,deeplearning4j,deeplearning4j,False,235,241,6,229
+2017-03-05 16:00:00-08:00,galaxy,galaxyproject,False,165,213,48,117
+2017-03-05 16:00:00-08:00,galaxy,galaxyproject,True,2,5,3,-1
+2017-03-05 16:00:00-08:00,galaxy-hub,galaxyproject,False,7,12,5,2
+2017-03-05 16:00:00-08:00,galaxy-hub,galaxyproject,True,531,849,318,213
+2017-03-05 16:00:00-08:00,hdbscan,scikit-learn-contrib,True,20,20,0,20
+2017-03-05 16:00:00-08:00,henson,mrzv,True,27,36,9,18
+2017-03-05 16:00:00-08:00,julia,JuliaLang,False,307,462,155,152
+2017-03-05 16:00:00-08:00,matplotlib,matplotlib,False,23,24,1,22
+2017-03-05 16:00:00-08:00,matplotlib,matplotlib,True,7,7,0,7
+2017-03-05 16:00:00-08:00,pmagpy,pmagpy,False,640,880,240,400
+2017-03-05 16:00:00-08:00,pycortex,gallantlab,False,133,773,640,-507
+2017-03-05 16:00:00-08:00,pycortex,gallantlab,True,90,98,8,82
+2017-03-05 16:00:00-08:00,quanteda,kbenoit,False,61,68,7,54
+2017-03-05 16:00:00-08:00,scikit-image,scikit-image,False,210,337,127,83
+2017-03-05 16:00:00-08:00,scikit-image,scikit-image,True,99,179,80,19
+2017-03-06 16:00:00-08:00,CARLsim3,UCI-CARL,False,27,33,6,21
+2017-03-06 16:00:00-08:00,CARLsim3,UCI-CARL,True,352,638,286,66
+2017-03-06 16:00:00-08:00,CARLsim4,UCI-CARL,False,590,1533,943,-353
+2017-03-06 16:00:00-08:00,CARLsim4,UCI-CARL,True,50,104,54,-4
+2017-03-06 16:00:00-08:00,Omeka,omeka,False,105,127,22,83
+2017-03-06 16:00:00-08:00,Sylius,Sylius,False,789,993,204,585
+2017-03-06 16:00:00-08:00,deeplearning4j,deeplearning4j,False,6358,12655,6297,61
+2017-03-06 16:00:00-08:00,deeplearning4j,deeplearning4j,True,18,28,10,8
+2017-03-06 16:00:00-08:00,galaxy,galaxyproject,False,196,217,21,175
+2017-03-06 16:00:00-08:00,getorg,getorg,False,6,11,5,1
+2017-03-06 16:00:00-08:00,julia,JuliaLang,False,645,954,309,336
+2017-03-06 16:00:00-08:00,libraries.io,librariesio,True,68,111,43,25
+2017-03-06 16:00:00-08:00,matplotlib,matplotlib,False,48,67,19,29
+2017-03-06 16:00:00-08:00,matplotlib,matplotlib,True,155,260,105,50
+2017-03-06 16:00:00-08:00,notebook,jupyter,False,12,13,1,11
+2017-03-06 16:00:00-08:00,pandas,pandas-dev,False,926,1724,798,128
+2017-03-06 16:00:00-08:00,pandas,pandas-dev,True,42,49,7,35
+2017-03-06 16:00:00-08:00,pmagpy,pmagpy,False,464,604,140,324
+2017-03-06 16:00:00-08:00,pmagpy,pmagpy,True,382,763,381,1
+2017-03-06 16:00:00-08:00,pomegranate,jmschrei,False,252,252,0,252
+2017-03-06 16:00:00-08:00,pulse2percept,uwescience,False,138,172,34,104
+2017-03-06 16:00:00-08:00,pycortex,gallantlab,False,0,0,0,0
+2017-03-06 16:00:00-08:00,pycortex,gallantlab,True,119,119,0,119
+2017-03-06 16:00:00-08:00,quanteda,kbenoit,False,66,127,61,5
+2017-03-06 16:00:00-08:00,scipy,scipy,False,21,23,2,19
+2017-03-06 16:00:00-08:00,scipy,scipy,True,87,177,90,-3
+2017-03-06 16:00:00-08:00,sncosmo,sncosmo,False,3,6,3,0
+2017-03-07 16:00:00-08:00,CARLsim3,UCI-CARL,False,1,2,1,0
+2017-03-07 16:00:00-08:00,CARLsim4,UCI-CARL,False,11,18,7,4
+2017-03-07 16:00:00-08:00,CARLsim4,UCI-CARL,True,531,887,356,175
+2017-03-07 16:00:00-08:00,Omeka,omeka,False,104,125,21,83
+2017-03-07 16:00:00-08:00,Sylius,Sylius,False,3228,4369,1141,2087
+2017-03-07 16:00:00-08:00,Sylius,Sylius,True,5568,7485,1917,3651
+2017-03-07 16:00:00-08:00,bokeh,bokeh,False,2,4,2,0
+2017-03-07 16:00:00-08:00,cottoncandy,gallantlab,False,31,44,13,18
+2017-03-07 16:00:00-08:00,cottoncandy,gallantlab,True,2,2,0,2
+2017-03-07 16:00:00-08:00,galaxy,galaxyproject,False,572,1018,446,126
+2017-03-07 16:00:00-08:00,galaxy-hub,galaxyproject,False,203,238,35,168
+2017-03-07 16:00:00-08:00,galaxy-hub,galaxyproject,True,310,1231,921,-611
+2017-03-07 16:00:00-08:00,hdbscan,scikit-learn-contrib,True,91,93,2,89
+2017-03-07 16:00:00-08:00,ipython,ipython,False,349,732,383,-34
+2017-03-07 16:00:00-08:00,ipython,ipython,True,207,278,71,136
+2017-03-07 16:00:00-08:00,julia,JuliaLang,False,430,728,298,132
+2017-03-07 16:00:00-08:00,julia,JuliaLang,True,2,3,1,1
+2017-03-07 16:00:00-08:00,libraries.io,librariesio,False,936,2713,1777,-841
+2017-03-07 16:00:00-08:00,libraries.io,librariesio,True,528,574,46,482
+2017-03-07 16:00:00-08:00,matplotlib,matplotlib,False,168,202,34,134
+2017-03-07 16:00:00-08:00,matplotlib,matplotlib,True,1897,2005,108,1789
+2017-03-07 16:00:00-08:00,mne-python,mne-tools,False,1974,2573,599,1375
+2017-03-07 16:00:00-08:00,mne-python,mne-tools,True,97,110,13,84
+2017-03-07 16:00:00-08:00,notebook,jupyter,False,25,32,7,18
+2017-03-07 16:00:00-08:00,notebook,jupyter,True,22,32,10,12
+2017-03-07 16:00:00-08:00,pandas,pandas-dev,False,165,218,53,112
+2017-03-07 16:00:00-08:00,pandas,pandas-dev,True,53,109,56,-3
+2017-03-07 16:00:00-08:00,pulse2percept,uwescience,False,0,2,2,-2
+2017-03-07 16:00:00-08:00,pycortex,gallantlab,False,352,418,66,286
+2017-03-07 16:00:00-08:00,pycortex,gallantlab,True,754,757,3,751
+2017-03-07 16:00:00-08:00,quanteda,kbenoit,False,181,189,8,173
+2017-03-07 16:00:00-08:00,readtext,kbenoit,False,61,85,24,37
+2017-03-07 16:00:00-08:00,readtext,kbenoit,True,1,6,5,-4
+2017-03-07 16:00:00-08:00,scikit-learn,scikit-learn,False,1103,1594,491,612
+2017-03-07 16:00:00-08:00,scikit-learn,scikit-learn,True,303,433,130,173
+2017-03-07 16:00:00-08:00,scipy,scipy,False,78,91,13,65
+2017-03-07 16:00:00-08:00,sunpy,sunpy,False,324,381,57,267
+2017-03-07 16:00:00-08:00,sunpy,sunpy,True,14,22,8,6
+2017-03-07 16:00:00-08:00,watchtower,NelleV,False,189,239,50,139
+2017-03-07 16:00:00-08:00,watchtower,NelleV,True,32,57,25,7
+2017-03-08 16:00:00-08:00,CARLsim3,UCI-CARL,False,121,350,229,-108
+2017-03-08 16:00:00-08:00,MSNoise,ROBelgium,False,106,157,51,55
+2017-03-08 16:00:00-08:00,MSNoise,ROBelgium,True,9,13,4,5
+2017-03-08 16:00:00-08:00,Sylius,Sylius,False,2490,3484,994,1496
+2017-03-08 16:00:00-08:00,Sylius,Sylius,True,5105,7341,2236,2869
+2017-03-08 16:00:00-08:00,bokeh,bokeh,False,47,51,4,43
+2017-03-08 16:00:00-08:00,bokeh,bokeh,True,54,66,12,42
+2017-03-08 16:00:00-08:00,deeplearning4j,deeplearning4j,False,1180,1562,382,798
+2017-03-08 16:00:00-08:00,diy,diatomic,False,2,4,2,0
+2017-03-08 16:00:00-08:00,diy,diatomic,True,295,655,360,-65
+2017-03-08 16:00:00-08:00,galaxy,galaxyproject,False,2530,2983,453,2077
+2017-03-08 16:00:00-08:00,galaxy,galaxyproject,True,85,102,17,68
+2017-03-08 16:00:00-08:00,hdbscan,scikit-learn-contrib,False,128,133,5,123
+2017-03-08 16:00:00-08:00,hdbscan,scikit-learn-contrib,True,17,34,17,0
+2017-03-08 16:00:00-08:00,ipython,ipython,False,291,402,111,180
+2017-03-08 16:00:00-08:00,ipython,ipython,True,187,261,74,113
+2017-03-08 16:00:00-08:00,julia,JuliaLang,False,1001,1540,539,462
+2017-03-08 16:00:00-08:00,julia,JuliaLang,True,2,3,1,1
+2017-03-08 16:00:00-08:00,libraries.io,librariesio,False,72,129,57,15
+2017-03-08 16:00:00-08:00,libraries.io,librariesio,True,467,510,43,424
+2017-03-08 16:00:00-08:00,matplotlib,matplotlib,False,191,226,35,156
+2017-03-08 16:00:00-08:00,matplotlib,matplotlib,True,1999,2192,193,1806
+2017-03-08 16:00:00-08:00,notebook,jupyter,False,793,876,83,710
+2017-03-08 16:00:00-08:00,notebook,jupyter,True,23,34,11,12
+2017-03-08 16:00:00-08:00,pandas,pandas-dev,False,278,300,22,256
+2017-03-08 16:00:00-08:00,pandas,pandas-dev,True,118,126,8,110
+2017-03-08 16:00:00-08:00,pmagpy,pmagpy,False,37,38,1,36
+2017-03-08 16:00:00-08:00,pycortex,gallantlab,False,813,1170,357,456
+2017-03-08 16:00:00-08:00,pycortex,gallantlab,True,1264,1308,44,1220
+2017-03-08 16:00:00-08:00,quanteda,kbenoit,False,673,1018,345,328
+2017-03-08 16:00:00-08:00,quanteda,kbenoit,True,1,1,0,1
+2017-03-08 16:00:00-08:00,scikit-learn,scikit-learn,False,927,1378,451,476
+2017-03-08 16:00:00-08:00,scikit-learn,scikit-learn,True,235,342,107,128
+2017-03-08 16:00:00-08:00,scipy,scipy,False,210,234,24,186
+2017-03-08 16:00:00-08:00,scipy,scipy,True,110,205,95,15
+2017-03-08 16:00:00-08:00,sncosmo,sncosmo,False,162,216,54,108
+2017-03-08 16:00:00-08:00,sncosmo,sncosmo,True,151,185,34,117
+2017-03-09 16:00:00-08:00,CARLsim3,UCI-CARL,False,524,2456,1932,-1408
+2017-03-09 16:00:00-08:00,CARLsim3,UCI-CARL,True,1570,1867,297,1273
+2017-03-09 16:00:00-08:00,Sylius,Sylius,False,2506,3318,812,1694
+2017-03-09 16:00:00-08:00,Sylius,Sylius,True,2463,3707,1244,1219
+2017-03-09 16:00:00-08:00,bokeh,bokeh,False,468,705,237,231
+2017-03-09 16:00:00-08:00,bokeh,bokeh,True,263,275,12,251
+2017-03-09 16:00:00-08:00,deeplearning4j,deeplearning4j,False,1017,1337,320,697
+2017-03-09 16:00:00-08:00,galaxy-hub,galaxyproject,False,485,653,168,317
+2017-03-09 16:00:00-08:00,galaxy-hub,galaxyproject,True,5224,5973,749,4475
+2017-03-09 16:00:00-08:00,hdbscan,scikit-learn-contrib,False,1620,3252,1632,-12
+2017-03-09 16:00:00-08:00,hdbscan,scikit-learn-contrib,True,781,781,0,781
+2017-03-09 16:00:00-08:00,julia,JuliaLang,False,785,1253,468,317
+2017-03-09 16:00:00-08:00,julia,JuliaLang,True,36,46,10,26
+2017-03-09 16:00:00-08:00,matplotlib,matplotlib,False,166,196,30,136
+2017-03-09 16:00:00-08:00,matplotlib,matplotlib,True,1857,1950,93,1764
+2017-03-09 16:00:00-08:00,pandas,pandas-dev,False,6809,11734,4925,1884
+2017-03-09 16:00:00-08:00,pandas,pandas-dev,True,962,2063,1101,-139
+2017-03-09 16:00:00-08:00,pmagpy,pmagpy,False,1254,2059,805,449
+2017-03-09 16:00:00-08:00,pycortex,gallantlab,False,1251,1659,408,843
+2017-03-09 16:00:00-08:00,pycortex,gallantlab,True,2552,2706,154,2398
+2017-03-09 16:00:00-08:00,quanteda,kbenoit,False,1023,1591,568,455
+2017-03-09 16:00:00-08:00,quanteda,kbenoit,True,224,450,226,-2
+2017-03-09 16:00:00-08:00,scipy,scipy,False,280,346,66,214
+2017-03-09 16:00:00-08:00,scipy,scipy,True,110,205,95,15

@@ -1,26 +1,26 @@
 import pandas as pd
 import numpy as np
-import datetime
 from watchtower.handlers_ import GithubDatabase
 from watchtower.commits_ import find_word_in_string
 
 db = GithubDatabase(auth='GITHUB_API')
 users = [ii for ii in db.users if len(ii) > 0]
+search_queries = ['DOC', 'docs', 'docstring',
+                  'documentation', 'docathon', 'readme', 'guide', 'tutorial']
+
 # Times for inclusion
-# end = pd.datetime.now()
-# include_last_n_days = 4
-# delta = datetime.timedelta(days=include_last_n_days + 1)
 start = '2017-03-01'
 end = '2017-03-11'
 print('Calculating user activity from {} to {}'.format(start, end))
 
-start, end = (pd.to_datetime(ii).tz_localize('UTC').tz_convert('US/Pacific')
-              for ii in [start, end])
+start, end = [pd.to_datetime(ii).tz_localize('US/Pacific')
+              for ii in [start, end]]
 exceptions = []
 activity = []
 for user in users:
     try:
         user_db = db.load(user)
+
         if len(user_db.PushEvent) == 0:
             activity.append((user, np.nan, np.nan))
             print('No commits for user: {}'.format(user))
@@ -30,7 +30,6 @@ for user in users:
                               for idate, ii in user_db.PushEvent.iterrows()
                               for jj in ii['payload']['commits']])
         dates = list(dates)
-
         for ii, idate in enumerate(dates):
             if idate.tzinfo is None:
                 idate = idate.tz_localize('UTC')
@@ -42,8 +41,6 @@ for user in users:
         messages = messages[mask]
         dates = dates[mask]
         for message, date in zip(messages, dates):
-            search_queries = ['DOC', 'docs', 'docstring',
-                              'documentation', 'docathon', 'readme', 'guide', 'tutorial']
             is_doc = find_word_in_string(message, search_queries)
             activity.append((user, date, is_doc))
 
