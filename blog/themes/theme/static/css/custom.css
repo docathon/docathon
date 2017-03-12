@@ -43,5 +43,10 @@ img.docathon_image {
 }
 
 div.parrotbox img {
-    float:right;
+    float:left;
+}
+
+div.parrotbox {
+    float:left;
+    width:100%;
 }
