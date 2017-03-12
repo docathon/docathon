@@ -9,7 +9,9 @@
 ./category/info.html
 ./category/info2.html
 ./category/info3.html
+./category/info4.html
 ./contributing-documentation.html
+./docathon-day-five.html
 ./docathon-day-four.html
 ./docathon-day-one.html
 ./docathon-day-three.html
@@ -20,6 +22,7 @@
 ./images/global_activity.png
 ./images/logo.svg
 ./images/parrot.gif
+./images/posts/day_five/docathon_map.png
 ./images/project_summary.png
 ./images/project_week.png
 ./images/users_all.png
@@ -27,6 +30,7 @@
 ./index.html
 ./index2.html
 ./index3.html
+./index4.html
 ./pages/about.html
 ./pages/hosting.html
 ./pages/hosts.html
@@ -114,9 +118,11 @@
 ./tag/coding.html
 ./tag/coding2.html
 ./tag/coding3.html
+./tag/coding4.html
 ./tag/communication.html
 ./tag/communication2.html
 ./tag/communication3.html
+./tag/communication4.html
 ./tags/index.html
 ./theme/css/custom.css
 ./theme/css/print.css
