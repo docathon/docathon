@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from watchtower.handlers_ import GithubDatabase
 from watchtower.commits_ import find_word_in_string
+from watchtower._config import DATETIME_FORMAT
 
 db = GithubDatabase(auth='GITHUB_API')
 users = [ii for ii in db.users if len(ii) > 0]
@@ -51,4 +52,4 @@ for user in users:
 print('Exceptions: ', '\n'.join([str(ii) for ii in exceptions]))
 activity = pd.DataFrame(activity, columns=['user', 'date', 'is_doc'])
 activity = activity.set_index('date')
-activity.to_csv('.user_totals.csv')
+activity.to_csv('.user_totals.csv', date_format=DATETIME_FORMAT)

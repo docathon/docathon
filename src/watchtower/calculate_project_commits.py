@@ -2,6 +2,7 @@ import numpy as np
 import os
 from watchtower import GithubDatabase
 from watchtower.commits_ import find_word_in_string
+from watchtower._config import DATETIME_FORMAT
 from tqdm import tqdm
 import pandas as pd
 import traceback
@@ -117,4 +118,4 @@ for user, project in tqdm(projects):
 print('Exceptions: {}'.format(exceptions))
 all_dates = pd.concat(all_dates, axis=0)
 all_dates.index.name = 'date'
-all_dates.to_csv('.project_totals.csv')
+all_dates.to_csv('.project_totals.csv', date_format=DATETIME_FORMAT)

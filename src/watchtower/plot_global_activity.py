@@ -17,15 +17,6 @@ docathon_end = '2017-03-10'
 figsize = (8, 4)
 
 
-def parse_dates(dates):
-    dates = list(dates)
-    for ii, iindex in enumerate(dates):
-        if isinstance(iindex, str):
-            dates[ii] = iindex.split(' ')[0]
-
-    return pd.to_datetime(dates)
-
-
 def plot_commits(all_dates, ylim=[0, 200], figsize=(10, 5)):
 
     # --- Plotting ---
@@ -60,9 +51,11 @@ def plot_commits(all_dates, ylim=[0, 200], figsize=(10, 5)):
     return fig, ax
 
 commits = pd.read_csv('.project_totals.csv')
-commits['date'] = parse_dates(commits['date'])
+commits = commits.set_index('date')
+commits.index = pd.to_datetime(commits.index, utc=True)\
+    .tz_convert('US/Pacific')
 commits = commits.query('date > @plot_start')
-all_commits = commits.groupby('date').sum()['doc']
+all_commits = commits.groupby(level='date').sum()['doc']
 fig, ax = plot_commits(all_commits, figsize=figsize)
 ax.set_title('Docathon activity')
 ax.set_ylabel('Number of doc commits')
