@@ -47,7 +47,7 @@ And a big thanks to our participants!
 
 We got a lot of great contributions from people that signed up as participants as well. We were a pretty diverse group, spread out across all parts of the world:
 
-.. image:: images/posts/day_five/docathon_map.png
+.. image:: https://cloud.githubusercontent.com/assets/1839645/23828598/cd21501e-068b-11e7-85d8-ee42a0b86762.png
   :width: 80%
 
 And of those users, we had a few very special folks that really knocked it out of the park this week! Here's our user leaderboard:
