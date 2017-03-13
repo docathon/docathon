@@ -24,19 +24,19 @@ We are keeping up the pace! Let's keep it going for two more days!
 
 **Global Activity**
 
-.. image:: https://bids.github.io/docathon/images/global_activity.png
+.. image:: https://docathon.github.io/docathon/images/global_activity.png
   :width: 60%
 
 It almost goes without saying at this point, but pycortex has maintained its superhuman documenting pace. Will they ever slow down?!
 
-.. image:: https://bids.github.io/docathon/images/project_summary.png
+.. image:: https://docathon.github.io/docathon/images/project_summary.png
   :width: 60%
 
 We also wanna give a shout out to `matplotlib <http://matplotlib.org/>`_ which is making the noble effort to create a sphinx gallery, as well as `quanteda <http://quanteda.io/>`_ which wins the prize for "awesomest documentation in R package so far" Yeah!
 
 And let's not forget about the users that are making all of this possible. I'm beginning to think some of you are gaming the system ;-) but all is fair game in the world of documentation:
 
-.. image:: https://bids.github.io/docathon/images/users_week.png
+.. image:: https://docathon.github.io/docathon/images/users_week.png
   :width: 60%
 
 Congrats to **r-b-g-b**, **alexhuth**, and **lmcinnes**.

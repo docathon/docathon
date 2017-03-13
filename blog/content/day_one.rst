@@ -24,23 +24,23 @@ My favorite thing about today is that you can totally see a bump in the document
 
 **Global Activity**
 
-.. image:: https://bids.github.io/docathon/images/global_activity.png
+.. image:: https://docathon.github.io/docathon/images/global_activity.png
   :width: 60%
 
 We should also give a shout out to our docstar projects that showed a big bump in activity today. Here's our docboard for project commits:
 
-.. image:: https://bids.github.io/docathon/images/project_summary.png
+.. image:: https://docathon.github.io/docathon/images/project_summary.png
   :width: 60%
 
 Three cheers for:
 
 * `PMagPy <http://pmagpy.github.io/>`_, a python project for analyzing paleomagnetic data
 * `cottoncandy <http://gallantlab.github.io/cottoncandy/>`_, a project for storing and flexibly accessing numpy data on Amazon S3.
-* `Sylius <https://bids.github.io/docathon/pages/projects/Sylius.html>`_, a platform for e-commerce using PHP
+* `Sylius <https://docathon.github.io/docathon/pages/projects/Sylius.html>`_, a platform for e-commerce using PHP
 
 We also got a big bump in commits from individual users! Here's what everybody has been up to:
 
-.. image:: https://bids.github.io/docathon/images/users_all.png
+.. image:: https://docathon.github.io/docathon/images/users_all.png
   :width: 60%
 
 Let's give a shout out to this day's docstars **anwarnunez**, **willingc**, and **swanson-hysell**.

@@ -18,19 +18,19 @@ We got another nice bump in commits for the day, as seen on our global activity 
 
 **Global Activity**
 
-.. image:: https://bids.github.io/docathon/images/global_activity.png
+.. image:: https://docathon.github.io/docathon/images/global_activity.png
   :width: 60%
 
 And here is the list of projects that upped their documentation game:
 
-.. image:: https://bids.github.io/docathon/images/project_summary.png
+.. image:: https://docathon.github.io/docathon/images/project_summary.png
   :width: 60%
 
 Way to go `PMagPy <http://pmagpy.github.io/>`_, for managing to hit the top three two days running. In addition, we saw two new leaders pop up in `pycortex <http://gallantlab.org/pycortex/docs/>`_, which creates beautiful javascript maps of brain activity, and `HDBSCAN <https://github.com/scikit-learn-contrib/hdbscan>`_, which is a high-performance implementation of a machine learning method built for scikit-learn. Way to go! 
 
 Our user leaderboard saw three new folks at the top today:
 
-.. image:: https://bids.github.io/docathon/images/users_week.png
+.. image:: https://docathon.github.io/docathon/images/users_week.png
   :width: 60%
 
 Congrats to **lmcinnes**, **staeiou**, and another victory lap for **willingc**.

@@ -22,19 +22,19 @@ I'm really impressed that we've got four straight days of documenting under our 
 
 **Global Activity**
 
-.. image:: https://bids.github.io/docathon/images/global_activity.png
+.. image:: https://docathon.github.io/docathon/images/global_activity.png
   :width: 60%
 
 There are a few new projects that have shown some great progress in the last day!
 
-.. image:: https://bids.github.io/docathon/images/project_summary.png
+.. image:: https://docathon.github.io/docathon/images/project_summary.png
   :width: 60%
 
 First of all is the aforementioned `galaxy hub <https://docs.galaxyproject.org/en/master/>`_, which is an open platform for biomedical computation. Next up is `pandas <http://pandas.pydata.org/>`_, everybody's favorite data wrangling, munging, and pseudo-databasing tool. Finally we have a newcomer to the open-source world, as `diy <https://github.com/diatomic/diy>`_ recently unveiled itself to the world as a package for parallel computing, like a butterfly out of the cocoon.
 
 And let's see what the user board looks like:
 
-.. image:: https://bids.github.io/docathon/images/users_week.png
+.. image:: https://docathon.github.io/docathon/images/users_week.png
   :width: 60%
 
 OK I'm not even going to mention **r-b-g-b**, who has apparently done nothing but drink red bull and document code for the last 3 days. For the users who are not superhuman, we should give a shout out to **mrzv**, **ketch**, and **spopham** for giving us a day 4 bump.
