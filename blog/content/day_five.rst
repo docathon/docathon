@@ -20,12 +20,12 @@ First things first, aere's what our activity looked like for the week. I increas
 
 **Global Activity**
 
-.. image:: https://bids.github.io/docathon/images/global_activity.png
+.. image:: https://docathon.github.io/docathon/images/global_activity.png
   :width: 60%
 
 And here's the final project leaderboard:
 
-.. image:: https://bids.github.io/docathon/images/project_summary.png
+.. image:: https://docathon.github.io/docathon/images/project_summary.png
   :width: 60%
 
 The winner goes to.............
@@ -52,7 +52,7 @@ We got a lot of great contributions from people that signed up as participants a
 
 And of those users, we had a few very special folks that really knocked it out of the park this week! Here's our user leaderboard:
 
-.. image:: https://bids.github.io/docathon/images/users_week.png
+.. image:: https://docathon.github.io/docathon/images/users_week.png
   :width: 90%
 
 It looks like **r-b-g-b**, **lmcinnes**, and **alexhuth** nabbed the top spots, but I'd like to think that everybody is a winner at the docathon :)

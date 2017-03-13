@@ -1,6 +1,6 @@
 These scripts are a used by the docathon in order to extract information about commits from projects that make documentation-related contributions.
 
-For more information about the docathon, see bids.github.io/docathon
+For more information about the docathon, see docathon.github.io/docathon
 
 To generate project information::
 

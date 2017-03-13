@@ -17,7 +17,7 @@ def validate_url(url):
         if 'http' not in url:
             url = 'http://' + url
     else:
-        url = 'http://bids.github.io/docathon'
+        url = 'http://docathon.github.io/docathon'
     return url
 
 projects = pd.read_csv(args.filename)
