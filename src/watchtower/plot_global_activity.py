@@ -26,7 +26,7 @@ def plot_commits(all_dates, ylim=[0, 200], figsize=(10, 5)):
 
     # Plot today
     ax.fill_between([docathon_start, docathon_end], *ax.get_ylim(),
-                    alpha=.1, color='k')
+                    alpha=.1, color='r')
     yticks = np.arange(0, ylim[1] + 1, 15).astype(int)
     ax.set_yticks(yticks)
     ax.set_yticklabels(yticks, fontsize=18)
