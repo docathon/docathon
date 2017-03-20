@@ -12,8 +12,8 @@ import traceback
 
 today = pd.datetime.today()
 plot_start = '2017-02-24'
-docathon_start = '2017-03-06'
-docathon_end = '2017-03-10'
+docathon_start = '2017-03-05'  # One day before/after so the color covers all days
+docathon_end = '2017-03-11'
 figsize = (8, 4)
 
 
